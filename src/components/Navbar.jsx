@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [closeTimeout, setCloseTimeout] = useState(null);
 
   const menuItems = [
     {
@@ -15,18 +16,22 @@ export default function Navbar() {
       submenu: [
         {
           title: 'About Us',
+          path: '/company/about-us',
           items: ['Our Vision', 'Our Mission', 'Our Values']
         },
         {
           title: 'Leadership',
+          path: '/company/leadership',
           items: ['Founders & Directors', 'Management Team']
         },
         {
           title: 'Our Journey',
+          path: '/company/our-journey',
           items: ['Company Timeline']
         },
         {
           title: 'Why Choose Us',
+          path: '/company/why-choose-us',
           items: ['Innovation', 'Reliability', 'Scalability']
         }
       ]
@@ -34,11 +39,11 @@ export default function Navbar() {
     {
       name: 'Our Team',
       submenu: [
-        { title: 'Core Team', items: [] },
-        { title: 'Technical Experts', items: [] },
-        { title: 'Industry Advisors', items: [] },
-        { title: 'Student Interns', items: [] },
-        { title: 'Culture & Work Environment', items: [] }
+        { title: 'Core Team', path: '/team/core-team', items: [] },
+        { title: 'Technical Experts', path: '/team/technical-experts', items: [] },
+        { title: 'Industry Advisors', path: '/team/industry-advisors', items: [] },
+        { title: 'Student Interns', path: '/team/student-interns', items: [] },
+        { title: 'Culture & Work Environment', path: '/team/culture', items: [] }
       ]
     },
     {
@@ -46,14 +51,17 @@ export default function Navbar() {
       submenu: [
         {
           title: 'Digital Solutions',
+          path: '/solutions/digital',
           items: ['GIS Solutions', 'CS & IT Services', 'MRAS Services']
         },
         {
           title: 'Business Solutions',
+          path: '/solutions/business',
           items: ['E-Commerce Platforms', 'HR Tech Solutions', 'BPO Services']
         },
         {
           title: 'Connectivity Solutions',
+          path: '/solutions/connectivity',
           items: ['Telecommunication', 'Network Infrastructure', 'Cloud Integration']
         }
       ]
@@ -61,77 +69,102 @@ export default function Navbar() {
     {
       name: 'Industries',
       submenu: [
-        { title: 'Government & Smart Cities', items: [] },
-        { title: 'Healthcare', items: [] },
-        { title: 'Education', items: [] },
-        { title: 'Retail & E-Commerce', items: [] },
-        { title: 'Telecom & Networking', items: [] },
-        { title: 'Banking & Finance', items: [] },
-        { title: 'Manufacturing', items: [] },
-        { title: 'Agriculture & GIS', items: [] }
+        { title: 'Government & Smart Cities', path: '/industries/government', items: [] },
+        { title: 'Healthcare', path: '/industries/healthcare', items: [] },
+        { title: 'Education', path: '/industries/education', items: [] },
+        { title: 'Retail & E-Commerce', path: '/industries/retail', items: [] },
+        { title: 'Telecom & Networking', path: '/industries/telecom', items: [] },
+        { title: 'Banking & Finance', path: '/industries/banking', items: [] },
+        { title: 'Manufacturing', path: '/industries/manufacturing', items: [] },
+        { title: 'Agriculture & GIS', path: '/industries/agriculture', items: [] }
       ]
     },
     {
       name: 'Careers',
       submenu: [
-        { title: 'Life at Company', items: [] },
-        { title: 'Job Openings', items: [] },
-        { title: 'Internship Programs', items: [] },
-        { title: 'Join Running Projects', items: [] },
-        { title: 'Campus Hiring', items: [] },
-        { title: 'Growth & Learning', items: [] },
-        { title: 'Employee Benefits', items: [] }
+        { title: 'Life at Company', path: '/careers/life', items: [] },
+        { title: 'Job Openings', path: '/careers/jobs', items: [] },
+        { title: 'Internship Programs', path: '/careers/internships', items: [] },
+        { title: 'Join Running Projects', path: '/careers/projects', items: [] },
+        { title: 'Campus Hiring', path: '/careers/campus', items: [] },
+        { title: 'Growth & Learning', path: '/careers/growth', items: [] },
+        { title: 'Employee Benefits', path: '/careers/benefits', items: [] }
       ]
     },
     {
       name: 'Projects',
       submenu: [
-        { title: 'Ongoing Projects', items: [] },
-        { title: 'Completed Projects', items: [] },
-        { title: 'Case Studies', items: [] },
-        { title: 'Research & Innovation', items: [] },
-        { title: 'Client Testimonials', items: [] }
+        { title: 'Ongoing Projects', path: '/projects/ongoing', items: [] },
+        { title: 'Completed Projects', path: '/projects/completed', items: [] },
+        { title: 'Case Studies', path: '/projects/case-studies', items: [] },
+        { title: 'Research & Innovation', path: '/projects/research', items: [] },
+        { title: 'Client Testimonials', path: '/projects/testimonials', items: [] }
       ]
     },
     {
       name: 'Resources',
       submenu: [
-        { title: 'Blogs & Articles', items: [] },
-        { title: 'News & Updates', items: [] },
-        { title: 'Events & Activities', items: [] },
-        { title: 'CSR Initiatives', items: [] },
-        { title: 'Whitepapers', items: [] },
-        { title: 'Reports & Publications', items: [] },
-        { title: 'Media Gallery', items: [] }
+        { title: 'Blogs & Articles', path: '/resources/blogs', items: [] },
+        { title: 'News & Updates', path: '/resources/news', items: [] },
+        { title: 'Events & Activities', path: '/resources/events', items: [] },
+        { title: 'CSR Initiatives', path: '/resources/csr', items: [] },
+        { title: 'Whitepapers', path: '/resources/whitepapers', items: [] },
+        { title: 'Reports & Publications', path: '/resources/reports', items: [] },
+        { title: 'Media Gallery', path: '/resources/media', items: [] }
       ]
     },
     {
       name: 'Join Us',
       submenu: [
-        { title: 'Partner With Us', items: [] },
-        { title: 'Collaborate on Research', items: [] },
-        { title: 'Startup & Student Programs', items: [] },
-        { title: 'Volunteer & CSR Programs', items: [] }
+        { title: 'Partner With Us', path: '/join/partner', items: [] },
+        { title: 'Collaborate on Research', path: '/join/collaborate', items: [] },
+        { title: 'Startup & Student Programs', path: '/join/startup', items: [] },
+        { title: 'Volunteer & CSR Programs', path: '/join/volunteer', items: [] }
       ]
     },
     {
       name: 'Contact',
       submenu: [
-        { title: 'Get in Touch', items: [] },
-        { title: 'Request a Quote', items: [] },
-        { title: 'Support & Help Desk', items: [] },
-        { title: 'Office Locations', items: [] },
-        { title: 'Feedback & Queries', items: [] }
+        { title: 'Get in Touch', path: '/contact/touch', items: [] },
+        { title: 'Request a Quote', path: '/contact/quote', items: [] },
+        { title: 'Support & Help Desk', path: '/contact/support', items: [] },
+        { title: 'Office Locations', path: '/contact/locations', items: [] },
+        { title: 'Feedback & Queries', path: '/contact/feedback', items: [] }
       ]
     }
   ];
 
   const handleMouseEnter = (index) => {
+    // Clear any pending close timeout
+    if (closeTimeout) {
+      clearTimeout(closeTimeout);
+      setCloseTimeout(null);
+    }
     setActiveDropdown(index);
   };
 
   const handleMouseLeave = () => {
-    setActiveDropdown(null);
+    // Add a delay before closing the dropdown
+    const timeout = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 300); // 300ms delay
+    setCloseTimeout(timeout);
+  };
+
+  const handleDropdownEnter = () => {
+    // Cancel closing when mouse enters dropdown
+    if (closeTimeout) {
+      clearTimeout(closeTimeout);
+      setCloseTimeout(null);
+    }
+  };
+
+  const handleDropdownLeave = () => {
+    // Close dropdown when mouse leaves the dropdown area
+    const timeout = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 200);
+    setCloseTimeout(timeout);
   };
 
   return (
@@ -158,12 +191,12 @@ export default function Navbar() {
                 {item.path ? (
                   <Link
                     to={item.path}
-                    className="text-gray-800 hover:text-white hover:bg-gradient-to-r from-red-600 via-pink-600 to-red-600 transition-all duration-300 font-bold text-sm px-4 py-2.5 rounded-lg group transform hover:-translate-y-1 hover:shadow-xl"
+                    className="text-gray-800 hover:text-white hover:bg-gradient-to-r from-red-600 via-pink-600 to-red-600 transition-all duration-300 font-bold text-sm px-5 py-2.5 rounded-lg group transform hover:-translate-y-1 hover:shadow-xl whitespace-nowrap"
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <button className="text-gray-800 hover:text-white hover:bg-gradient-to-r from-red-600 via-pink-600 to-red-600 transition-all duration-300 font-bold text-sm px-4 py-2.5 rounded-lg flex items-center space-x-1 group transform hover:-translate-y-1 hover:shadow-xl">
+                  <button className="text-gray-800 hover:text-white hover:bg-gradient-to-r from-red-600 via-pink-600 to-red-600 transition-all duration-300 font-bold text-sm px-5 py-2.5 rounded-lg flex items-center space-x-1 group transform hover:-translate-y-1 hover:shadow-xl whitespace-nowrap">
                     <span>{item.name}</span>
                     {item.submenu && (
                       <svg className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -175,7 +208,11 @@ export default function Navbar() {
 
                 {/* Enhanced Mega Menu Dropdown */}
                 {item.submenu && activeDropdown === index && (
-                  <div className="absolute right-0 mt-4 w-80 bg-white rounded-2xl shadow-2xl border-2 border-red-200 overflow-hidden animate-fadeIn">
+                  <div
+                    className="absolute right-0 mt-4 w-80 bg-white rounded-2xl shadow-2xl border-2 border-red-200 overflow-hidden animate-fadeIn"
+                    onMouseEnter={handleDropdownEnter}
+                    onMouseLeave={handleDropdownLeave}
+                  >
                     <div className="bg-gradient-to-br from-red-600 via-pink-600 to-purple-600 px-5 py-4">
                       <h3 className="text-white font-bold text-xl flex items-center gap-2">
                         <span className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse shadow-lg"></span>
@@ -186,7 +223,12 @@ export default function Navbar() {
                       <div className="grid grid-cols-1 gap-1">
                         {item.submenu.map((section, idx) => (
                           <div key={idx} className="group/item">
-                            <a href="#" className="block px-4 py-3.5 hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 rounded-xl transition-all duration-300 transform hover:translate-x-2 hover:shadow-md border border-transparent hover:border-red-100">
+                            <Link
+                              to={section.path}
+                              state={{ title: section.title }}
+                              onClick={() => setActiveDropdown(null)}
+                              className="block px-4 py-3.5 hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 rounded-xl transition-all duration-300 transform hover:translate-x-2 hover:shadow-md border border-transparent hover:border-red-100"
+                            >
                               <div>
                                 <div className="font-bold text-gray-900 text-sm group-hover/item:text-red-600 transition-colors duration-300 flex items-center gap-2">
                                   <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover/item:w-2.5 group-hover/item:h-2.5 transition-all shadow-sm"></span>
@@ -205,7 +247,7 @@ export default function Navbar() {
                                   )}
                                 </div>
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         ))}
                       </div>
@@ -248,7 +290,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Overlay */}
         {isOpen && (
-          <div 
+          <div
             className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"
             onClick={() => setIsOpen(false)}
           />
@@ -256,7 +298,7 @@ export default function Navbar() {
 
         {/* Enhanced Mobile Menu - Slide from Right */}
         <div className={`fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-          
+
           {/* Menu Header */}
           <div className="flex items-center justify-between p-6 border-b-2 border-gray-200 bg-gradient-to-r from-red-600 to-pink-600">
             <div className="text-white">
@@ -305,9 +347,14 @@ export default function Navbar() {
                       <div className="ml-4 mt-2 space-y-1 bg-gray-50 backdrop-blur-sm rounded-xl p-2">
                         {item.submenu.map((section, idx) => (
                           <div key={idx} className="py-1">
-                            <a href="#" className="block py-2 px-3 text-sm font-bold text-gray-800 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200">
+                            <Link
+                              to={section.path}
+                              state={{ title: section.title }}
+                              onClick={() => setIsOpen(false)}
+                              className="block py-2 px-3 text-sm font-bold text-gray-800 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200"
+                            >
                               {section.title}
-                            </a>
+                            </Link>
                             {section.items.length > 0 && (
                               <div className="ml-10 mt-1 space-y-1">
                                 {section.items.map((subItem, subIdx) => (
