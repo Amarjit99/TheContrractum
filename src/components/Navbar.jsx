@@ -128,7 +128,7 @@ export default function Navbar() {
         { title: 'Get in Touch', path: '/contact/touch', items: [] },
         { title: 'Request a Quote', path: '/contact/quote', items: [] },
         { title: 'Support & Help Desk', path: '/contact/support', items: [] },
-        { title: 'Office Locations', path: '/contact/locations', items: [] },
+        { title: 'Office Locations', path: '/contact/location', items: [] },
         { title: 'Feedback & Queries', path: '/contact/feedback', items: [] }
       ]
     }
@@ -175,7 +175,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center group -ml-8 transform hover:scale-110 transition-all duration-300">
             <span className="text-3xl lg:text-4xl font-black">
               <span className="text-blue-600 drop-shadow-md">The</span>{" "}
-              <span className="text-red-600 drop-shadow-md">Contrractum</span>
+              <span className="text-red-600 drop-shadow-md">Contractum</span>
             </span>
           </Link>
 
@@ -213,12 +213,6 @@ export default function Navbar() {
                     onMouseEnter={handleDropdownEnter}
                     onMouseLeave={handleDropdownLeave}
                   >
-                    <div className="bg-gradient-to-br from-red-600 via-pink-600 to-purple-600 px-5 py-4">
-                      <h3 className="text-white font-bold text-xl flex items-center gap-2">
-                        <span className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse shadow-lg"></span>
-                        {item.name}
-                      </h3>
-                    </div>
                     <div className="max-h-96 overflow-y-auto p-3">
                       <div className="grid grid-cols-1 gap-1">
                         {item.submenu.map((section, idx) => (

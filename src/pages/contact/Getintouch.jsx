@@ -1,5 +1,8 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Send } from 'lucide-react';
+import location from "../../assets/location.png";
+import phone from "../../assets/phone.png";
+import email from "../../assets/email.png";
 
 const Getintouch = () => {
   return (
@@ -99,7 +102,7 @@ const Getintouch = () => {
               <div className="space-y-6">
                 <div className="flex items-start gap-4 p-5 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-all">
                   <div className="bg-gray-800 p-3 rounded-lg">
-                    <Mail size={22} className="text-white" />
+                    <img src={email} alt="Email" className="w-5.5 h-5.5" />
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-900 mb-1 text-sm uppercase tracking-wide">Email Address</h3>
@@ -111,7 +114,7 @@ const Getintouch = () => {
 
                 <div className="flex items-start gap-4 p-5 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-all">
                   <div className="bg-gray-800 p-3 rounded-lg">
-                    <Phone size={22} className="text-white" />
+                    <img src={phone} alt="Phone" className="w-5.5 h-5.5" />
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-900 mb-1 text-sm uppercase tracking-wide">Phone Number</h3>
@@ -123,7 +126,7 @@ const Getintouch = () => {
 
                 <div className="flex items-start gap-4 p-5 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-all">
                   <div className="bg-gray-800 p-3 rounded-lg">
-                    <MapPin size={22} className="text-white" />
+                    <img src={location} alt="Location" className="w-5.5 h-5.5" />
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-900 mb-1 text-sm uppercase tracking-wide">Office Address</h3>

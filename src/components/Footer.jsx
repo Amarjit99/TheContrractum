@@ -31,7 +31,7 @@ const Footer = () => {
 
           <div className="text-center md:text-left">
             <h2 className="text-2xl md:text-3xl font-bold mb-2">
-              Stay Connected with <span className="text-blue-400">The</span> <span className="text-red-500">Contrractum</span>
+              Stay Connected with <span className="text-blue-400">The</span> <span className="text-red-500">Contractum</span>
             </h2>
             <p className="text-red-100 text-sm">Get the latest insights, updates, and exclusive offers delivered to your inbox</p>
           </div>
@@ -62,7 +62,7 @@ const Footer = () => {
           {/* Column 1 - Company Info */}
           <div>
             <h3 className="text-3xl font-bold mb-4">
-              <span className="text-blue-400">The</span> <span className="text-red-500">Contrractum</span>
+              <span className="text-blue-400">The</span> <span className="text-red-500">Contractum</span>
             </h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Passionately focused on delivering innovative solutions and fostering lasting relationships for over a decade.
@@ -217,7 +217,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 relative z-10">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} <span className="text-blue-400 font-semibold">The</span> <span className="text-red-500 font-semibold">Contrractum</span>. All rights reserved.
+            © {new Date().getFullYear()} <span className="text-blue-400 font-semibold">The</span> <span className="text-red-500 font-semibold">Contractum</span>. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

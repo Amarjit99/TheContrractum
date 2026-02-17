@@ -1,6 +1,7 @@
 import React from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
-
+import location from "../assets/location.png";
+import phone from "../assets/phone.png";
+import email from "../assets/email.png";
 const Registration = () => {
   return (
     <div className="min-h-screen flex flex-col lg:flex-row">
@@ -103,7 +104,7 @@ const Registration = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 border border-gray-100">
               <div className="flex items-start gap-4">
                 <div className="bg-gradient-to-br from-red-500 to-pink-600 p-4 rounded-xl text-white group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                  <Mail size={24} />
+                  <img src={email} alt="Email" className="w-6 h-6" />
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-lg text-gray-900 mb-2">Email Address</h4>
@@ -121,7 +122,7 @@ const Registration = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 border border-gray-100">
               <div className="flex items-start gap-4">
                 <div className="bg-gradient-to-br from-blue-500 to-indigo-600 p-4 rounded-xl text-white group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                  <Phone size={24} />
+                  <img src={phone} alt="Phone" className="w-6 h-6" />
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-lg text-gray-900 mb-2">Phone Number</h4>
@@ -139,7 +140,7 @@ const Registration = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 border border-gray-100">
               <div className="flex items-start gap-4">
                 <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-4 rounded-xl text-white group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                  <MapPin size={24} />
+                  <img src={location} alt="Location" className="w-6 h-6" />
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-lg text-gray-900 mb-2">Office Address</h4>
