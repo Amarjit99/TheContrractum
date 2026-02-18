@@ -25,7 +25,7 @@ export default function About() {
             </div>
           </div>
           <div className="relative">
-            <div className="bg-linear-to-r from-indigo-400 to-purple-500 rounded-2xl h-96 shadow-xl"></div>
+            <div className="bg-gradient-to-r from-indigo-400 to-purple-500 rounded-2xl h-96 shadow-xl"></div>
           </div>
         </div>
       </div>

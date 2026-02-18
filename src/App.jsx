@@ -7,6 +7,7 @@ import Register from './pages/Register';
 
 // Company Pages
 import AboutUs from './pages/company/AboutUs';
+import AboutUsThemePreview from './pages/company/AboutUsThemePreview';
 import Leadership from './pages/company/Leadership';
 import OurJourney from './pages/company/OurJourney';
 import WhyChooseUs from './pages/company/WhyChooseUs';
@@ -51,6 +52,7 @@ import Testimonials from './pages/projects/Testimonials';
 
 // Resources Pages
 import Blogs from './pages/resources/Blogs';
+import BlogArticle from './pages/resources/BlogArticle';
 import News from './pages/resources/News';
 import Events from './pages/resources/Events';
 import CSR from './pages/resources/CSR';
@@ -65,8 +67,9 @@ import Startup from './pages/join/Startup';
 import Volunteer from './pages/join/Volunteer';
 
 // Contact Pages
-import Touch from './pages/contact/Touch';
-import Quote from './pages/contact/Quote';
+// Contact Pages
+import Getintouch from './pages/contact/Getintouch';
+import RequestQuote from './pages/contact/Requestaquote';
 import Support from './pages/contact/Support';
 import Locations from './pages/contact/Locations';
 import Feedback from './pages/contact/Feedback';
@@ -76,13 +79,14 @@ export default function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow">
+        <main className="grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
 
             <Route path="/company/about-us" element={<AboutUs />} />
+            <Route path="/company/about-theme-preview" element={<AboutUsThemePreview />} />
             <Route path="/company/leadership" element={<Leadership />} />
             <Route path="/company/our-journey" element={<OurJourney />} />
             <Route path="/company/why-choose-us" element={<WhyChooseUs />} />
@@ -121,6 +125,7 @@ export default function App() {
             <Route path="/projects/testimonials" element={<Testimonials />} />
 
             <Route path="/resources/blogs" element={<Blogs />} />
+            <Route path="/resources/blogs/:id" element={<BlogArticle />} />
             <Route path="/resources/news" element={<News />} />
             <Route path="/resources/events" element={<Events />} />
             <Route path="/resources/csr" element={<CSR />} />
@@ -133,8 +138,8 @@ export default function App() {
             <Route path="/join/startup" element={<Startup />} />
             <Route path="/join/volunteer" element={<Volunteer />} />
 
-            <Route path="/contact/touch" element={<Touch />} />
-            <Route path="/contact/quote" element={<Quote />} />
+            <Route path="/contact/touch" element={<Getintouch />} />
+            <Route path="/contact/quote" element={<RequestQuote />} />
             <Route path="/contact/support" element={<Support />} />
             <Route path="/contact/locations" element={<Locations />} />
             <Route path="/contact/feedback" element={<Feedback />} />

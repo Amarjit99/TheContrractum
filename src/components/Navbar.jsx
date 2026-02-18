@@ -20,6 +20,11 @@ export default function Navbar() {
           items: ['Our Vision', 'Our Mission', 'Our Values']
         },
         {
+          title: 'Theme Preview (New)',
+          path: '/company/about-theme-preview',
+          items: ['Pro Theme (Indigo/Teal)']
+        },
+        {
           title: 'Leadership',
           path: '/company/leadership',
           items: ['Founders & Directors', 'Management Team']
