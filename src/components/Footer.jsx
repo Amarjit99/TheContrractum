@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Linkedin,
   Twitter,
@@ -31,7 +32,7 @@ const Footer = () => {
 
           <div className="text-center md:text-left">
             <h2 className="text-2xl md:text-3xl font-bold mb-2">
-              Stay Connected with <span className="text-blue-400">The</span> <span className="text-red-500">Contractum</span>
+              Stay Connected with <span className="text-blue-400">The</span> <span className="text-red-500">Contrractum</span>
             </h2>
             <p className="text-red-100 text-sm">Get the latest insights, updates, and exclusive offers delivered to your inbox</p>
           </div>
@@ -62,7 +63,7 @@ const Footer = () => {
           {/* Column 1 - Company Info */}
           <div>
             <h3 className="text-3xl font-bold mb-4">
-              <span className="text-blue-400">The</span> <span className="text-red-500">Contractum</span>
+              <span className="text-blue-400">The</span> <span className="text-red-500">Contrractum</span>
             </h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Passionately focused on delivering innovative solutions and fostering lasting relationships for over a decade.
@@ -74,24 +75,48 @@ const Footer = () => {
             </h4>
 
             <div className="flex gap-3 mb-6">
-              <a href="#" className="bg-white/5 p-3 rounded-lg hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-500 hover:text-white cursor-pointer transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border border-white/10">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                className="bg-white/5 p-3 rounded-lg hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-500 hover:text-white cursor-pointer transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border border-white/10"
+              >
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="bg-white/5 p-3 rounded-lg hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 hover:text-white cursor-pointer transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border border-white/10">
+              <a
+                href="https://x.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="X"
+                className="bg-white/5 p-3 rounded-lg hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 hover:text-white cursor-pointer transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border border-white/10"
+              >
                 <Twitter size={20} />
               </a>
-              <a href="#" className="bg-white/5 p-3 rounded-lg hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600 hover:text-white cursor-pointer transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border border-white/10">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+                className="bg-white/5 p-3 rounded-lg hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600 hover:text-white cursor-pointer transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border border-white/10"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="bg-white/5 p-3 rounded-lg hover:bg-gradient-to-r hover:from-red-600 hover:to-red-700 hover:text-white cursor-pointer transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border border-white/10">
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="YouTube"
+                className="bg-white/5 p-3 rounded-lg hover:bg-gradient-to-r hover:from-red-600 hover:to-red-700 hover:text-white cursor-pointer transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border border-white/10"
+              >
                 <Youtube size={20} />
               </a>
             </div>
 
-            <button className="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2 group transform hover:-translate-y-1 transition-all shadow-lg hover:shadow-red-500/50">
+            <Link to="/contact/quote" className="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2 group transform hover:-translate-y-1 transition-all shadow-lg hover:shadow-red-500/50 w-fit">
               Request Demo
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </Link>
           </div>
 
           {/* Column 2 - Solutions */}
@@ -101,33 +126,47 @@ const Footer = () => {
               <div className="h-0.5 w-8 bg-gradient-to-r from-red-500 to-transparent"></div>
             </h4>
             <ul className="space-y-3">
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                GIS Solutions
+              <li>
+                <Link to="/solutions/digital" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  GIS Solutions
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                IT Consulting
+              <li>
+                <Link to="/solutions/digital" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  IT Consulting
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                E-commerce
+              <li>
+                <Link to="/solutions/business" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  E-commerce
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                Telecom Services
+              <li>
+                <Link to="/solutions/connectivity" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  Telecom Services
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                HR Solutions
+              <li>
+                <Link to="/solutions/business" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  HR Solutions
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                BPO Services
+              <li>
+                <Link to="/solutions/business" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  BPO Services
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                Market Research
+              <li>
+                <Link to="/solutions/business" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  Market Research
+                </Link>
               </li>
             </ul>
           </div>
@@ -139,33 +178,47 @@ const Footer = () => {
               <div className="h-0.5 w-8 bg-gradient-to-r from-red-500 to-transparent"></div>
             </h4>
             <ul className="space-y-3">
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                About Us
+              <li>
+                <Link to="/company/about-us" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  About Us
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                Our Team
+              <li>
+                <Link to="/team/core-team" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  Our Team
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                Careers
+              <li>
+                <Link to="/careers/job-openings" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  Careers
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                Contact Us
+              <li>
+                <Link to="/contact/touch" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  Contact Us
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                Projects
+              <li>
+                <Link to="/projects/ongoing" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  Projects
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                Resources
+              <li>
+                <Link to="/resources/blogs" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  Resources
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
-                Support
+              <li>
+                <Link to="/contact/support" className="hover:text-white cursor-pointer transition-colors hover:translate-x-2 transform duration-200 flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all"></span>
+                  Support
+                </Link>
               </li>
             </ul>
           </div>
@@ -217,12 +270,12 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 relative z-10">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} <span className="text-blue-400 font-semibold">The</span> <span className="text-red-500 font-semibold">Contractum</span>. All rights reserved.
+            © {new Date().getFullYear()} <span className="text-blue-400 font-semibold">The</span> <span className="text-red-500 font-semibold">Contrractum</span>. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link to="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

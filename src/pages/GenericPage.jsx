@@ -1,4 +1,4 @@
-import { useParams, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function GenericPage() {
     const location = useLocation();
@@ -74,12 +74,12 @@ export default function GenericPage() {
 
                         <div className="mt-12 text-center">
                             <p className="text-gray-600 mb-6">Have questions or need more information?</p>
-                            <a
-                                href="/contact"
+                            <Link
+                                to="/contact/touch"
                                 className="inline-block bg-gradient-to-r from-red-600 to-pink-600 text-white font-bold px-8 py-3 rounded-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
                             >
                                 Get in Touch
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

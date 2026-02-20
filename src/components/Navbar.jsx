@@ -152,16 +152,31 @@ export default function Navbar() {
     // Add a delay before closing the dropdown
     const timeout = setTimeout(() => {
       setActiveDropdown(null);
-    }, 300); // 300ms delay
+    }, 800); // allow time to move into the dropdown
     setCloseTimeout(timeout);
   };
 
-  const handleDropdownEnter = () => {
+  const handleFocusIn = (index) => {
+    if (closeTimeout) {
+      clearTimeout(closeTimeout);
+      setCloseTimeout(null);
+    }
+    setActiveDropdown(index);
+  };
+
+  const handleFocusOut = (event) => {
+    if (!event.currentTarget.contains(event.relatedTarget)) {
+      setActiveDropdown(null);
+    }
+  };
+
+  const handleDropdownEnter = (index) => {
     // Cancel closing when mouse enters dropdown
     if (closeTimeout) {
       clearTimeout(closeTimeout);
       setCloseTimeout(null);
     }
+    setActiveDropdown(index);
   };
 
   const handleDropdownLeave = () => {
@@ -173,7 +188,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-2xl border-b-2 border-gradient-to-r from-red-500 to-pink-500">
+    <nav className="sticky top-0 z-50 bg-white shadow-2xl border-b-2 border-red-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Company Name */}
@@ -192,6 +207,8 @@ export default function Navbar() {
                 className="relative group"
                 onMouseEnter={() => item.submenu && handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
+                onFocus={() => item.submenu && handleFocusIn(index)}
+                onBlur={(event) => item.submenu && handleFocusOut(event)}
               >
                 {item.path ? (
                   <Link
@@ -201,7 +218,13 @@ export default function Navbar() {
                     {item.name}
                   </Link>
                 ) : (
-                  <button className="text-gray-800 hover:text-white hover:bg-gradient-to-r from-red-600 via-pink-600 to-red-600 transition-all duration-300 font-bold text-sm px-5 py-2.5 rounded-lg flex items-center space-x-1 group transform hover:-translate-y-1 hover:shadow-xl whitespace-nowrap">
+                  <button
+                    type="button"
+                    className="text-gray-800 hover:text-white hover:bg-gradient-to-r from-red-600 via-pink-600 to-red-600 transition-all duration-300 font-bold text-sm px-5 py-2.5 rounded-lg flex items-center space-x-1 group transform hover:-translate-y-1 hover:shadow-xl whitespace-nowrap"
+                    onClick={() => setActiveDropdown(activeDropdown === index ? null : index)}
+                    aria-haspopup="menu"
+                    aria-expanded={activeDropdown === index}
+                  >
                     <span>{item.name}</span>
                     {item.submenu && (
                       <svg className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -215,7 +238,7 @@ export default function Navbar() {
                 {item.submenu && activeDropdown === index && (
                   <div
                     className="absolute right-0 mt-4 w-80 bg-white rounded-2xl shadow-2xl border-2 border-red-200 overflow-hidden animate-fadeIn"
-                    onMouseEnter={handleDropdownEnter}
+                    onMouseEnter={() => handleDropdownEnter(index)}
                     onMouseLeave={handleDropdownLeave}
                   >
                     <div className="bg-gradient-to-br from-red-600 via-pink-600 to-purple-600 px-5 py-4">

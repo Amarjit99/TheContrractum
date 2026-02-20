@@ -7,7 +7,6 @@ import Client from '../components/Client';
 import Testmonials from '../components/Testmonials';
 import Blog from '../components/Blog';
 import Contact from '../components/Contact';
-import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
       <Testmonials />
       <Blog />
       <Contact />
-    
     </div>
   );
 }
