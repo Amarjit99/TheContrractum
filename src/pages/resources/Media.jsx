@@ -252,7 +252,7 @@ export default function Media() {
   const totalViews = mediaItems.reduce((sum, item) => sum + item.views, 0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-primary-light">
 
       {/* Hero Header with Background Image */}
       <div className="relative text-white py-32 overflow-hidden">
@@ -262,7 +262,7 @@ export default function Media() {
             alt="Media Gallery"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/85 via-pink-900/75 to-red-900/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/85 via-primary/75 to-primary-light/85"></div>
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -293,7 +293,7 @@ export default function Media() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </div>
@@ -303,7 +303,7 @@ export default function Media() {
 
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
               </svg>
             </div>
@@ -313,7 +313,7 @@ export default function Media() {
 
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
               </svg>
@@ -324,7 +324,7 @@ export default function Media() {
 
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
               </svg>
             </div>
@@ -342,7 +342,7 @@ export default function Media() {
                 onClick={() => setActiveTab(tab)}
                 className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                   activeTab === tab
-                    ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-primary to-primary-light text-white shadow-lg'
                     : 'bg-slate-50 text-slate-700 hover:bg-slate-100'
                 }`}
               >
@@ -403,7 +403,7 @@ export default function Media() {
         {activeTab === "All" && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-purple-600 to-pink-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-primary-light rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Featured Media</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -421,7 +421,7 @@ export default function Media() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                     
                     <div className="absolute top-4 left-4 flex gap-2">
-                      <span className={`${item.type === 'Photo' ? 'bg-purple-100 text-purple-700 border-purple-300' : 'bg-pink-100 text-pink-700 border-pink-300'} px-3 py-1 rounded-full text-xs font-bold border`}>
+                      <span className={`${item.type === 'Photo' ? 'bg-purple-100 text-primary-dark border-purple-300' : 'bg-pink-100 text-primary border-pink-300'} px-3 py-1 rounded-full text-xs font-bold border`}>
                         {item.type === 'Video' && (
                           <svg className="w-3 h-3 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
@@ -473,13 +473,13 @@ export default function Media() {
 
                     <div className="flex flex-wrap gap-1 mb-3">
                       {item.tags.map((tag, index) => (
-                        <span key={index} className="bg-purple-50 text-purple-700 text-xs px-2 py-1 rounded-md font-semibold">
+                        <span key={index} className="bg-primary/10 text-primary-dark text-xs px-2 py-1 rounded-md font-semibold">
                           #{tag}
                         </span>
                       ))}
                     </div>
 
-                    <button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 shadow-md hover:shadow-lg">
+                    <button className="w-full bg-gradient-to-r from-primary to-primary-light text-white py-2 rounded-lg font-semibold hover:from-primary-dark hover:to-primary transition-all duration-300 shadow-md hover:shadow-lg">
                       {item.type === 'Video' ? 'Watch Video' : 'View Photo'}
                     </button>
                   </div>
@@ -494,7 +494,7 @@ export default function Media() {
           <div className="mb-16">
             {activeTab !== "All" && (
               <div className="flex items-center mb-8">
-                <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-pink-600 to-red-600 rounded-full mr-4"></span>
+                <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary-light to-primary rounded-full mr-4"></span>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900">{activeTab === "All" ? "More Media" : activeTab}</h2>
               </div>
             )}
@@ -512,7 +512,7 @@ export default function Media() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                     
-                    <span className={`absolute top-3 left-3 ${item.type === 'Photo' ? 'bg-purple-100 text-purple-700 border-purple-300' : 'bg-pink-100 text-pink-700 border-pink-300'} px-2 py-1 rounded-full text-xs font-bold border`}>
+                    <span className={`absolute top-3 left-3 ${item.type === 'Photo' ? 'bg-purple-100 text-primary-dark border-purple-300' : 'bg-pink-100 text-primary border-pink-300'} px-2 py-1 rounded-full text-xs font-bold border`}>
                       {item.type === 'Video' && (
                         <svg className="w-3 h-3 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
@@ -562,7 +562,7 @@ export default function Media() {
         {activeTab === "Press Releases" && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-purple-600 to-red-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-primary-dark rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Press Releases</h2>
             </div>
             <div className="space-y-6">
@@ -573,10 +573,10 @@ export default function Media() {
                 >
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex-1">
-                      <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold border border-purple-300 inline-block mb-3">
+                      <span className="bg-purple-100 text-primary-dark px-3 py-1 rounded-full text-xs font-bold border border-purple-300 inline-block mb-3">
                         Press Release
                       </span>
-                      <h3 className="text-2xl font-bold text-slate-900 mb-2 hover:text-purple-600 transition-colors cursor-pointer">
+                      <h3 className="text-2xl font-bold text-slate-900 mb-2 hover:text-primary transition-colors cursor-pointer">
                         {item.title}
                       </h3>
                       <p className="text-sm text-slate-600 mb-3 flex items-center gap-2">
@@ -590,7 +590,7 @@ export default function Media() {
                   <p className="text-slate-700 leading-relaxed mb-4">
                     {item.excerpt}
                   </p>
-                  <button className="text-purple-600 font-semibold hover:text-purple-700 transition-colors flex items-center gap-2">
+                  <button className="bg-primary text-white font-semibold hover:bg-primary-dark transition-colors flex items-center gap-2 px-4 py-2 rounded">
                     <span>Read Full Release</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -606,7 +606,7 @@ export default function Media() {
         {activeTab === "Media Coverage" && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-pink-600 to-red-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary-light to-primary rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Media Coverage</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
@@ -615,10 +615,10 @@ export default function Media() {
                   key={item.id}
                   className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group cursor-pointer"
                 >
-                  <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-bold border border-pink-300 inline-block mb-4">
+                  <span className="bg-pink-100 text-primary px-3 py-1 rounded-full text-xs font-bold border border-pink-300 inline-block mb-4">
                     Media Coverage
                   </span>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-pink-600 transition-colors">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary-light transition-colors">
                     {item.title}
                   </h3>
                   <div className="flex items-center justify-between text-sm text-slate-600 mb-4">
@@ -630,7 +630,7 @@ export default function Media() {
                       {item.date}
                     </span>
                   </div>
-                  <button className="text-pink-600 font-semibold hover:text-pink-700 transition-colors flex items-center gap-2">
+                  <button className="bg-primary text-white font-semibold hover:bg-primary-dark transition-colors flex items-center gap-2 px-4 py-2 rounded">
                     <span>Read Article</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -654,7 +654,7 @@ export default function Media() {
         )}
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
+        <div className="bg-gradient-to-r from-primary-dark via-primary to-primary-light rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -673,10 +673,10 @@ export default function Media() {
               Press releases, interview requests, and media kit downloads
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold hover:bg-purple-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Contact Media Relations
               </button>
-              <button className="bg-purple-700 text-white px-8 py-4 rounded-lg font-bold hover:bg-purple-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
+              <button className="bg-primary-dark text-white px-8 py-4 rounded-lg font-bold hover:bg-purple-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
                 Download Media Kit
               </button>
             </div>
@@ -689,7 +689,7 @@ export default function Media() {
       {lastScrollY > 300 && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 bg-purple-600 text-white p-4 rounded-full shadow-2xl hover:bg-purple-700 transition-all duration-300 z-50 hover:scale-110"
+          className="fixed bottom-8 right-8 bg-primary text-white p-4 rounded-full shadow-2xl hover:bg-primary-dark transition-all duration-300 z-50 hover:scale-110"
           aria-label="Scroll to top"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

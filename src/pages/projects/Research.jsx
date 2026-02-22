@@ -294,7 +294,7 @@ export default function Research() {
   const ongoingProjects = researchData.filter(p => p.status === "Ongoing").length;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50 to-primary-light">
 
       {/* Hero Header with Background Image */}
       <div className="relative text-white py-32 overflow-hidden">
@@ -355,7 +355,7 @@ export default function Research() {
 
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
@@ -439,7 +439,7 @@ export default function Research() {
         {featuredResearch.length > 0 && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-cyan-600 to-blue-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-cyan-600 to-primary-light rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Featured Research</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -496,7 +496,7 @@ export default function Research() {
                       <div className="space-y-1">
                         {project.keyFindings.slice(0, 3).map((finding, index) => (
                           <div key={index} className="flex items-start gap-2 text-xs">
-                            <svg className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                             </svg>
                             <span className="text-slate-600">{finding}</span>
@@ -532,7 +532,7 @@ export default function Research() {
         {regularResearch.length > 0 && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-indigo-600 to-blue-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-primary-light rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">All Research Projects</h2>
             </div>
             <div className="space-y-6">
@@ -584,7 +584,7 @@ export default function Research() {
                           <div className="space-y-1">
                             {project.keyFindings.slice(0, 2).map((finding, index) => (
                               <div key={index} className="flex items-start gap-2 text-xs">
-                                <svg className="w-3 h-3 text-green-600 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <svg className="w-3 h-3 text-primary mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                 </svg>
                                 <span className="text-slate-600">{finding}</span>
@@ -610,7 +610,7 @@ export default function Research() {
 
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.technologies.slice(0, 5).map((tech, index) => (
-                          <span key={index} className="bg-indigo-50 text-indigo-700 text-xs px-2 py-1 rounded-lg font-semibold">
+                          <span key={index} className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-lg font-semibold">
                             {tech}
                           </span>
                         ))}
@@ -622,7 +622,7 @@ export default function Research() {
                             <span className="font-semibold">Team:</span> {project.team.slice(0, 2).join(", ")}
                             {project.team.length > 2 && ` +${project.team.length - 2} more`}
                           </div>
-                          <button className="text-cyan-600 font-semibold hover:text-cyan-700 flex items-center gap-1">
+                          <button className="text-white font-semibold bg-primary hover:bg-primary-dark flex items-center gap-1">
                             <span>View Details</span>
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -650,7 +650,7 @@ export default function Research() {
         )}
 
         {/* Innovation Impact Section */}
-        <div className="mt-16 bg-gradient-to-br from-cyan-600 via-blue-600 to-indigo-600 rounded-2xl shadow-2xl p-12 text-white overflow-hidden relative">
+        <div className="mt-16 bg-gradient-to-br from-cyan-600 via-blue-600 to-primary rounded-2xl shadow-2xl p-12 text-white overflow-hidden relative">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -686,10 +686,10 @@ export default function Research() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-cyan-600 px-8 py-4 rounded-lg font-bold hover:bg-cyan-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Collaborate With Us
               </button>
-              <button className="bg-cyan-700 text-white px-8 py-4 rounded-lg font-bold hover:bg-cyan-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
+              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
                 View Open Positions
               </button>
             </div>

@@ -79,7 +79,7 @@ export default function HeroSection() {
 
             <Link
               to="/careers"
-              className="px-8 py-3 bg-gradient-to-r from-red-600 to-pink-600 text-white font-semibold rounded-md hover:opacity-90 transition"
+              className="px-8 py-3 bg-gradient-to-r from-primary to-primary-light text-white font-semibold rounded-md hover:opacity-90 transition"
             >
               Join Our Team
             </Link>

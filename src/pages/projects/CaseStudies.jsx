@@ -183,7 +183,7 @@ export default function CaseStudies() {
             alt="Case Studies"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/75 via-purple-900/65 to-blue-900/75"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/75 via-purple-900/65 to-primary-light/75"></div>
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -214,7 +214,7 @@ export default function CaseStudies() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
             </div>
@@ -224,7 +224,7 @@ export default function CaseStudies() {
 
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </div>
@@ -302,7 +302,7 @@ export default function CaseStudies() {
         {featuredCases.length > 0 && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-purple-600 to-indigo-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-primary rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Featured Case Studies</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -320,7 +320,7 @@ export default function CaseStudies() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                     
-                    <span className="absolute top-4 left-4 bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold border border-purple-300">
+                    <span className="absolute top-4 left-4 bg-purple-100 text-primary-dark px-3 py-1 rounded-full text-xs font-bold border border-purple-300">
                       Featured
                     </span>
 
@@ -364,7 +364,7 @@ export default function CaseStudies() {
                       ))}
                     </div>
 
-                    <button className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                    <button className="w-full bg-gradient-to-r from-primary to-primary text-white py-3 rounded-lg font-semibold hover:from-primary-dark hover:to-primary transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
                       <span>Read Full Case Study</span>
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -381,7 +381,7 @@ export default function CaseStudies() {
         {regularCases.length > 0 && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-indigo-600 to-blue-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-primary-light rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">More Case Studies</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -405,11 +405,11 @@ export default function CaseStudies() {
                   </div>
 
                   <div className="p-6 flex flex-col grow">
-                    <h3 className="text-xl font-bold text-slate-900 mb-2 leading-tight group-hover:text-purple-600 transition-colors">
+                    <h3 className="text-xl font-bold text-slate-900 mb-2 leading-tight group-hover:text-primary transition-colors">
                       {study.title}
                     </h3>
 
-                    <p className="text-sm text-purple-600 font-semibold mb-3">
+                    <p className="text-sm text-primary font-semibold mb-3">
                       {study.client}
                     </p>
 
@@ -425,7 +425,7 @@ export default function CaseStudies() {
                       ))}
                     </div>
 
-                    <button className="w-full border-2 border-purple-600 text-purple-600 py-2.5 rounded-lg font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300 flex items-center justify-center gap-2">
+                    <button className="w-full bg-primary text-white py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 flex items-center justify-center gap-2">
                       <span>View Details</span>
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -450,7 +450,7 @@ export default function CaseStudies() {
         )}
 
         {/* CTA Section */}
-        <div className="mt-16 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
+        <div className="mt-16 bg-gradient-to-r from-primary to-primary rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z\" fill=\"%23ffffff\" fill-opacity=\"1\" fill-rule=\"evenodd\"/%3E%3C/svg%3E")',
@@ -469,10 +469,10 @@ export default function CaseStudies() {
               Let's discuss how we can solve your business challenges with innovative technology solutions that deliver measurable results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold hover:bg-purple-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Start Your Project
               </button>
-              <button className="bg-purple-700 text-white px-8 py-4 rounded-lg font-bold hover:bg-purple-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
+              <button className="bg-primary-dark text-white px-8 py-4 rounded-lg font-bold hover:bg-purple-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
                 Schedule Consultation
               </button>
             </div>
@@ -485,7 +485,7 @@ export default function CaseStudies() {
       {lastScrollY > 300 && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 bg-purple-600 text-white p-4 rounded-full shadow-2xl hover:bg-purple-700 transition-all duration-300 z-50 hover:scale-110"
+          className="fixed bottom-8 right-8 bg-primary text-white p-4 rounded-full shadow-2xl hover:bg-primary-dark transition-all duration-300 z-50 hover:scale-110"
           aria-label="Scroll to top"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -522,13 +522,13 @@ export default function CaseStudies() {
             </div>
 
             <div className="p-8">
-              <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-bold">
+              <span className="bg-purple-100 text-primary-dark px-3 py-1 rounded-full text-sm font-bold">
                 {selectedCase.industry}
               </span>
               <h2 className="text-3xl font-bold text-slate-900 mt-4 mb-2">
                 {selectedCase.title}
               </h2>
-              <p className="text-lg text-purple-600 font-semibold mb-6">{selectedCase.client}</p>
+              <p className="text-lg text-primary font-semibold mb-6">{selectedCase.client}</p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="bg-slate-50 p-4 rounded-lg">
@@ -556,14 +556,14 @@ export default function CaseStudies() {
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   {selectedCase.results.map((result, index) => (
                     <div key={index} className="bg-green-50 border border-green-200 p-3 rounded-lg flex items-start gap-2">
-                      <svg className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <span className="text-sm font-semibold text-green-700">{result}</span>
                     </div>
                   ))}
                 </div>
-                <p className="text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-lg border-l-4 border-purple-600">
+                <p className="text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-lg border-l-4 border-primary">
                   {selectedCase.impact}
                 </p>
               </div>
@@ -572,21 +572,21 @@ export default function CaseStudies() {
                 <h3 className="text-xl font-bold text-slate-900 mb-3">Technologies Used</h3>
                 <div className="flex flex-wrap gap-2">
                   {selectedCase.technologies.map((tech, index) => (
-                    <span key={index} className="bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-lg text-sm font-semibold">
+                    <span key={index} className="bg-primary/10 text-primary px-3 py-1.5 rounded-lg text-sm font-semibold">
                       {tech}
                     </span>
                   ))}
                 </div>
               </div>
 
-              <div className="bg-purple-50 border-l-4 border-purple-600 p-6 rounded-lg">
-                <svg className="w-8 h-8 text-purple-600 mb-3" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-primary/10 border-l-4 border-primary p-6 rounded-lg">
+                <svg className="w-8 h-8 text-primary mb-3" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
                 </svg>
                 <p className="text-slate-700 italic leading-relaxed mb-3">
                   "{selectedCase.testimonial}"
                 </p>
-                <p className="text-sm font-semibold text-purple-700">
+                <p className="text-sm font-semibold text-primary-dark">
                   — {selectedCase.testimonialAuthor}
                 </p>
               </div>

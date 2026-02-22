@@ -10,7 +10,7 @@ export default function Benefits() {
             icon: "🏥",
             title: "Health Insurance",
             description: "Comprehensive medical coverage for you and your family, including dental and vision care.",
-            color: "from-blue-500 to-cyan-600"
+            color: "from-primary to-cyan-600"
         },
         {
             icon: "🏖️",
@@ -22,25 +22,25 @@ export default function Benefits() {
             icon: "📚",
             title: "Learning & Development",
             description: "Access to training programs, certifications, workshops, and conferences to grow your skills.",
-            color: "from-purple-500 to-pink-600"
+            color: "from-purple-500 to-primary-light"
         },
         {
             icon: "🏠",
             title: "Remote Work Options",
             description: "Flexible work-from-home policies and hybrid working arrangements for better flexibility.",
-            color: "from-indigo-500 to-blue-600"
+            color: "from-primary to-primary-light"
         },
         {
             icon: "🎯",
             title: "Career Growth",
             description: "Clear career progression paths with mentorship programs and leadership development.",
-            color: "from-red-500 to-pink-600"
+            color: "from-red-500 to-primary-light"
         },
         {
             icon: "🍔",
             title: "Free Meals & Snacks",
             description: "Complimentary lunch, breakfast options, and unlimited snacks in the office pantry.",
-            color: "from-yellow-500 to-orange-600"
+            color: "from-yellow-500 to-primary"
         },
         {
             icon: "🚗",
@@ -64,13 +64,13 @@ export default function Benefits() {
             icon: "🧘",
             title: "Wellness Programs",
             description: "Gym memberships, yoga classes, mental health support, and wellness initiatives.",
-            color: "from-green-500 to-teal-600"
+            color: "from-green-500 to-primary-light"
         },
         {
             icon: "👶",
             title: "Parental Leave",
             description: "Extended maternity and paternity leave with flexible return-to-work options.",
-            color: "from-violet-500 to-purple-600"
+            color: "from-violet-500 to-primary"
         }
     ];
 
@@ -92,12 +92,12 @@ export default function Benefits() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
             {/* Hero Section */}
-            <div className="relative bg-gradient-to-r from-red-600 via-pink-600 to-purple-600 text-white py-24 overflow-hidden">
+            <div className="relative bg-gradient-to-r from-primary via-primary-light to-primary-dark text-white py-24 overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden opacity-10">
                     <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
                     <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/2 translate-y-1/2"></div>
                 </div>
-                
+
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                     <div className="text-center">
                         <span className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold uppercase tracking-wider mb-6">
@@ -119,7 +119,7 @@ export default function Benefits() {
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">
                         Why Work With Us?
                     </h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto mb-4"></div>
+                    <div className="w-24 h-1 bg-gradient-to-r from-primary-dark to-primary mx-auto mb-4"></div>
                     <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                         We offer a comprehensive benefits package that goes beyond the basics to ensure you thrive both professionally and personally.
                     </p>
@@ -127,7 +127,7 @@ export default function Benefits() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {benefits.map((benefit, index) => (
-                        <div 
+                        <div
                             key={index}
                             className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:-translate-y-2"
                         >
@@ -153,7 +153,7 @@ export default function Benefits() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-bold mb-4">Additional Perks</h2>
-                        <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto mb-4"></div>
+                        <div className="w-24 h-1 bg-gradient-to-r from-primary-dark to-primary mx-auto mb-4"></div>
                         <p className="text-gray-300 text-lg">
                             And there's more! Here are some additional benefits you'll enjoy as part of our team.
                         </p>
@@ -161,7 +161,7 @@ export default function Benefits() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
                         {additionalPerks.map((perk, index) => (
-                            <div 
+                            <div
                                 key={index}
                                 className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4 hover:bg-white/20 transition-all duration-300"
                             >
@@ -177,7 +177,7 @@ export default function Benefits() {
 
             {/* CTA Section */}
             <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-                <div className="bg-gradient-to-r from-red-600 to-pink-600 rounded-3xl shadow-2xl overflow-hidden">
+                <div className="bg-gradient-to-r from-primary to-primary-light rounded-3xl shadow-2xl overflow-hidden">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div className="p-12">
                             <h2 className="text-4xl font-bold text-white mb-4">
@@ -187,14 +187,14 @@ export default function Benefits() {
                                 Explore our current job openings and start your journey with The Contrractum today.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <a 
-                                    href="#/careers/jobs" 
-                                    className="inline-block px-8 py-4 bg-white text-red-600 font-bold rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
+                                <a
+                                    href="#/careers/jobs"
+                                    className="inline-block px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-dark transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
                                 >
                                     View Job Openings
                                 </a>
-                                <a 
-                                    href="#/careers/life" 
+                                <a
+                                    href="#/careers/life"
                                     className="inline-block px-8 py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white/50 font-bold rounded-xl hover:bg-white/20 transition-all duration-300"
                                 >
                                     Life at Company
@@ -202,9 +202,9 @@ export default function Benefits() {
                             </div>
                         </div>
                         <div className="hidden md:block relative h-full min-h-[400px]">
-                            <img 
-                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800" 
-                                alt="Team collaboration" 
+                            <img
+                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800"
+                                alt="Team collaboration"
                                 className="absolute inset-0 w-full h-full object-cover"
                             />
                         </div>
@@ -221,9 +221,9 @@ export default function Benefits() {
                     <p className="text-gray-600 mb-8">
                         Our HR team is here to help. Reach out to learn more about our comprehensive benefits package.
                     </p>
-                    <a 
-                        href="#/contact/touch" 
-                        className="inline-block px-8 py-4 bg-gradient-to-r from-red-600 to-pink-600 text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+                    <a
+                        href="#/contact/touch"
+                        className="inline-block px-8 py-4 bg-gradient-to-r from-primary to-primary-light text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                     >
                         Contact HR Team
                     </a>

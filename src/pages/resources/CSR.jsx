@@ -242,7 +242,7 @@ export default function CSR() {
             alt="CSR Initiatives"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-900/85 via-emerald-900/75 to-teal-900/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-green-900/85 via-emerald-900/75 to-primary-light/85"></div>
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -273,7 +273,7 @@ export default function CSR() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
             </div>
@@ -431,7 +431,7 @@ export default function CSR() {
                       </div>
                     </div>
 
-                    <button className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white py-3 rounded-lg font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                    <button className="w-full bg-gradient-to-r from-primary to-primary-light text-white py-3 rounded-lg font-semibold hover:from-primary-dark hover:to-primary transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
                       <span>Learn More</span>
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -448,7 +448,7 @@ export default function CSR() {
         {regularInitiatives.length > 0 && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-emerald-600 to-teal-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-primary-light rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">All CSR Initiatives</h2>
             </div>
             <div className="space-y-6">
@@ -477,7 +477,7 @@ export default function CSR() {
                           <span className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-semibold border border-green-200 inline-block mb-3">
                             {initiative.category}
                           </span>
-                          <h3 className="text-2xl font-bold text-slate-900 leading-tight group-hover:text-green-600 transition-colors">
+                          <h3 className="text-2xl font-bold text-slate-900 leading-tight group-hover:text-primary transition-colors">
                             {initiative.title}
                           </h3>
                         </div>
@@ -514,7 +514,7 @@ export default function CSR() {
                         <div className="text-xs text-slate-600">
                           <span className="font-semibold">Partners:</span> {initiative.partnerOrganizations.slice(0, 2).join(", ")}
                         </div>
-                        <button className="text-green-600 font-semibold text-sm hover:text-green-700 flex items-center gap-1">
+                        <button className="bg-primary text-white font-semibold text-sm hover:bg-primary-dark flex items-center gap-1 px-4 py-2 rounded">
                           <span>View Details</span>
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -541,7 +541,7 @@ export default function CSR() {
         )}
 
         {/* Get Involved CTA */}
-        <div className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
+        <div className="bg-gradient-to-r from-green-600 via-emerald-600 to-primary-light rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -585,10 +585,10 @@ export default function CSR() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-green-600 px-8 py-4 rounded-lg font-bold hover:bg-green-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Get Involved
               </button>
-              <button className="bg-green-700 text-white px-8 py-4 rounded-lg font-bold hover:bg-green-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
+              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
                 Download CSR Report
               </button>
             </div>

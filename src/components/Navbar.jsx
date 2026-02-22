@@ -11,30 +11,25 @@ export default function Navbar() {
       name: 'Home',
       path: '/'
     },
-    {
-      name: 'Company',
-      submenu: [
-        {
-          title: 'About Us',
-          path: '/company/about-us',
-          items: ['Our Vision', 'Our Mission', 'Our Values']
-        },
-        {
-          title: 'Leadership',
-          path: '/company/leadership',
-          items: ['Founders & Directors', 'Management Team']
-        },
-        {
-          title: 'Our Journey',
-          path: '/company/our-journey',
-          items: ['Company Timeline']
-        },
-        {
-          title: 'Why Choose Us',
-          path: '/company/why-choose-us',
-          items: ['Innovation', 'Reliability', 'Scalability']
-        }
-      ]
+    
+     {
+  name: 'Company',
+  submenu: [
+    { title: 'Our Vision', path: '/company/about-us/vision', items: [] },
+    { title: 'Our Mission', path: '/company/about-us/mission', items: [] },
+    { title: 'Our Values', path: '/company/about-us/values' , items: []},
+
+    { title: 'Founders & Directors', path: '/company/leadership/founders', items: [] },
+    { title: 'Management Team', path: '/company/leadership/management', items: [] },
+
+    { title: 'Our Journey', path: '/company/our-journey', items: [] },
+    { title: 'Company Timeline', path: '/company/our-journey/timeline', items: [] },
+
+    { title: 'Innovation', path: '/company/why-choose-us/innovation' , items: []},
+    { title: 'Reliability', path: '/company/why-choose-us/reliability', items: [] },
+    { title: 'Scalability', path: '/company/why-choose-us/scalability', items: [] }
+  ]
+
     },
     {
       name: 'Our Team',
@@ -49,21 +44,15 @@ export default function Navbar() {
     {
       name: 'Solutions',
       submenu: [
-        {
-          title: 'Digital Solutions',
-          path: '/solutions/digital',
-          items: ['GIS Solutions', 'CS & IT Services', 'MRAS Services']
-        },
-        {
-          title: 'Business Solutions',
-          path: '/solutions/business',
-          items: ['E-Commerce Platforms', 'HR Tech Solutions', 'BPO Services']
-        },
-        {
-          title: 'Connectivity Solutions',
-          path: '/solutions/connectivity',
-          items: ['Telecommunication', 'Network Infrastructure', 'Cloud Integration']
-        }
+        { title: 'CS & IT Services', path: '/solutions/business/csit', items: [] },
+        { title: 'GIS Solutions', path: '/solutions/business/gis', items: [] },
+        { title: 'MRAS Services', path: '/solutions/business/Mras', items: [] },
+        { title: 'E-Commerce Platforms', path: '/solutions/digital/e-commerce', items: [] },
+        { title: 'HR Tech Solutions', path: '/solutions/digital/hrtech', items: [] },
+        { title: 'BPO Services', path: '/solutions/digital/bpo', items: [] },
+        { title: 'Telecommunication', path: '/solutions/connectivity/telecom', items: [] },
+        { title: 'Network Infrastructure', path: '/solutions/connectivity/network-infra', items: [] },
+        { title: 'Cloud Integration', path: '/solutions/connectivity/cloud', items: [] }
       ]
     },
     {

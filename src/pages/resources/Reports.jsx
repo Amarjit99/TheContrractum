@@ -302,7 +302,7 @@ export default function Reports() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
             </div>
@@ -322,7 +322,7 @@ export default function Reports() {
 
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
               </svg>
             </div>
@@ -406,7 +406,7 @@ export default function Reports() {
         {featuredReports.length > 0 && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-orange-600 to-amber-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-primary-light rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Featured Reports</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -473,7 +473,7 @@ export default function Reports() {
                       <ul className="space-y-1">
                         {report.highlights.slice(0, 3).map((highlight, index) => (
                           <li key={index} className="text-xs text-slate-700 flex items-start gap-2">
-                            <svg className="w-3 h-3 text-orange-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg className="w-3 h-3 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                             </svg>
                             <span>{highlight}</span>
@@ -482,7 +482,7 @@ export default function Reports() {
                       </ul>
                     </div>
 
-                    <button className="w-full bg-gradient-to-r from-orange-600 to-amber-600 text-white py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-amber-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                    <button className="w-full bg-gradient-to-r from-primary to-primary-light text-white py-3 rounded-lg font-semibold hover:from-primary-dark hover:to-primary transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                       </svg>
@@ -499,7 +499,7 @@ export default function Reports() {
         {regularReports.length > 0 && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-amber-600 to-red-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary-light to-primary rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">All Reports</h2>
             </div>
             <div className="space-y-6">
@@ -528,7 +528,7 @@ export default function Reports() {
                           <span className="bg-orange-50 text-orange-700 px-3 py-1 rounded-full text-xs font-semibold border border-orange-200 inline-block mb-3">
                             {report.publicationDate}
                           </span>
-                          <h3 className="text-2xl font-bold text-slate-900 leading-tight group-hover:text-orange-600 transition-colors">
+                          <h3 className="text-2xl font-bold text-slate-900 leading-tight group-hover:text-primary transition-colors">
                             {report.title}
                           </h3>
                         </div>
@@ -568,7 +568,7 @@ export default function Reports() {
                         <div className="text-xs text-slate-600">
                           <span className="font-semibold">Format:</span> {report.format} • <span className="font-semibold">Category:</span> {report.category}
                         </div>
-                        <button className="bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-orange-700 transition-colors flex items-center gap-2 text-sm">
+                        <button className="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-dark transition-colors flex items-center gap-2 text-sm">
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                           </svg>
@@ -595,7 +595,7 @@ export default function Reports() {
         )}
 
         {/* Email Subscription CTA */}
-        <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-red-600 rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
+        <div className="bg-gradient-to-r from-primary via-primary-light to-primary-dark rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -620,7 +620,7 @@ export default function Reports() {
                   placeholder="Enter your email address"
                   className="flex-1 px-6 py-4 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-4 focus:ring-white/50 font-medium"
                 />
-                <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-bold hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 whitespace-nowrap">
+                <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 whitespace-nowrap">
                   Subscribe
                 </button>
               </div>

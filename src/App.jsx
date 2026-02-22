@@ -10,6 +10,13 @@ import AboutUs from './pages/company/AboutUs';
 import Leadership from './pages/company/Leadership';
 import OurJourney from './pages/company/OurJourney';
 import WhyChooseUs from './pages/company/WhyChooseUs';
+import Vision from './pages/company/vision';
+import Mission from './pages/company/Mission';
+import Value from './pages/company/Value';
+import Founder from './pages/company/Founder';
+import Innovation from './pages/company/Innovation';
+import Reliability from './pages/company/Reblity';
+import Scalability from './pages/company/Scalability';
 
 // //////////////////Team Pages///////////////////////////////////
 import CoreTeam from './pages/team/CoreTeam';
@@ -19,6 +26,15 @@ import StudentInterns from './pages/team/StudentInterns';
 import Culture from './pages/team/Culture';
 
 //////////////////// Solutions Pages/////////////////////////////////////
+import Csit from './pages/solutions/business/csit';
+import Gissolution from './pages/solutions/business/gis';
+import MRASservies from './pages/solutions/business/Mras';
+import ECommerceSolutions from './pages/solutions/digital/e-commerce';
+import HrTech from './pages/solutions/digital/hrtech';
+import BPO from './pages/solutions/digital/bpo';
+import TelecomSolutions from './pages/solutions/connectivity/telecom';
+import NetworkInfrastructure from './pages/solutions/connectivity/network-infra';
+import Cloud from './pages/solutions/connectivity/cloud';
 import DigitalSolutions from './pages/solutions/DigitalSolutions';
 import BusinessSolutions from './pages/solutions/BusinessSolutions';
 import ConnectivitySolutions from './pages/solutions/ConnectivitySolutions';
@@ -87,9 +103,21 @@ export default function App() {
 
 {/* ///////////////////////// Company Routes///////////////////////// */}
             <Route path="/company/about-us" element={<AboutUs />} />
+            <Route path="/company/about-us/vision" element={<Vision />} />
+            <Route path="/company/about-us/mission" element={<Mission />} />
+            <Route path="/company/about-us/values" element={<Value />} />
+            
             <Route path="/company/leadership" element={<Leadership />} />
+            <Route path="/company/leadership/founders" element={<Founder />} />
+            <Route path="/company/leadership/management" element={<Leadership />} />
+            
             <Route path="/company/our-journey" element={<OurJourney />} />
+            <Route path="/company/our-journey/timeline" element={<OurJourney />} />
+            
             <Route path="/company/why-choose-us" element={<WhyChooseUs />} />
+            <Route path="/company/why-choose-us/innovation" element={<Innovation />} />
+            <Route path="/company/why-choose-us/reliability" element={<Reliability />} />
+            <Route path="/company/why-choose-us/scalability" element={<Scalability />} />
 
 {/* ///////////////////////// team Routes///////////////////////// */}
             <Route path="/team/core-team" element={<CoreTeam />} />
@@ -100,6 +128,15 @@ export default function App() {
 
 {/* ///////////////////////// solutions Routes///////////////////////// */}
             <Route path="/solutions/digital" element={<DigitalSolutions />} />
+            <Route path="/solutions/business/csit" element={<Csit />} />
+            <Route path="/solutions/business/gis" element={<Gissolution />} />
+            <Route path="/solutions/business/Mras" element={<MRASservies />} />
+            <Route path="/solutions/digital/e-commerce" element={<ECommerceSolutions />} />
+            <Route path="/solutions/digital/hrtech" element={<HrTech />} />
+            <Route path="/solutions/digital/bpo" element={<BPO />} />
+            <Route path="/solutions/connectivity/telecom" element={<TelecomSolutions />} />
+            <Route path="/solutions/connectivity/network-infra" element={<NetworkInfrastructure />} />
+            <Route path="/solutions/connectivity/cloud" element={<Cloud />} />
             <Route path="/solutions/business" element={<BusinessSolutions />} />
             <Route path="/solutions/connectivity" element={<ConnectivitySolutions />} />
 

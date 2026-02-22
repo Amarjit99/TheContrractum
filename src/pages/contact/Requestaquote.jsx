@@ -6,10 +6,10 @@ const RequestQuote = () => {
     <div className="min-h-screen bg-gray-100 py-16 px-4">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+        <h1 className="text-4xl font-bold text-black mb-4">
           Request a Quote
         </h1>
-        <div className="w-24 h-1 bg-red-500 mx-auto mb-4"></div>
+        <div className="w-24 h-1 bg-primary mx-auto mb-4"></div>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Tell us about your project and we’ll provide you with a customized quote.
           Our team will get back to you within 24 hours.
@@ -28,7 +28,7 @@ const RequestQuote = () => {
             {/* Name */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Full Name <span className="text-red-500">*</span>
+                Full Name <span className="text-primary">*</span>
               </label>
               <input
                 type="text"
@@ -41,7 +41,7 @@ const RequestQuote = () => {
             {/* Email */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Email Address <span className="text-red-500">*</span>
+                Email Address <span className="text-primary">*</span>
               </label>
               <input
                 type="email"
@@ -54,7 +54,7 @@ const RequestQuote = () => {
             {/* Phone */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Phone Number <span className="text-red-500">*</span>
+                Phone Number <span className="text-primary">*</span>
               </label>
               <input
                 type="tel"
@@ -67,7 +67,7 @@ const RequestQuote = () => {
             {/* Service Type */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Select Service <span className="text-red-500">*</span>
+                Select Service <span className="text-primary">*</span>
               </label>
               <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-gray-800 focus:ring-2 focus:ring-gray-200 focus:outline-none transition-all bg-white" required>
                 <option value="">Choose a service</option>
@@ -85,7 +85,7 @@ const RequestQuote = () => {
             {/* Budget */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Estimated Budget <span className="text-red-500">*</span>
+                Estimated Budget <span className="text-primary">*</span>
               </label>
               <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-gray-800 focus:ring-2 focus:ring-gray-200 focus:outline-none transition-all bg-white" required>
                 <option value="">Select budget range</option>
@@ -100,7 +100,7 @@ const RequestQuote = () => {
             {/* Description */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Project Description <span className="text-red-500">*</span>
+                Project Description <span className="text-primary">*</span>
               </label>
               <textarea
                 rows="5"
@@ -111,7 +111,7 @@ const RequestQuote = () => {
             </div>
 
             {/* Submit Button */}
-            <button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-4 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg">
+            <button className="w-full bg-primary hover:bg-primary text-white py-4 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg">
               Submit Quote Request
             </button>
           </form>
@@ -130,7 +130,7 @@ const RequestQuote = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <div className="bg-green-100 p-1.5 rounded-full mt-0.5">
-                  <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -154,7 +154,7 @@ const RequestQuote = () => {
               
               <li className="flex items-start gap-3">
                 <div className="bg-purple-100 p-1.5 rounded-full mt-0.5">
-                  <svg className="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -166,7 +166,7 @@ const RequestQuote = () => {
               
               <li className="flex items-start gap-3">
                 <div className="bg-orange-100 p-1.5 rounded-full mt-0.5">
-                  <svg className="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -178,7 +178,7 @@ const RequestQuote = () => {
             </ul>
           </div>
 
-          <div className="bg-gray-900 text-white shadow-xl rounded-2xl p-8">
+          <div className="bg-primary text-white shadow-xl rounded-2xl p-8">
             <h4 className="font-semibold mb-4 text-lg">Need Assistance?</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-3">

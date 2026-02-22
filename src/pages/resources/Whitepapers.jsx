@@ -252,7 +252,7 @@ export default function Whitepapers() {
   const totalAuthors = [...new Set(whitepapers.flatMap(p => p.authors))].length;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-primary-light">
 
       {/* Hero Header with Background Image */}
       <div className="relative text-white py-32 overflow-hidden">
@@ -293,7 +293,7 @@ export default function Whitepapers() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
             </div>
@@ -313,7 +313,7 @@ export default function Whitepapers() {
 
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
               </svg>
             </div>
@@ -347,7 +347,7 @@ export default function Whitepapers() {
                   placeholder="Search by title, author, or topic..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-12 pr-4 py-3 border-2 border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-slate-50"
+                  className="w-full pl-12 pr-4 py-3 border-2 border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-primary transition-all bg-slate-50"
                 />
                 <svg className="w-5 h-5 text-slate-400 absolute left-4 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -363,7 +363,7 @@ export default function Whitepapers() {
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-slate-50 font-medium"
+                className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-primary transition-all bg-slate-50 font-medium"
               >
                 {categories.map(category => (
                   <option key={category} value={category}>{category}</option>
@@ -379,7 +379,7 @@ export default function Whitepapers() {
               <select
                 value={selectedYear}
                 onChange={(e) => setSelectedYear(e.target.value)}
-                className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-slate-50 font-medium"
+                className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-primary transition-all bg-slate-50 font-medium"
               >
                 {years.map(year => (
                   <option key={year} value={year}>{year}</option>
@@ -397,7 +397,7 @@ export default function Whitepapers() {
         {featuredPapers.length > 0 && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-indigo-600 to-purple-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-primary-light rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Featured Whitepapers</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -415,7 +415,7 @@ export default function Whitepapers() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                     
                     <div className="absolute top-4 left-4 flex gap-2">
-                      <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-bold border border-indigo-300">
+                      <span className="bg-indigo-100 text-primary px-3 py-1 rounded-full text-xs font-bold border border-indigo-300">
                         {paper.publicationDate}
                       </span>
                       <span className="bg-yellow-400 text-slate-900 px-3 py-1 rounded-full text-xs font-bold border-2 border-yellow-500">
@@ -468,7 +468,7 @@ export default function Whitepapers() {
                       <p className="text-xs font-bold text-slate-700 mb-2">Key Topics:</p>
                       <div className="flex flex-wrap gap-2">
                         {paper.keyTopics.slice(0, 3).map((topic, index) => (
-                          <span key={index} className="bg-indigo-50 text-indigo-700 text-xs px-2 py-1 rounded-lg font-semibold">
+                          <span key={index} className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-lg font-semibold">
                             {topic}
                           </span>
                         ))}
@@ -480,7 +480,7 @@ export default function Whitepapers() {
                       </div>
                     </div>
 
-                    <button className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                    <button className="w-full bg-gradient-to-r from-primary to-primary-light text-white py-3 rounded-lg font-semibold hover:from-primary-dark hover:to-primary transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                       </svg>
@@ -497,7 +497,7 @@ export default function Whitepapers() {
         {regularPapers.length > 0 && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-blue-600 to-cyan-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-cyan-600 rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">All Whitepapers</h2>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
@@ -514,7 +514,7 @@ export default function Whitepapers() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                     
-                    <span className="absolute top-4 left-4 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-bold border border-indigo-300">
+                    <span className="absolute top-4 left-4 bg-indigo-100 text-primary px-3 py-1 rounded-full text-xs font-bold border border-indigo-300">
                       {paper.publicationDate}
                     </span>
 
@@ -524,7 +524,7 @@ export default function Whitepapers() {
                   </div>
 
                   <div className="p-5">
-                    <h3 className="text-lg font-bold text-slate-900 mb-3 leading-tight line-clamp-2 group-hover:text-indigo-600 transition-colors">
+                    <h3 className="text-lg font-bold text-slate-900 mb-3 leading-tight line-clamp-2 group-hover:text-primary transition-colors">
                       {paper.title}
                     </h3>
 
@@ -555,13 +555,13 @@ export default function Whitepapers() {
 
                     <div className="flex flex-wrap gap-1 mb-4">
                       {paper.keyTopics.slice(0, 2).map((topic, index) => (
-                        <span key={index} className="bg-indigo-50 text-indigo-700 text-xs px-2 py-1 rounded-md font-semibold">
+                        <span key={index} className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-md font-semibold">
                           {topic}
                         </span>
                       ))}
                     </div>
 
-                    <button className="w-full bg-indigo-600 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2 text-sm">
+                    <button className="w-full bg-primary text-white py-2 rounded-lg font-semibold hover:bg-primary-dark transition-colors flex items-center justify-center gap-2 text-sm">
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                       </svg>
@@ -586,7 +586,7 @@ export default function Whitepapers() {
         )}
 
         {/* Newsletter Subscription CTA */}
-        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
+        <div className="bg-gradient-to-r from-primary via-primary to-primary-light rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -611,7 +611,7 @@ export default function Whitepapers() {
                   placeholder="Enter your email address"
                   className="flex-1 px-6 py-4 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-4 focus:ring-white/50 font-medium"
                 />
-                <button className="bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold hover:bg-indigo-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 whitespace-nowrap">
+                <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 whitespace-nowrap">
                   Subscribe
                 </button>
               </div>
@@ -628,7 +628,7 @@ export default function Whitepapers() {
       {lastScrollY > 300 && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 bg-indigo-600 text-white p-4 rounded-full shadow-2xl hover:bg-indigo-700 transition-all duration-300 z-50 hover:scale-110"
+          className="fixed bottom-8 right-8 bg-primary text-white p-4 rounded-full shadow-2xl hover:bg-primary-dark transition-all duration-300 z-50 hover:scale-110"
           aria-label="Scroll to top"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

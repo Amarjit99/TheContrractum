@@ -15,7 +15,7 @@ export default function LocationSection() {
         {/* Left Content */}
         <div className="space-y-8">
 
-          <h2 className="text-4xl font-bold text-gray-800">
+          <h2 className="text-4xl font-bold text-black">
             From Contractum Integral Solution Private Limited
           </h2>
 
@@ -70,7 +70,7 @@ export default function LocationSection() {
 
           </div>
 
-          <button className="mt-6 px-6 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition duration-300">
+          <button className="mt-6 px-6 py-3 bg-primary text-white rounded-full hover:bg-primary transition duration-300">
             Read More
           </button>
 

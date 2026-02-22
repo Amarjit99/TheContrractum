@@ -300,7 +300,7 @@ export default function Testimonials() {
 
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
             </div>
@@ -310,7 +310,7 @@ export default function Testimonials() {
 
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -394,7 +394,7 @@ export default function Testimonials() {
         {featuredTestimonials.length > 0 && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-amber-600 to-orange-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary-light to-primary rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Featured Success Stories</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -486,7 +486,7 @@ export default function Testimonials() {
         {regularTestimonials.length > 0 && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-orange-600 to-amber-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-primary-light rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">All Client Testimonials</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -561,7 +561,7 @@ export default function Testimonials() {
 
         {/* Video Testimonials Section */}
         {videoTestimonials.length > 0 && (
-          <div className="mb-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl p-12 text-white">
+          <div className="mb-16 bg-gradient-to-br from-primary to-primary rounded-2xl p-12 text-white">
             <div className="text-center mb-8">
               <div className="inline-block bg-white/10 backdrop-blur-sm px-6 py-2 rounded-full mb-4">
                 <span className="text-blue-200 text-sm font-semibold flex items-center gap-2 justify-center">
@@ -589,7 +589,7 @@ export default function Testimonials() {
                     </div>
                   </div>
                   <p className="text-sm text-blue-50 leading-relaxed line-clamp-3">"{testimonial.testimonial.substring(0, 100)}..."</p>
-                  <button className="mt-3 w-full bg-white text-blue-600 py-2 rounded-lg font-semibold text-sm hover:bg-blue-50 transition-all flex items-center justify-center gap-2">
+                  <button className="mt-3 w-full bg-primary text-white py-2 rounded-lg font-semibold text-sm hover:bg-primary-dark transition-all flex items-center justify-center gap-2">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
                     </svg>
@@ -602,7 +602,7 @@ export default function Testimonials() {
         )}
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-amber-600 to-orange-600 rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
+        <div className="bg-gradient-to-r from-primary-light to-primary rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -621,10 +621,10 @@ export default function Testimonials() {
               Experience the same transformative results. Let's create your success story together with cutting-edge technology solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-amber-600 px-8 py-4 rounded-lg font-bold hover:bg-amber-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Start Your Project
               </button>
-              <button className="bg-amber-700 text-white px-8 py-4 rounded-lg font-bold hover:bg-amber-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
+              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
                 Schedule a Call
               </button>
             </div>

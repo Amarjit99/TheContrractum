@@ -461,10 +461,10 @@ export default function BlogArticle() {
         return (
             <div className="min-h-screen bg-gray-50 flex items-center justify-center">
                 <div className="text-center">
-                    <h1 className="text-4xl font-bold text-gray-800 mb-4">Article Not Found</h1>
+                    <h1 className="text-4xl font-bold text-black mb-4">Article Not Found</h1>
                     <button 
                         onClick={() => navigate('/resources/blogs')}
-                        className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-xl hover:shadow-lg transition-all"
+                        className="px-6 py-3 bg-gradient-to-r from-primary to-primary-light text-white font-semibold rounded-xl hover:shadow-lg transition-all"
                     >
                         Back to Blogs
                     </button>
@@ -501,7 +501,7 @@ export default function BlogArticle() {
                         Back to Blogs
                     </button>
                     
-                    <span className="inline-block px-3 sm:px-4 py-1 sm:py-1.5 bg-purple-600 text-white text-xs sm:text-sm font-semibold rounded-full mb-3 sm:mb-4 w-fit">
+                    <span className="inline-block px-3 sm:px-4 py-1 sm:py-1.5 bg-primary text-white text-xs sm:text-sm font-semibold rounded-full mb-3 sm:mb-4 w-fit">
                         {article.category}
                     </span>
                     
@@ -528,7 +528,7 @@ export default function BlogArticle() {
             <article className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
                 {/* Introduction */}
                 <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-10 mb-6 sm:mb-8">
-                    <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed italic border-l-4 border-purple-600 pl-4 sm:pl-6">
+                    <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed italic border-l-4 border-primary pl-4 sm:pl-6">
                         {article.content.intro}
                     </p>
                 </div>
@@ -561,7 +561,7 @@ export default function BlogArticle() {
                 {/* Conclusion */}
                 <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl shadow-lg p-6 sm:p-8 md:p-10 mb-8 sm:mb-12">
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
-                        <svg className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-6 h-6 sm:w-8 sm:h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         Conclusion
@@ -573,21 +573,21 @@ export default function BlogArticle() {
 
                 {/* Share Section */}
                 <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 mb-8 sm:mb-12">
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-4">Share this article</h3>
+                    <h3 className="text-lg sm:text-xl font-bold text-black mb-4">Share this article</h3>
                     <div className="flex flex-wrap gap-3 sm:gap-4">
-                        <button className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base">
+                        <button className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors text-sm sm:text-base">
                             <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                             </svg>
                             Facebook
                         </button>
-                        <button className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition-colors text-sm sm:text-base">
+                        <button className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors text-sm sm:text-base">
                             <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
                             </svg>
                             Twitter
                         </button>
-                        <button className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors text-sm sm:text-base">
+                        <button className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors text-sm sm:text-base">
                             <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                             </svg>
@@ -600,7 +600,7 @@ export default function BlogArticle() {
             {/* Related Articles */}
             {relatedArticles.length > 0 && (
                 <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6 sm:mb-8 md:mb-12 text-center">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-6 sm:mb-8 md:mb-12 text-center">
                         Related Articles
                     </h2>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -621,10 +621,10 @@ export default function BlogArticle() {
                                     />
                                 </div>
                                 <div className="p-4 sm:p-6">
-                                    <span className="inline-block px-2 sm:px-3 py-1 bg-purple-100 text-purple-600 text-xs font-semibold rounded-full mb-2 sm:mb-3">
+                                    <span className="inline-block px-2 sm:px-3 py-1 bg-purple-100 text-primary text-xs font-semibold rounded-full mb-2 sm:mb-3">
                                         {post.category}
                                     </span>
-                                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 mb-2 sm:mb-3 line-clamp-2 group-hover:text-purple-600 transition-colors">
+                                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-black mb-2 sm:mb-3 line-clamp-2 group-hover:text-primary transition-colors">
                                         {post.title}
                                     </h3>
                                     <p className="text-xs sm:text-sm text-gray-600 line-clamp-2 mb-3 sm:mb-4">
@@ -646,7 +646,7 @@ export default function BlogArticle() {
             {showScrollTop && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-50 p-3 sm:p-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-110 group"
+                    className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-50 p-3 sm:p-4 bg-gradient-to-r from-primary to-primary-light text-white rounded-full shadow-2xl hover:shadow-primary/50 transition-all duration-300 hover:scale-110 group"
                     aria-label="Scroll to top"
                 >
                     <svg className="w-5 h-5 sm:w-6 sm:h-6 transform group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

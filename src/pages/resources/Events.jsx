@@ -268,7 +268,7 @@ export default function Events() {
   const displayedEvents = filteredEvents.slice(0, visibleEvents);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-primary-light">
 
       {/* Smart Navbar */}
       <div className={`fixed top-0 left-0 right-0 bg-white shadow-md z-40 transition-transform duration-300 ${
@@ -277,7 +277,7 @@ export default function Events() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
               <span className="text-xl font-bold text-slate-900">Events & Activities</span>
@@ -286,7 +286,7 @@ export default function Events() {
               <span className="text-sm text-slate-600 hidden md:inline">
                 {upcomingEvents.length} Upcoming · {pastEvents.length} Past
               </span>
-              <button className="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+              <button className="bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
                 Register Now
               </button>
             </div>
@@ -305,7 +305,7 @@ export default function Events() {
             alt="Events & Activities"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/85 via-pink-900/75 to-indigo-900/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/85 via-primary/75 to-primary/85"></div>
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -336,7 +336,7 @@ export default function Events() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </div>
@@ -346,7 +346,7 @@ export default function Events() {
 
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
@@ -356,7 +356,7 @@ export default function Events() {
 
           <div className="bg-white rounded-xl shadow-lg p-6 border border-slate-200 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between mb-2">
-              <svg className="w-10 h-10 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
@@ -381,7 +381,7 @@ export default function Events() {
             onClick={() => setSelectedType("upcoming")}
             className={`px-6 py-3 rounded-lg font-semibold transition-all ${
               selectedType === "upcoming"
-                ? "bg-purple-600 text-white shadow-lg"
+                ? "bg-primary text-white shadow-lg"
                 : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-200"
             }`}
           >
@@ -396,7 +396,7 @@ export default function Events() {
             onClick={() => setSelectedType("past")}
             className={`px-6 py-3 rounded-lg font-semibold transition-all ${
               selectedType === "past"
-                ? "bg-purple-600 text-white shadow-lg"
+                ? "bg-primary text-white shadow-lg"
                 : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-200"
             }`}
           >
@@ -458,7 +458,7 @@ export default function Events() {
         {featuredEvents.length > 0 && selectedType === "upcoming" && (
           <div className="mb-16">
             <div className="flex items-center mb-8">
-              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-purple-600 to-pink-600 rounded-full mr-4"></span>
+              <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-primary-light rounded-full mr-4"></span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Featured Events</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -480,7 +480,7 @@ export default function Events() {
                     </span>
 
                     <div className="absolute bottom-4 left-4 right-4">
-                      <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold inline-block mb-2">
+                      <span className="bg-purple-100 text-primary-dark px-3 py-1 rounded-full text-xs font-semibold inline-block mb-2">
                         {event.category}
                       </span>
                       <h3 className="text-2xl font-bold text-white leading-tight">
@@ -492,13 +492,13 @@ export default function Events() {
                   <div className="p-6">
                     <div className="grid grid-cols-2 gap-4 mb-4">
                       <div className="flex items-center gap-2 text-sm text-slate-600">
-                        <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
                         <span>{new Date(event.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-slate-600">
-                        <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <span>{event.time}</span>
@@ -506,7 +506,7 @@ export default function Events() {
                     </div>
 
                     <div className="flex items-start gap-2 text-sm text-slate-600 mb-4">
-                      <svg className="w-5 h-5 text-purple-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
@@ -530,10 +530,10 @@ export default function Events() {
                       <span className="text-sm font-semibold text-slate-700">
                         {event.seatsAvailable} / {event.totalSeats} seats available
                       </span>
-                      <span className="text-lg font-bold text-purple-600">{event.price}</span>
+                      <span className="text-lg font-bold text-primary">{event.price}</span>
                     </div>
 
-                    <button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 shadow-md hover:shadow-lg">
+                    <button className="w-full bg-gradient-to-r from-primary to-primary-light text-white py-3 rounded-lg font-semibold hover:from-primary-dark hover:to-primary transition-all duration-300 shadow-md hover:shadow-lg">
                       Register Now →
                     </button>
                   </div>
@@ -546,7 +546,7 @@ export default function Events() {
         {/* All Events Grid */}
         <div className="mb-16">
           <div className="flex items-center mb-8">
-            <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-indigo-600 to-purple-600 rounded-full mr-4"></span>
+            <span className="inline-block w-1.5 h-10 bg-gradient-to-b from-primary to-primary-light rounded-full mr-4"></span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
               {selectedType === "upcoming" ? "All Upcoming Events" : "Past Events Archive"}
             </h2>
@@ -571,19 +571,19 @@ export default function Events() {
                 </div>
 
                 <div className="p-6 flex flex-col grow">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 leading-tight group-hover:text-purple-600 transition-colors line-clamp-2">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 leading-tight group-hover:text-primary transition-colors line-clamp-2">
                     {event.title}
                   </h3>
 
                   <div className="space-y-2 mb-4 text-sm text-slate-600">
                     <div className="flex items-center gap-2">
-                      <svg className="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
                       <span>{new Date(event.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <svg className="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       </svg>
                       <span className="line-clamp-1">{event.location}</span>
@@ -596,7 +596,7 @@ export default function Events() {
 
                   <div className="flex flex-wrap gap-2 mb-4">
                     {event.tags.slice(0, 3).map((tag, index) => (
-                      <span key={index} className="bg-purple-50 text-purple-700 text-xs px-2 py-1 rounded-full font-semibold">
+                      <span key={index} className="bg-primary/10 text-primary-dark text-xs px-2 py-1 rounded-full font-semibold">
                         {tag}
                       </span>
                     ))}
@@ -608,9 +608,9 @@ export default function Events() {
                         <span className="text-slate-600">
                           {event.seatsAvailable} seats left
                         </span>
-                        <span className="font-bold text-purple-600">{event.price}</span>
+                        <span className="font-bold text-primary">{event.price}</span>
                       </div>
-                      <button className="w-full border-2 border-purple-600 text-purple-600 py-2.5 rounded-lg font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300">
+                      <button className="w-full bg-primary text-white py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300">
                         Register
                       </button>
                     </>
@@ -620,7 +620,7 @@ export default function Events() {
                       <div className="space-y-1">
                         {event.highlights?.map((highlight, index) => (
                           <div key={index} className="flex items-center gap-2 text-xs text-slate-600">
-                            <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <svg className="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                             </svg>
                             <span>{highlight}</span>
@@ -639,7 +639,7 @@ export default function Events() {
             <div className="text-center mt-8">
               <button
                 onClick={() => setVisibleEvents(prev => prev + 6)}
-                className="bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Load More Events ({filteredEvents.length - visibleEvents} remaining)
               </button>
@@ -659,7 +659,7 @@ export default function Events() {
         )}
 
         {/* Newsletter CTA */}
-        <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
+        <div className="bg-gradient-to-r from-primary via-primary-light to-primary rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
@@ -683,7 +683,7 @@ export default function Events() {
                 placeholder="Enter your email address"
                 className="flex-1 px-6 py-4 rounded-lg text-slate-900 font-medium focus:ring-4 focus:ring-white/30 outline-none"
               />
-              <button className="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold hover:bg-purple-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Subscribe Now
               </button>
             </div>
@@ -699,7 +699,7 @@ export default function Events() {
       {lastScrollY > 300 && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 bg-purple-600 text-white p-4 rounded-full shadow-2xl hover:bg-purple-700 transition-all duration-300 z-50 hover:scale-110"
+          className="fixed bottom-8 right-8 bg-primary text-white p-4 rounded-full shadow-2xl hover:bg-primary-dark transition-all duration-300 z-50 hover:scale-110"
           aria-label="Scroll to top"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

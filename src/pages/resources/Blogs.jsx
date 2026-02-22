@@ -191,7 +191,7 @@ export default function Blogs() {
                         <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
                             <button 
                                 onClick={scrollToBlogs}
-                                className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm sm:text-base font-bold rounded-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                                className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary to-primary-light text-white text-sm sm:text-base font-bold rounded-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
                             >
                                 Explore Articles
                             </button>
@@ -228,7 +228,7 @@ export default function Blogs() {
             {/* Featured Topics Section */}
             <section className="py-12 md:py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-8 md:mb-10 text-center">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-black mb-8 md:mb-10 text-center">
                         Featured Topics
                     </h3>
 
@@ -247,7 +247,7 @@ export default function Blogs() {
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
-                                <p className="mt-2 sm:mt-3 md:mt-4 text-xs sm:text-sm md:text-base text-gray-700 font-medium group-hover:text-purple-600 transition-colors">
+                                <p className="mt-2 sm:mt-3 md:mt-4 text-xs sm:text-sm md:text-base text-gray-700 font-medium group-hover:text-primary transition-colors">
                                     {item.name}
                                 </p>
                             </div>
@@ -257,7 +257,7 @@ export default function Blogs() {
             </section>
 
             {/* Learning Section */}
-            <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 relative overflow-hidden">
+            <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-indigo-50 via-blue-50 to-primary-light relative overflow-hidden">
                 {/* Decorative Elements */}
                 <div className="absolute top-10 right-10 w-48 h-48 sm:w-72 sm:h-72 bg-purple-200 rounded-full filter blur-3xl opacity-30 animate-pulse"></div>
                 <div className="absolute bottom-10 left-10 w-64 h-64 sm:w-96 sm:h-96 bg-pink-200 rounded-full filter blur-3xl opacity-30 animate-pulse" style={{animationDelay: '1s'}}></div>
@@ -290,7 +290,7 @@ export default function Blogs() {
                                 Dynamic Learning for
                             </h2>
 
-                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4 md:mb-6">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary via-primary to-primary-light bg-clip-text text-transparent mb-4 md:mb-6">
                                 Cutting-Edge Skills
                             </h2>
 
@@ -303,21 +303,21 @@ export default function Blogs() {
 
                             <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 mb-6 md:mb-8">
                                 <div className="group relative overflow-hidden">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg sm:rounded-xl transform group-hover:scale-105 transition-transform duration-300"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-light rounded-lg sm:rounded-xl transform group-hover:scale-105 transition-transform duration-300"></div>
                                     <div className="relative text-center p-2 sm:p-3 md:p-4 text-white">
                                         <div className="text-lg sm:text-xl md:text-2xl font-black mb-1">500+</div>
                                         <div className="text-[10px] sm:text-xs font-medium opacity-90">Articles</div>
                                     </div>
                                 </div>
                                 <div className="group relative overflow-hidden">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg sm:rounded-xl transform group-hover:scale-105 transition-transform duration-300"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-primary rounded-lg sm:rounded-xl transform group-hover:scale-105 transition-transform duration-300"></div>
                                     <div className="relative text-center p-2 sm:p-3 md:p-4 text-white">
                                         <div className="text-lg sm:text-xl md:text-2xl font-black mb-1">50K+</div>
                                         <div className="text-[10px] sm:text-xs font-medium opacity-90">Readers</div>
                                     </div>
                                 </div>
                                 <div className="group relative overflow-hidden">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-pink-500 to-pink-600 rounded-lg sm:rounded-xl transform group-hover:scale-105 transition-transform duration-300"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-br from-pink-500 to-primary-light rounded-lg sm:rounded-xl transform group-hover:scale-105 transition-transform duration-300"></div>
                                     <div className="relative text-center p-2 sm:p-3 md:p-4 text-white">
                                         <div className="text-lg sm:text-xl md:text-2xl font-black mb-1">100+</div>
                                         <div className="text-[10px] sm:text-xs font-medium opacity-90">Topics</div>
@@ -326,13 +326,13 @@ export default function Blogs() {
                             </div>
 
                             <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                                <button className="flex-1 px-4 sm:px-6 py-3 sm:py-3.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white text-sm sm:text-base font-bold rounded-lg sm:rounded-xl hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
+                                <button className="flex-1 px-4 sm:px-6 py-3 sm:py-3.5 bg-gradient-to-r from-primary via-primary to-primary-light text-white text-sm sm:text-base font-bold rounded-lg sm:rounded-xl hover:shadow-2xl hover:shadow-primary/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
                                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                                     </svg>
                                     Start Learning
                                 </button>
-                                <button className="px-4 sm:px-6 py-3 sm:py-3.5 bg-white border-2 border-purple-600 text-purple-600 text-sm sm:text-base font-bold rounded-lg sm:rounded-xl hover:bg-purple-50 transition-all duration-300 hover:scale-105">
+                                <button className="px-4 sm:px-6 py-3 sm:py-3.5 bg-primary text-white text-sm sm:text-base font-bold rounded-lg sm:rounded-xl hover:bg-primary-dark transition-all duration-300 hover:scale-105">
                                     View Courses
                                 </button>
                             </div>
@@ -349,7 +349,7 @@ export default function Blogs() {
                 <div className="mb-8 md:mb-12 bg-white rounded-xl md:rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 md:gap-6 mb-4 md:mb-6">
                         <div>
-                            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">Explore Our Blogs</h2>
+                            <h2 className="text-2xl sm:text-3xl font-bold text-black">Explore Our Blogs</h2>
                             <p className="text-sm sm:text-base text-gray-600 mt-1 md:mt-2">Discover insights from industry experts and thought leaders</p>
                         </div>
                         
@@ -381,8 +381,8 @@ export default function Blogs() {
                                     }}
                                     className={`px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-2.5 text-xs sm:text-sm md:text-base rounded-full font-semibold transition-all duration-300 ${
                                         selectedCategory === category
-                                            ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg scale-105'
-                                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border-2 border-transparent hover:border-purple-200'
+                                            ? 'bg-gradient-to-r from-primary to-primary-light text-white shadow-lg scale-105'
+                                            : 'bg-gray-100 text-gray-700 hover:bg-primary border-2 border-transparent hover:border-purple-200'
                                     }`}
                                 >
                                     {category}
@@ -395,10 +395,10 @@ export default function Blogs() {
                 {/* Blog Posts Grid */}
                 <div className="mb-8 md:mb-12">
                     <div className="flex items-center justify-between mb-6 md:mb-8">
-                        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">
+                        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-black">
                             {selectedCategory === 'All' ? 'Latest Articles' : selectedCategory}
                         </h2>
-                        <span className="px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 bg-purple-100 text-purple-600 rounded-full text-xs sm:text-sm font-semibold">
+                        <span className="px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 bg-purple-100 text-primary rounded-full text-xs sm:text-sm font-semibold">
                             {filteredPosts.length} {filteredPosts.length === 1 ? 'article' : 'articles'}
                         </span>
                     </div>
@@ -428,10 +428,10 @@ export default function Blogs() {
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </div>
                                         <div className="p-6">
-                                            <span className="inline-block px-3 py-1 bg-purple-100 text-purple-600 text-xs font-semibold rounded-full mb-3">
+                                            <span className="inline-block px-3 py-1 bg-purple-100 text-primary text-xs font-semibold rounded-full mb-3">
                                                 {post.category}
                                             </span>
-                                            <h3 className="text-xl font-bold text-gray-800 mb-3 line-clamp-2 group-hover:text-purple-600 transition-colors cursor-pointer">
+                                            <h3 className="text-xl font-bold text-black mb-3 line-clamp-2 group-hover:text-primary transition-colors cursor-pointer">
                                                 {post.title}
                                             </h3>
                                             <p className="text-gray-600 text-sm mb-4 line-clamp-3">
@@ -449,7 +449,7 @@ export default function Blogs() {
                                             </div>
                                             <button 
                                                 onClick={() => navigate(`/resources/blogs/${post.id}`)}
-                                                className="w-full py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 group-hover:scale-105"
+                                                className="w-full py-2 bg-gradient-to-r from-primary to-primary-light text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 group-hover:scale-105"
                                             >
                                                 Read Article →
                                             </button>
@@ -463,7 +463,7 @@ export default function Blogs() {
                                 <div className="text-center mt-8 md:mt-12">
                                     <button
                                         onClick={() => setVisiblePosts(prev => prev + 6)}
-                                        className="px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base bg-white border-2 border-purple-600 text-purple-600 font-bold rounded-lg sm:rounded-xl hover:bg-purple-600 hover:text-white transition-all duration-300 hover:shadow-xl"
+                                        className="px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base bg-white bg-primary text-white font-bold rounded-lg sm:rounded-xl hover:bg-primary hover:text-white transition-all duration-300 hover:shadow-xl"
                                     >
                                         Load More Articles
                                     </button>
@@ -477,7 +477,7 @@ export default function Blogs() {
 
                 {/* Trending Topics */}
                 <div className="bg-white rounded-xl md:rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
-                    <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 flex items-center gap-2">
+                    <h2 className="text-xl sm:text-2xl font-bold text-black mb-4 sm:mb-6 flex items-center gap-2">
                         <span className="text-xl sm:text-2xl"></span> Trending Topics
                     </h2>
                     <div className="flex flex-wrap gap-2 sm:gap-3">
@@ -485,7 +485,7 @@ export default function Blogs() {
                             <button
                                 key={index}
                                 onClick={() => setSearchQuery(topic)}
-                                className="px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 rounded-full text-xs sm:text-sm font-medium hover:from-purple-100 hover:to-pink-100 hover:text-purple-600 cursor-pointer transition-all duration-300 hover:shadow-md hover:scale-105"
+                                className="px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 rounded-full text-xs sm:text-sm font-medium hover:from-primary-dark hover:to-pink-100 hover:text-primary cursor-pointer transition-all duration-300 hover:shadow-md hover:scale-105"
                             >
                                 #{topic}
                             </button>
@@ -498,7 +498,7 @@ export default function Blogs() {
             {showScrollTop && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-50 p-3 sm:p-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 hover:scale-110 group"
+                    className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-50 p-3 sm:p-4 bg-gradient-to-r from-primary to-primary-light text-white rounded-full shadow-2xl hover:shadow-primary/50 transition-all duration-300 hover:scale-110 group"
                     aria-label="Scroll to top"
                 >
                     <svg className="w-5 h-5 sm:w-6 sm:h-6 transform group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
