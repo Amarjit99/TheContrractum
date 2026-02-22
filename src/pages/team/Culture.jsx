@@ -1,9 +1,9 @@
 export default function Culture() {
-    return (
+  return (
     <div className="w-full bg-white text-black">
 
       {/* ================= HERO SECTION ================= */}
-      <section className="bg-gradient-to-r from-primary to-primary-light text-white">
+      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28 text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
             Life at YourCompany
@@ -121,7 +121,7 @@ export default function Culture() {
       </section>
 
       {/* ================= CTA SECTION ================= */}
-      <section className="bg-primary text-white py-12 sm:py-16">
+      <section className="bg-blue-900 text-white py-12 sm:py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
             Join Our Team
@@ -130,7 +130,7 @@ export default function Culture() {
             Be part of a culture that celebrates innovation and collaboration.
           </p>
 
-          <button className="mt-8 bg-primary text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold hover:bg-primary-dark transition duration-300">
+          <button className="mt-8 bg-blue-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
             Explore Careers
           </button>
         </div>

@@ -24,7 +24,7 @@ export default function Telecom() {
                         </div>
                         <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
                             The Future of <br />
-                            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-cyan-400">
+                            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-cyan-400">
                                 Global Communication
                             </span>
                         </h1>
@@ -32,7 +32,7 @@ export default function Telecom() {
                             Empowering telecom providers with 5G infrastructure, AI-driven network optimization, and seamless customer experience platforms.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/contact/quote" className="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-blue-500/25 flex items-center gap-2">
+                            <Link to="/contact/quote" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-blue-500/25 flex items-center gap-2">
                                 Consult with Us
                                 <ArrowRight size={20} />
                             </Link>
@@ -117,7 +117,7 @@ export default function Telecom() {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-cyan-600/20 rounded-3xl transform rotate-3"></div>
+                            <div className="absolute inset-0 bg-linear-to-tr from-blue-600/20 to-cyan-600/20 rounded-3xl transform rotate-3"></div>
                             <img
                                 src="https://images.unsplash.com/photo-1558494949-ef526b0042a0?auto=format&fit=crop&q=80&w=800"
                                 alt="Fiber Optics"
@@ -156,7 +156,7 @@ export default function Telecom() {
             {/* CTA Section */}
             <div className="py-24 bg-white">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <div className="bg-linear-to-r from-primary to-cyan-600 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
+                    <div className="bg-linear-to-r from-blue-600 to-cyan-600 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
                         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
                         <div className="relative z-10">
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">Build the Network of Tomorrow</h2>
@@ -164,7 +164,7 @@ export default function Telecom() {
                                 Partner with us to navigate the complexities of modern telecommunications.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact/quote" className="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-gray-50 transition-colors shadow-lg">
+                                <Link to="/contact/quote" className="px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
                                     Get Started
                                 </Link>
                                 <Link to="/company/about-us" className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">

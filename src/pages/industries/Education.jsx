@@ -24,7 +24,7 @@ export default function Education() {
                         </div>
                         <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
                             Smart Learning <br />
-                            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-indigo-400">
+                            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-400">
                                 Beyond Boundaries
                             </span>
                         </h1>
@@ -32,7 +32,7 @@ export default function Education() {
                             Empowering institutions with next-gen learning management systems, virtual classrooms, and data-driven student success platforms.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/contact/quote" className="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-blue-500/25 flex items-center gap-2">
+                            <Link to="/contact/quote" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-blue-500/25 flex items-center gap-2">
                                 Request Demo
                                 <ArrowRight size={20} />
                             </Link>
@@ -117,7 +117,7 @@ export default function Education() {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-primary/20 rounded-3xl transform rotate-3"></div>
+                            <div className="absolute inset-0 bg-linear-to-tr from-blue-600/20 to-blue-600/20 rounded-3xl transform rotate-3"></div>
                             <img
                                 src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80&w=800"
                                 alt="Digital Classroom"
@@ -156,7 +156,7 @@ export default function Education() {
             {/* CTA Section */}
             <div className="py-24 bg-white">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <div className="bg-linear-to-r from-primary to-primary rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
+                    <div className="bg-linear-to-r from-blue-600 to-blue-800 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
                         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
                         <div className="relative z-10">
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">Transform Your Campus Today</h2>
@@ -164,7 +164,7 @@ export default function Education() {
                                 Join the digital education revolution. Let's build the future of learning together.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact/touch" className="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-gray-50 transition-colors shadow-lg">
+                                <Link to="/contact/touch" className="px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
                                     Contact Us
                                 </Link>
                                 <Link to="/company/about-us" className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">

@@ -6,7 +6,7 @@ export default function Government() {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
-            <div className="relative bg-primary text-white py-24 lg:py-32 overflow-hidden">
+            <div className="relative bg-blue-900 text-white py-24 lg:py-32 overflow-hidden">
                 <div className="absolute inset-0 z-0 opacity-20">
                     <img
                         src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&q=80&w=1200"
@@ -24,7 +24,7 @@ export default function Government() {
                         </div>
                         <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
                             Building Smarter <br />
-                            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-indigo-400">
+                            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-400">
                                 Cities & Nations
                             </span>
                         </h1>
@@ -32,7 +32,7 @@ export default function Government() {
                             Empowering government agencies with secure, scalable, and innovative digital solutions to better serve citizens in the digital age.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/contact/quote" className="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-blue-500/25 flex items-center gap-2">
+                            <Link to="/contact/quote" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-blue-500/25 flex items-center gap-2">
                                 Request Consultation
                                 <ArrowRight size={20} />
                             </Link>
@@ -117,7 +117,7 @@ export default function Government() {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-primary/20 rounded-3xl transform rotate-3"></div>
+                            <div className="absolute inset-0 bg-linear-to-tr from-blue-600/20 to-blue-600/20 rounded-3xl transform rotate-3"></div>
                             <img
                                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
                                 alt="Smart City Infrastructure"
@@ -156,7 +156,7 @@ export default function Government() {
             {/* CTA Section */}
             <div className="py-24 bg-white">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <div className="bg-linear-to-r from-primary to-primary-dark rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
+                    <div className="bg-linear-to-r from-blue-600 to-blue-800 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
                         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
                         <div className="relative z-10">
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Public Service?</h2>
@@ -164,7 +164,7 @@ export default function Government() {
                                 Let's collaborate to build a more efficient, transparent, and citizen-centric future.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact/touch" className="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-gray-50 transition-colors shadow-lg">
+                                <Link to="/contact/touch" className="px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
                                     Get in Touch
                                 </Link>
                                 <Link to="/about-us" className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">

@@ -40,7 +40,7 @@ export default function StudentInterns() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <div className="bg-gradient-to-r from-primary-dark via-primary to-primary-light text-white py-24">
+            <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-24">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
                     <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-6">
                         <Rocket size={18} className="text-yellow-300" />
@@ -48,10 +48,10 @@ export default function StudentInterns() {
                             Future Leaders Program
                         </span>
                     </div>
-                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg">
+                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg text-white">
                         Student Interns
                     </h1>
-                    <p className="text-xl text-orange-100 max-w-2xl mx-auto">
+                    <p className="text-xl text-blue-100 max-w-2xl mx-auto">
                         Fueling growth, innovation, and fresh perspectives. Meet the bright
                         minds shaping tomorrow.
                     </p>
@@ -81,7 +81,7 @@ export default function StudentInterns() {
                                     <h3 className="text-2xl font-bold text-gray-900 mb-1">
                                         {intern.name}
                                     </h3>
-                                    <p className="text-primary font-semibold mb-3">{intern.role}</p>
+                                    <p className="text-blue-600 font-semibold mb-3">{intern.role}</p>
                                 </div>
 
                                 <div className="flex items-center gap-2 text-gray-500 text-sm mb-4">
@@ -111,14 +111,14 @@ export default function StudentInterns() {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-gradient-to-r from-primary-dark via-primary to-primary-light text-white py-20">
+            <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-20">
                 <div className="max-w-4xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl lg:text-4xl font-black mb-6">Applications for Summer Internships 2026 are Open!</h2>
-                    <p className="text-orange-100 text-lg mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-black mb-6 text-white">Applications for Summer Internships 2026 are Open!</h2>
+                    <p className="text-blue-200 text-lg mb-8">
                         Don't just watch the revolution—be part of it. Experience mentorship, real projects, and rapid growth.
                     </p>
                     <Link to="/careers/internships">
-                        <button className="bg-primary text-white hover:bg-primary-dark font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
+                        <button className="bg-blue-600 text-white hover:bg-blue-700 font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
                             Apply Now
                         </button>
                     </Link>

@@ -32,7 +32,7 @@ export default function Healthcare() {
                             Revolutionizing patient care with cutting-edge telemedicine, data interoperability, and AI-driven diagnostic tools.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/contact/quote" className="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-teal-500/25 flex items-center gap-2">
+                            <Link to="/contact/quote" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-teal-500/25 flex items-center gap-2">
                                 Talk to an Expert
                                 <ArrowRight size={20} />
                             </Link>

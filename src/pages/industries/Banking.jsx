@@ -24,7 +24,7 @@ export default function Banking() {
                         </div>
                         <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
                             Secure, Seamless <br />
-                            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-primary-light">
+                            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-blue-500">
                                 Digital Banking
                             </span>
                         </h1>
@@ -32,7 +32,7 @@ export default function Banking() {
                             Transforming financial institutions with secure cloud banking, blockchain integration, and AI-driven fraud detection.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/contact/quote" className="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-emerald-500/25 flex items-center gap-2">
+                            <Link to="/contact/quote" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-emerald-500/25 flex items-center gap-2">
                                 Request Consultation
                                 <ArrowRight size={20} />
                             </Link>
@@ -87,7 +87,7 @@ export default function Banking() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
-                            <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-primary-light/20 rounded-3xl transform -rotate-3"></div>
+                            <div className="absolute inset-0 bg-linear-to-tr from-blue-600/20 to-blue-400/20 rounded-3xl transform -rotate-3"></div>
                             <img
                                 src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
                                 alt="Digital Finance"
@@ -156,7 +156,7 @@ export default function Banking() {
             {/* CTA Section */}
             <div className="py-24 bg-white">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <div className="bg-linear-to-r from-primary to-primary-light rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
+                    <div className="bg-linear-to-r from-blue-600 to-blue-500 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
                         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
                         <div className="relative z-10">
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">Innovate with Confidence</h2>

@@ -32,9 +32,9 @@ export default function CoreTeam() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <div className="bg-gradient-to-r from-primary via-primary-light to-primary-dark text-white py-24">
+            <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-24">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg">
+                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg text-white">
                         Meet Our Leadership
                     </h1>
                     <p className="text-xl text-blue-100 max-w-2xl mx-auto">
@@ -63,18 +63,18 @@ export default function CoreTeam() {
                                 <h3 className="text-2xl font-bold text-gray-900 mb-1">
                                     {leader.name}
                                 </h3>
-                                <p className="text-primary font-semibold mb-4">{leader.role}</p>
+                                <p className="text-blue-600 font-semibold mb-4">{leader.role}</p>
                                 <p className="text-gray-600 text-sm mb-6 leading-relaxed">
                                     {leader.bio}
                                 </p>
                                 <div className="flex justify-center space-x-4">
-                                    <a href="#" className="p-2 text-gray-400 hover:text-blue-600 hover:bg-primary-dark rounded-full transition-colors">
+                                    <a href="#" className="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-100 rounded-full transition-colors">
                                         <Linkedin size={20} />
                                     </a>
-                                    <a href="#" className="p-2 text-gray-400 hover:text-blue-400 hover:bg-primary-dark rounded-full transition-colors">
+                                    <a href="#" className="p-2 text-gray-400 hover:text-blue-400 hover:bg-blue-100 rounded-full transition-colors">
                                         <Twitter size={20} />
                                     </a>
-                                    <a href="mailto:contact@contrractum.com" className="p-2 text-gray-400 hover:text-primary hover:bg-primary/10 rounded-full transition-colors">
+                                    <a href="mailto:contact@contrractum.com" className="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-colors">
                                         <Mail size={20} />
                                     </a>
                                 </div>
@@ -85,14 +85,14 @@ export default function CoreTeam() {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-primary text-white py-20">
+            <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-20">
                 <div className="max-w-4xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl lg:text-4xl font-black mb-6">Connect with Visionaries</h2>
-                    <p className="text-gray-400 text-lg mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-black mb-6 text-white">Connect with Visionaries</h2>
+                    <p className="text-blue-200 text-lg mb-8">
                         Our leadership team is always open to discussing strategic partnerships and new ventures.
                     </p>
                     <Link to="/contact/touch">
-                        <button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-dark hover:to-primary text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
+                        <button className="bg-blue-600 text-white hover:bg-blue-700 font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
                             Contact Leadership
                         </button>
                     </Link>

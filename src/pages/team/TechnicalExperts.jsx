@@ -17,7 +17,7 @@ export default function TechnicalExperts() {
                         <p className="text-xl text-slate-200 max-w-3xl mx-auto mb-10 leading-relaxed">
                             Our team of certified technical experts combines deep industry knowledge with cutting-edge solutions to drive your success
                         </p>
-                        <button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary hover:to-primary-light text-white font-bold py-4 px-10 rounded-xl transition transform hover:scale-105 shadow-lg hover:shadow-2xl">
+                        <button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold py-4 px-10 rounded-xl transition transform hover:scale-105 shadow-lg hover:shadow-2xl">
                             Connect with Our Experts
                         </button>
                     </div>
@@ -74,7 +74,7 @@ export default function TechnicalExperts() {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-light rounded-2xl transform -skew-y-3 opacity-20"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl transform -skew-y-3 opacity-20"></div>
                             <div className="relative bg-gradient-to-br from-slate-50 to-white rounded-2xl p-2 shadow-2xl overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=500&fit=crop" alt="Technical Team Meeting" className="rounded-xl w-full object-cover h-96 shadow-lg" />
                             </div>
@@ -100,7 +100,7 @@ export default function TechnicalExperts() {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Card 1 */}
-                        <div className="group bg-gradient-to-br from-primary to-primary-light rounded-2xl p-8 hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-blue-500/30 backdrop-blur-sm">
+                        <div className="group bg-gradient-to-br from-blue-600 to-blue-500 rounded-2xl p-8 hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-blue-500/30 backdrop-blur-sm">
                             <div className="mb-6">
                                 <div className="w-16 h-16 bg-blue-400/20 rounded-xl flex items-center justify-center text-4xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
                                     🏢
@@ -116,7 +116,7 @@ export default function TechnicalExperts() {
                         </div>
 
                         {/* Card 2 */}
-                        <div className="group bg-gradient-to-br from-cyan-600 to-primary-light rounded-2xl p-8 hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-cyan-500/30 backdrop-blur-sm">
+                        <div className="group bg-gradient-to-br from-cyan-600 to-cyan-500 rounded-2xl p-8 hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-cyan-500/30 backdrop-blur-sm">
                             <div className="mb-6">
                                 <div className="w-16 h-16 bg-cyan-400/20 rounded-xl flex items-center justify-center text-4xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
                                     ☁️
@@ -132,7 +132,7 @@ export default function TechnicalExperts() {
                         </div>
 
                         {/* Card 3 */}
-                        <div className="group bg-gradient-to-br from-primary to-slate-800 rounded-2xl p-8 hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-primary/30 backdrop-blur-sm">
+                        <div className="group bg-gradient-to-br from-blue-900 to-slate-800 rounded-2xl p-8 hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-blue-900/30 backdrop-blur-sm">
                             <div className="mb-6">
                                 <div className="w-16 h-16 bg-indigo-400/20 rounded-xl flex items-center justify-center text-4xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
                                     🔒
@@ -160,10 +160,10 @@ export default function TechnicalExperts() {
                         Figures that strengthen our determination to go above and beyond for our customers
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                        <div className="group relative bg-gradient-to-br from-primary/10 to-primary-light/10 border border-blue-500/30 rounded-2xl p-12 hover:border-blue-400/60 hover:shadow-2xl transition-all duration-300 backdrop-blur-sm">
-                            <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary-light/0 group-hover:from-primary/5 group-hover:to-primary-light/5 rounded-2xl transition-all duration-300"></div>
+                        <div className="group relative bg-gradient-to-br from-blue-600/10 to-blue-400/10 border border-blue-500/30 rounded-2xl p-12 hover:border-blue-400/60 hover:shadow-2xl transition-all duration-300 backdrop-blur-sm">
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/0 to-blue-400/0 group-hover:from-blue-600/5 group-hover:to-blue-400/5 rounded-2xl transition-all duration-300"></div>
                             <div className="relative">
-                                <p className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-light mb-3">
+                                <p className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 mb-3">
                                     500+
                                 </p>
                                 <p className="text-xl font-bold text-slate-200">Successfully Delivered Projects</p>
@@ -180,10 +180,10 @@ export default function TechnicalExperts() {
                                 <p className="text-slate-400 text-sm mt-2">Global reach and influence</p>
                             </div>
                         </div>
-                        <div className="group relative bg-gradient-to-br from-primary/10 to-primary-dark/10 border border-primary/30 rounded-2xl p-12 hover:border-primary-light/60 hover:shadow-2xl transition-all duration-300 backdrop-blur-sm">
-                            <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/5 rounded-2xl transition-all duration-300"></div>
+                        <div className="group relative bg-gradient-to-br from-blue-900/10 to-blue-800/10 border border-blue-900/30 rounded-2xl p-12 hover:border-blue-500/60 hover:shadow-2xl transition-all duration-300 backdrop-blur-sm">
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-900/0 to-blue-900/0 group-hover:from-blue-900/5 group-hover:to-blue-900/5 rounded-2xl transition-all duration-300"></div>
                             <div className="relative">
-                                <p className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-primary mb-3">
+                                <p className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700 mb-3">
                                     50+
                                 </p>
                                 <p className="text-xl font-bold text-slate-200">Certified Experts</p>
@@ -262,11 +262,11 @@ export default function TechnicalExperts() {
 
             {/* Call to Action Section */}
             <div className="relative bg-cover bg-center py-24 my-8" style={{
-                backgroundImage: 'linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.88) 100%), url("https://images.unsplash.com/photo-1635356389055-81126a1a9d8c?w=1600&h=900&fit=crop")' ,
+                backgroundImage: 'linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.88) 100%), url("https://images.unsplash.com/photo-1635356389055-81126a1a9d8c?w=1600&h=900&fit=crop")',
                 backgroundSize: 'cover',
                 backgroundAttachment: 'fixed'
             }}>
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-900/30 to-primary-light/30"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-900/30 to-blue-500/30"></div>
                 <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
                         {/* Form Section */}
@@ -285,7 +285,7 @@ export default function TechnicalExperts() {
                                 <div>
                                     <input type="text" placeholder="Company Name" className="w-full px-5 py-4 rounded-xl text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-transparent transition placeholder-slate-500" />
                                 </div>
-                                <button type="submit" className="w-full bg-gradient-to-r from-primary to-primary-light hover:from-primary hover:to-primary-light text-white font-black py-4 rounded-xl transition transform hover:scale-105 shadow-lg hover:shadow-2xl">
+                                <button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-black py-4 rounded-xl transition transform hover:scale-105 shadow-lg hover:shadow-2xl">
                                     Request Expert Consultation
                                 </button>
                             </form>
@@ -342,7 +342,7 @@ export default function TechnicalExperts() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </div>
                             <div className="p-8">
-                                <span className="inline-block bg-purple-100 text-primary-dark px-4 py-2 rounded-full text-xs font-black mb-4 tracking-wider">CASE STUDY</span>
+                                <span className="inline-block bg-purple-100 text-blue-900 px-4 py-2 rounded-full text-xs font-black mb-4 tracking-wider">CASE STUDY</span>
                                 <h3 className="text-2xl font-black text-slate-900 mb-3">Enterprise Security Transformation</h3>
                                 <p className="text-slate-600 leading-relaxed">How we helped a global enterprise strengthen their security posture and compliance framework</p>
                             </div>
@@ -361,7 +361,7 @@ export default function TechnicalExperts() {
                         </div>
                     </div>
                     <div className="text-center mt-16">
-                        <button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary hover:to-primary-light text-white font-black py-4 px-10 rounded-xl transition transform hover:scale-105 shadow-lg hover:shadow-2xl">
+                        <button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-black py-4 px-10 rounded-xl transition transform hover:scale-105 shadow-lg hover:shadow-2xl">
                             View All Resources
                         </button>
                     </div>

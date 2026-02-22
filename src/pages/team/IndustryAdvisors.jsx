@@ -32,9 +32,9 @@ export default function IndustryAdvisors() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <div className="bg-gradient-to-r from-primary via-primary-light to-primary-dark text-white py-24">
+            <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-24">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg">
+                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg text-white">
                         Industry Advisors
                     </h1>
                     <p className="text-xl text-blue-100 max-w-2xl mx-auto">
@@ -50,14 +50,14 @@ export default function IndustryAdvisors() {
                     {advisors.map((advisor, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-shadow duration-300 flex flex-col"
+                            className="bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-blue-600 hover:shadow-2xl transition-shadow duration-300 flex flex-col"
                         >
                             <div className="p-8 flex-1">
                                 <Quote className="w-10 h-10 text-red-200 mb-4" />
                                 <p className="text-gray-600 italic text-lg mb-6 leading-relaxed">
                                     "{advisor.quote}"
                                 </p>
-                                <div className="flex items-center gap-2 text-sm font-semibold text-primary mb-6 bg-primary/10 w-fit px-3 py-1 rounded-full">
+                                <div className="flex items-center gap-2 text-sm font-semibold text-blue-700 mb-6 bg-blue-100 w-fit px-3 py-1 rounded-full">
                                     <TrendingUp size={16} />
                                     <span>Focus: {advisor.impact}</span>
                                 </div>
@@ -86,7 +86,7 @@ export default function IndustryAdvisors() {
                         We value wisdom and experience. If you're a industry veteran looking to make an impact, let's talk.
                     </p>
                     <Link to="/join/partner">
-                        <button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-dark hover:to-primary text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
+                        <button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
                             Become an Advisor
                         </button>
                     </Link>

@@ -32,7 +32,7 @@ export default function Agriculture() {
                             Empowering farmers with precision agriculture, IoT monitoring, and data-driven crop management systems.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/contact/quote" className="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-green-500/25 flex items-center gap-2">
+                            <Link to="/contact/quote" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-green-500/25 flex items-center gap-2">
                                 Request Demo
                                 <ArrowRight size={20} />
                             </Link>
@@ -71,7 +71,7 @@ export default function Agriculture() {
                             }
                         ].map((item, index) => (
                             <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                                <div className="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center text-primary mb-6">
+                                <div className="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center text-blue-600 mb-6">
                                     <item.icon size={28} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
@@ -110,7 +110,7 @@ export default function Agriculture() {
                             </div>
 
                             <div className="mt-10">
-                                <Link to="/solutions/sustainability" className="text-primary font-bold hover:text-green-700 inline-flex items-center gap-2 group">
+                                <Link to="/solutions/sustainability" className="text-blue-600 font-bold hover:text-green-700 inline-flex items-center gap-2 group">
                                     Explore AgriTech
                                     <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                                 </Link>
@@ -164,7 +164,7 @@ export default function Agriculture() {
                                 Join the new era of sustainable, high-tech farming.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact/quote" className="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-gray-50 transition-colors shadow-lg">
+                                <Link to="/contact/quote" className="px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
                                     Contact Us
                                 </Link>
                                 <Link to="/company/about-us" className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">

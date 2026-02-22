@@ -18,7 +18,7 @@ export default function Retail() {
 
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-purple-500/20 text-purple-300 text-sm font-medium mb-6">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/10 border border-purple-500/20 text-purple-300 text-sm font-medium mb-6">
                             <ShoppingBag size={16} />
                             <span>Retail & Ecommerce</span>
                         </div>
@@ -32,7 +32,7 @@ export default function Retail() {
                             Unifying physical and digital commerce with omnichannel strategies, AI-driven personalization, and smart supply chain solutions.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/contact/quote" className="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-purple-500/25 flex items-center gap-2">
+                            <Link to="/contact/quote" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-purple-500/25 flex items-center gap-2">
                                 Request Strategy
                                 <ArrowRight size={20} />
                             </Link>
@@ -71,7 +71,7 @@ export default function Retail() {
                             }
                         ].map((item, index) => (
                             <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+                                <div className="w-14 h-14 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-600 mb-6">
                                     <item.icon size={28} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
@@ -87,7 +87,7 @@ export default function Retail() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
-                            <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-primary-light/20 rounded-3xl transform -rotate-3"></div>
+                            <div className="absolute inset-0 bg-linear-to-tr from-blue-600/20 to-blue-400/20 rounded-3xl transform -rotate-3"></div>
                             <img
                                 src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=800"
                                 alt="Modern Retail"
@@ -119,7 +119,7 @@ export default function Retail() {
                             </div>
 
                             <div className="mt-10">
-                                <Link to="/contact/touch" className="text-primary font-bold hover:text-primary-dark inline-flex items-center gap-2 group">
+                                <Link to="/contact/touch" className="text-blue-600 font-bold hover:text-blue-700 inline-flex items-center gap-2 group">
                                     Upgrade your store
                                     <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                                 </Link>
@@ -156,7 +156,7 @@ export default function Retail() {
             {/* CTA Section */}
             <div className="py-24 bg-white">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <div className="bg-linear-to-r from-primary to-primary-light rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
+                    <div className="bg-linear-to-r from-blue-600 to-blue-500 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
                         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
                         <div className="relative z-10">
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">Scale Your Retail Business</h2>
@@ -164,7 +164,7 @@ export default function Retail() {
                                 Don't just sell—create experiences. Let's build a retail ecosystem that customers love.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact/quote" className="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-gray-50 transition-colors shadow-lg">
+                                <Link to="/contact/quote" className="px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
                                     Get Started
                                 </Link>
                                 <Link to="/company/about-us" className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">
