@@ -21,19 +21,34 @@ export default function Life() {
 
     return (
         <div className="min-h-screen bg-gray-50">
-            {/* Hero Section */}
-            <div className="bg-gradient-to-r from-teal-500 via-blue-500 to-primary text-white py-24">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            {/* Hero Section with Background Image */}
+            <div className="relative bg-gradient-to-r from-teal-500 via-blue-500 to-primary text-white py-32 overflow-hidden">
+                {/* Background Image */}
+                <div 
+                    className="absolute inset-0 z-0"
+                    style={{
+                        backgroundImage: 'url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80)',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        opacity: '0.3'
+                    }}
+                />
+                
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-r from-teal-500/80 via-blue-600/80 to-primary/80 z-0" />
+                
+                {/* Content */}
+                <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
                     <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-6">
                         <Heart size={18} className="text-pink-300" />
                         <span className="font-semibold text-sm uppercase tracking-wide">
                             Culture & Vibe
                         </span>
                     </div>
-                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg">
+                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-2xl">
                         More Than Just a Job
                     </h1>
-                    <p className="text-xl text-teal-100 max-w-2xl mx-auto">
+                    <p className="text-xl text-teal-100 max-w-2xl mx-auto leading-relaxed">
                         We believe that happy people build better products. Discover the vibrant community behind the code.
                     </p>
                 </div>
@@ -115,14 +130,14 @@ export default function Life() {
             </div>
 
             {/* CTA */}
-            <div className="bg-white py-20 text-center">
+            <div className="bg-blue-900 py-20 text-center">
                 <div className="max-w-4xl mx-auto px-6">
-                    <h2 className="text-3xl font-black text-gray-900 mb-6">Picture Yourself Here</h2>
-                    <p className="text-gray-600 text-lg mb-8">
+                    <h2 className="text-3xl font-black text-white mb-6">Picture Yourself Here</h2>
+                    <p className="text-gray-100 text-lg mb-8">
                         The only thing missing is you. Come join the fun.
                     </p>
                     <Link to="/careers/jobs">
-                        <button className="bg-primary text-white hover:bg-primary-dark font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg">
+                        <button className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-2xl">
                             See Open Roles
                         </button>
                     </Link>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 // Completed Projects Data
 const completedProjectsData = [
@@ -133,6 +134,7 @@ const completedProjectsData = [
 ];
 
 export default function Completed() {
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedRating, setSelectedRating] = useState("All");
@@ -453,7 +455,10 @@ export default function Completed() {
                   </div>
 
                   {/* Action Button */}
-                  <button className="w-full bg-gradient-to-r from-primary to-primary-light text-white py-3 rounded-lg font-semibold hover:from-primary-dark hover:to-primary transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group">
+                  <button 
+                    onClick={() => navigate(`/projects/completed/${project.id}`)}
+                    className="w-full bg-red-600 text-white py-3 rounded-full font-semibold hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group"
+                  >
                     <span>View Case Study</span>
                     <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -474,12 +479,7 @@ export default function Completed() {
         )}
 
         {/* Success Metrics Section */}
-        <div className="mt-16 bg-gradient-to-r from-primary to-primary-light rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0" style={{
-              backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z\" fill=\"%23ffffff\" fill-opacity=\"1\" fill-rule=\"evenodd\"/%3E%3C/svg%3E")',
-            }}></div>
-          </div>
+        <div className="mt-16 bg-blue-900 rounded-2xl shadow-2xl p-12 text-center text-white">
           <div className="max-w-4xl mx-auto relative z-10">
             <div className="bg-white/10 backdrop-blur-sm w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -489,25 +489,25 @@ export default function Completed() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Proven Track Record of Excellence
             </h2>
-            <p className="text-xl text-green-100 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-100 mb-8 leading-relaxed">
               Our completed projects demonstrate our commitment to quality, innovation, and client satisfaction. We deliver solutions that create lasting impact.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div>
                 <p className="text-4xl font-bold mb-2">100%</p>
-                <p className="text-green-100 text-sm">On-Time Delivery</p>
+                <p className="text-gray-100 text-sm">On-Time Delivery</p>
               </div>
               <div>
                 <p className="text-4xl font-bold mb-2">98%</p>
-                <p className="text-green-100 text-sm">Client Satisfaction</p>
+                <p className="text-gray-100 text-sm">Client Satisfaction</p>
               </div>
               <div>
                 <p className="text-4xl font-bold mb-2">50M+</p>
-                <p className="text-green-100 text-sm">Users Served</p>
+                <p className="text-gray-100 text-sm">Users Served</p>
               </div>
               <div>
                 <p className="text-4xl font-bold mb-2">24/7</p>
-                <p className="text-green-100 text-sm">Support Provided</p>
+                <p className="text-gray-100 text-sm">Support Provided</p>
               </div>
             </div>
           </div>

@@ -586,12 +586,7 @@ export default function Whitepapers() {
         )}
 
         {/* Newsletter Subscription CTA */}
-        <div className="bg-gradient-to-r from-primary via-primary to-primary-light rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0" style={{
-              backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-            }}></div>
-          </div>
+        <div className="bg-blue-900 rounded-2xl shadow-2xl p-12 text-center text-white">
           <div className="max-w-3xl mx-auto relative z-10">
             <div className="bg-white/10 backdrop-blur-sm w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -601,7 +596,7 @@ export default function Whitepapers() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Get Notified of New Whitepapers
             </h2>
-            <p className="text-xl text-indigo-100 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-100 mb-8 leading-relaxed">
               Subscribe to receive our latest research and technical insights directly in your inbox
             </p>
             <div className="max-w-md mx-auto">
@@ -611,11 +606,11 @@ export default function Whitepapers() {
                   placeholder="Enter your email address"
                   className="flex-1 px-6 py-4 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-4 focus:ring-white/50 font-medium"
                 />
-                <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 whitespace-nowrap">
+                <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 whitespace-nowrap">
                   Subscribe
                 </button>
               </div>
-              <p className="text-indigo-200 text-sm mt-4">
+              <p className="text-gray-100 text-sm mt-4">
                 Join 10,000+ professionals staying updated on technology trends
               </p>
             </div>

@@ -650,13 +650,7 @@ export default function Research() {
         )}
 
         {/* Innovation Impact Section */}
-        <div className="mt-16 bg-gradient-to-br from-cyan-600 via-blue-600 to-primary rounded-2xl shadow-2xl p-12 text-white overflow-hidden relative">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0" style={{
-              backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-            }}></div>
-          </div>
-
+        <div className="mt-16 bg-blue-900 rounded-2xl shadow-2xl p-12 text-white">
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <div className="bg-white/10 backdrop-blur-sm w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -666,30 +660,30 @@ export default function Research() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Join Our Research Community
             </h2>
-            <p className="text-xl text-cyan-100 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-100 mb-8 leading-relaxed">
               Collaborate with world-class researchers, access cutting-edge facilities, and contribute to breakthrough innovations that shape the future.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <p className="text-4xl font-bold mb-2">250+</p>
-                <p className="text-cyan-100">Global Collaborations</p>
+                <p className="text-gray-100">Global Collaborations</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <p className="text-4xl font-bold mb-2">150+</p>
-                <p className="text-cyan-100">Research Scientists</p>
+                <p className="text-gray-100">Research Scientists</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <p className="text-4xl font-bold mb-2">$27M+</p>
-                <p className="text-cyan-100">Total Funding Secured</p>
+                <p className="text-gray-100">Total Funding Secured</p>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Collaborate With Us
               </button>
-              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
+              <button className="bg-transparent text-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white">
                 View Open Positions
               </button>
             </div>

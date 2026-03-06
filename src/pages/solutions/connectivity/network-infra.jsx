@@ -424,17 +424,17 @@ export default function NetworkInfrastructure() {
       </section>
 
       {/* ===== CTA Section ===== */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-600 via-cyan-600 to-blue-600">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-blue-900">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Network?
           </h2>
-          <p className="text-xl text-cyan-100 mb-10">
+          <p className="text-xl text-gray-100 mb-10">
             Let our infrastructure experts design the perfect solution for your enterprise needs.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-10 py-4 bg-white text-cyan-600 font-bold rounded-lg hover:shadow-2xl hover:shadow-white/50 hover:scale-105 active:scale-95 transition-all duration-300">
+            <button className="px-10 py-4 bg-white text-blue-900 font-bold rounded-lg hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-300">
               Request Free Consultation
             </button>
             <button className="px-10 py-4 border-3 border-white text-white font-bold rounded-lg hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-300">

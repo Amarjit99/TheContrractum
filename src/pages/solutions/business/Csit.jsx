@@ -137,11 +137,11 @@ export default function Csit() {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-gradient-to-r from-green-500 to-green-600 text-white">
+            <div className="bg-blue-900 text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 text-center">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Let's Grow Your Business Together</h2>
-                    <p className="text-green-100 text-sm sm:text-base mb-6 max-w-2xl mx-auto">Our business solutions are designed to maximize your ROI and accelerate growth.</p>
-                    <button className="bg-white text-green-600 font-bold px-6 sm:px-8 py-3 rounded-lg hover:bg-gray-100 transition text-sm sm:text-base">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-white">Let's Grow Your Business Together</h2>
+                    <p className="text-gray-100 text-sm sm:text-base mb-6 max-w-2xl mx-auto">Our business solutions are designed to maximize your ROI and accelerate growth.</p>
+                    <button className="bg-white text-blue-900 font-bold px-6 sm:px-8 py-3 rounded-lg hover:bg-gray-100 transition text-sm sm:text-base">
                         Request Demo
                     </button>
                 </div>

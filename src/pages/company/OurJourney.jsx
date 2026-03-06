@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import journeyHero from '../../assets/about-3.jpg';
 
 const OurJourney = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -54,14 +55,12 @@ const OurJourney = () => {
       {/* Hero Section */}
       <section className="relative w-full h-96 md:h-[550px] flex items-center justify-center overflow-hidden mb-16 md:mb-20">
         <div className="absolute inset-0 w-full h-full">
-          <div 
-            className="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-108"
-            style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop')`,
-              backgroundAttachment: 'fixed'
-            }}
+          <img 
+            src={journeyHero} 
+            alt="Our Journey" 
+            className="w-full h-full object-cover brightness-75"
           />
-          <div className="absolute inset-0 bg-blue-900 opacity-55 transition-all duration-400 hover:opacity-65" />
+          <div className="absolute inset-0 bg-blue-900/50" />
         </div>
         <div className="relative z-10 text-center text-white animate-fadeInDown">
           <h1 className="text-4xl md:text-5xl font-bold mb-3 md:mb-4 drop-shadow-lg tracking-wider">Our Journey</h1>
@@ -313,25 +312,15 @@ const OurJourney = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative w-full py-16 md:py-24 overflow-hidden">
-        <div className="absolute inset-0 w-full h-full">
-          <div 
-            className="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-108"
-            style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop')`,
-              backgroundAttachment: 'fixed'
-            }}
-          />
-          <div className="absolute inset-0 bg-blue-900 opacity-75 transition-all duration-400 hover:opacity-85 backdrop-blur-sm" />
-        </div>
+      <section className="relative w-full py-16 md:py-24 overflow-hidden bg-blue-900">
         <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wider">Ready to Transform Your Business?</h2>
-          <p className="text-lg md:text-xl text-white text-opacity-95 mb-10 tracking-wide">Join hundreds of companies already partnered with us for digital transformation</p>
+          <p className="text-lg md:text-xl text-gray-100 mb-10 tracking-wide">Join hundreds of companies already partnered with us for digital transformation</p>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
-            <button className="px-10 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold uppercase tracking-widest rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <button className="px-10 py-4 bg-white text-blue-900 font-bold uppercase tracking-widest rounded-lg shadow-lg hover:bg-gray-100 hover:-translate-y-1 transition-all duration-300">
               Get Started Today
             </button>
-            <button className="px-10 py-4 bg-transparent border-3 border-white text-white font-bold uppercase tracking-widest rounded-lg shadow-lg hover:bg-white hover:text-blue-600 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm">
+            <button className="px-10 py-4 bg-transparent border-3 border-white text-white font-bold uppercase tracking-widest rounded-lg shadow-lg hover:bg-white hover:text-blue-900 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm">
               Schedule a Demo
             </button>
           </div>

@@ -1,5 +1,6 @@
 import { GraduationCap, Briefcase, Star, Rocket } from "lucide-react";
 import { Link } from "react-router-dom";
+import internsHero from "../../assets/growth.webp";
 
 export default function StudentInterns() {
     const interns = [
@@ -40,15 +41,24 @@ export default function StudentInterns() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <div className="bg-gradient-to-r from-primary-dark via-primary to-primary-light text-white py-24">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <div className="relative py-20 md:py-24 overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <img 
+                        src={internsHero} 
+                        alt="Student Interns Background" 
+                        className="w-full h-full object-cover brightness-75"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/80 via-primary/75 to-primary-light/80"></div>
+                </div>
+                <div className="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
                     <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-6">
                         <Rocket size={18} className="text-yellow-300" />
-                        <span className="font-semibold text-sm uppercase tracking-wide">
+                        <span className="font-semibold text-sm uppercase tracking-wide text-white">
                             Future Leaders Program
                         </span>
                     </div>
-                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg">
+                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg text-white">
                         Student Interns
                     </h1>
                     <p className="text-xl text-orange-100 max-w-2xl mx-auto">
@@ -111,14 +121,14 @@ export default function StudentInterns() {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-gradient-to-r from-primary-dark via-primary to-primary-light text-white py-20">
+            <div className="bg-blue-900 text-white py-20">
                 <div className="max-w-4xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl lg:text-4xl font-black mb-6">Applications for Summer Internships 2026 are Open!</h2>
-                    <p className="text-orange-100 text-lg mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-black mb-6 text-white">Applications for Summer Internships 2026 are Open!</h2>
+                    <p className="text-gray-100 text-lg mb-8">
                         Don't just watch the revolution—be part of it. Experience mentorship, real projects, and rapid growth.
                     </p>
                     <Link to="/careers/internships">
-                        <button className="bg-primary text-white hover:bg-primary-dark font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
+                        <button className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
                             Apply Now
                         </button>
                     </Link>

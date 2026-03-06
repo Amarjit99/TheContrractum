@@ -503,20 +503,20 @@ export default function Cloud() {
       </section>
 
       {/* ===== CTA Section ===== */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-violet-700 via-purple-700 to-purple-800">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-blue-900">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Start Your Cloud Journey Today
           </h2>
-          <p className="text-xl text-purple-100 mb-10">
+          <p className="text-xl text-gray-100 mb-10">
             Join thousands of companies transforming their infrastructure with cloud solutions.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-10 py-4 bg-gradient-to-r from-amber-400 to-amber-500 text-purple-900 font-bold rounded-lg hover:shadow-2xl hover:shadow-amber-400/60 hover:scale-105 active:scale-95 transition-all duration-300">
+            <button className="px-10 py-4 bg-white text-blue-900 font-bold rounded-lg hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-300">
               Get Started Free
             </button>
-            <button className="px-10 py-4 border-3 border-amber-400 text-amber-300 font-bold rounded-lg hover:bg-amber-400/10 hover:scale-105 active:scale-95 transition-all duration-300">
+            <button className="px-10 py-4 border-3 border-white text-white font-bold rounded-lg hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-300">
               Schedule Demo
             </button>
           </div>

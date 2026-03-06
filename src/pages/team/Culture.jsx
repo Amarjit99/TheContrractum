@@ -1,14 +1,29 @@
+import React from "react";
+import cultureHero from "../../assets/culture.webp";
+import workEnv1 from "../../assets/life.webp";
+import workEnv2 from "../../assets/people.webp";
+import workEnv3 from "../../assets/benefits.webp";
+
 export default function Culture() {
     return (
     <div className="w-full bg-white text-black">
 
       {/* ================= HERO SECTION ================= */}
-      <section className="bg-gradient-to-r from-primary to-primary-light text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28 text-center">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+      <section className="relative py-16 sm:py-20 lg:py-28 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src={cultureHero} 
+            alt="Culture Background" 
+            className="w-full h-full object-cover brightness-75"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary-light/80"></div>
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white">
             Life at YourCompany
           </h1>
-          <p className="mt-4 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto text-white">
             Where innovation, collaboration, and growth create a thriving
             workplace.
           </p>
@@ -70,21 +85,42 @@ export default function Culture() {
           </p>
 
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <img
-              src="https://source.unsplash.com/600x400/?office"
-              alt="Office"
-              className="w-full h-56 sm:h-64 object-cover rounded-xl shadow-md"
-            />
-            <img
-              src="https://source.unsplash.com/600x400/?teamwork"
-              alt="Teamwork"
-              className="w-full h-56 sm:h-64 object-cover rounded-xl shadow-md"
-            />
-            <img
-              src="https://source.unsplash.com/600x400/?workspace"
-              alt="Workspace"
-              className="w-full h-56 sm:h-64 object-cover rounded-xl shadow-md"
-            />
+            <div className="relative h-56 sm:h-64 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group">
+              <img
+                src={workEnv1}
+                alt="Office"
+                className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Modern Office</h3>
+                <p className="text-gray-200 text-sm">State-of-the-art workspace designed for collaboration</p>
+              </div>
+            </div>
+            <div className="relative h-56 sm:h-64 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group">
+              <img
+                src={workEnv2}
+                alt="Teamwork"
+                className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Team Collaboration</h3>
+                <p className="text-gray-200 text-sm">Working together to achieve exceptional results</p>
+              </div>
+            </div>
+            <div className="relative h-56 sm:h-64 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group">
+              <img
+                src={workEnv3}
+                alt="Workspace"
+                className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Work-Life Balance</h3>
+                <p className="text-gray-200 text-sm">Flexible environment promoting wellbeing and productivity</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -121,16 +157,16 @@ export default function Culture() {
       </section>
 
       {/* ================= CTA SECTION ================= */}
-      <section className="bg-primary text-white py-12 sm:py-16">
+      <section className="bg-blue-900 text-white py-12 sm:py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
             Join Our Team
           </h2>
-          <p className="mt-4 text-sm sm:text-base lg:text-lg">
+          <p className="mt-4 text-sm sm:text-base lg:text-lg text-gray-100">
             Be part of a culture that celebrates innovation and collaboration.
           </p>
 
-          <button className="mt-8 bg-primary text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold hover:bg-primary-dark transition duration-300">
+          <button className="mt-8 bg-white text-blue-900 px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
             Explore Careers
           </button>
         </div>

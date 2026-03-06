@@ -147,15 +147,15 @@ export default function HrTech() {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-gradient-to-r from-cyan-500 via-blue-600 to-blue-700 text-white">
+            <div className="bg-blue-900 text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 text-center">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Ready to Transform Your HR Operations?</h2>
-                    <p className="text-blue-100 text-sm sm:text-base mb-8 max-w-2xl mx-auto">Join hundreds of companies that have streamlined their HR processes and improved employee satisfaction with our integrated platform.</p>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-white">Ready to Transform Your HR Operations?</h2>
+                    <p className="text-gray-100 text-sm sm:text-base mb-8 max-w-2xl mx-auto">Join hundreds of companies that have streamlined their HR processes and improved employee satisfaction with our integrated platform.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <button className="bg-white text-blue-600 font-bold px-6 sm:px-8 py-3 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-110 hover:shadow-xl active:scale-95 text-sm sm:text-base cursor-pointer">
+                        <button className="bg-white text-blue-900 font-bold px-6 sm:px-8 py-3 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-110 hover:shadow-xl active:scale-95 text-sm sm:text-base cursor-pointer">
                             Schedule Demo
                         </button>
-                        <button className="border-2 border-white text-white font-bold px-6 sm:px-8 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition duration-300 transform hover:scale-110 hover:shadow-xl active:scale-95 text-sm sm:text-base cursor-pointer">
+                        <button className="border-2 border-white text-white font-bold px-6 sm:px-8 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition duration-300 transform hover:scale-110 hover:shadow-xl active:scale-95 text-sm sm:text-base cursor-pointer">
                             View Pricing
                         </button>
                     </div>

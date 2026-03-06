@@ -1,4 +1,12 @@
 import React from "react";
+import valuesHero from "../../assets/culture.webp";
+import value1 from "../../assets/g1.png";
+import value2 from "../../assets/g2.png";
+import value3 from "../../assets/g3.png";
+import value4 from "../../assets/g4.png";
+import value5 from "../../assets/g5.png";
+import value6 from "../../assets/g6.png";
+import leadershipBg from "../../assets/leadership.webp";
 
 export default function Values() {
     const coreValues = [
@@ -15,7 +23,8 @@ export default function Values() {
                 "Best-in-class solutions",
                 "Performance excellence"
             ],
-            impact: "Drive superior results and customer satisfaction"
+            impact: "Drive superior results and customer satisfaction",
+            image: value1
         },
         {
             id: 2,
@@ -30,7 +39,8 @@ export default function Values() {
                 "Honest partnerships",
                 "Trustworthy relationships"
             ],
-            impact: "Build lasting trust with all stakeholders"
+            impact: "Build lasting trust with all stakeholders",
+            image: value2
         },
         {
             id: 3,
@@ -45,7 +55,8 @@ export default function Values() {
                 "Experimentation culture",
                 "Continuous learning"
             ],
-            impact: "Create breakthrough solutions and competitive advantage"
+            impact: "Create breakthrough solutions and competitive advantage",
+            image: value3
         },
         {
             id: 4,
@@ -60,7 +71,8 @@ export default function Values() {
                 "Diverse perspectives",
                 "Collective success"
             ],
-            impact: "Achieve extraordinary results together"
+            impact: "Achieve extraordinary results together",
+            image: value4
         },
         {
             id: 5,
@@ -75,7 +87,8 @@ export default function Values() {
                 "Feedback incorporation",
                 "Long-term partnerships"
             ],
-            impact: "Build loyal customer relationships"
+            impact: "Build loyal customer relationships",
+            image: value5
         },
         {
             id: 6,
@@ -90,7 +103,8 @@ export default function Values() {
                 "Community engagement",
                 "Sustainable operations"
             ],
-            impact: "Create positive impact for generations"
+            impact: "Create positive impact for generations",
+            image: value6
         },
     ];
 
@@ -228,11 +242,15 @@ export default function Values() {
     return (
         <div className="bg-white">
             {/* ===== Hero Section ===== */}
-            <div className="relative min-h-[600px] bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 overflow-hidden pt-20">
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-20 left-10 w-56 h-56 bg-purple-400 rounded-full blur-3xl"></div>
-                    <div className="absolute bottom-0 right-10 w-72 h-72 bg-pink-400 rounded-full blur-3xl"></div>
-                    <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-indigo-400 rounded-full blur-3xl"></div>
+            <div className="relative min-h-[600px] overflow-hidden pt-20">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <img 
+                        src={valuesHero} 
+                        alt="Values Background" 
+                        className="w-full h-full object-cover brightness-75"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/80 via-purple-900/75 to-pink-900/80"></div>
                 </div>
 
                 <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -255,53 +273,59 @@ export default function Values() {
                             </div>
                         </div>
                         <div className="relative group">
-                            <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-purple-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                            <img 
-                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" 
+                            {/* <img 
+                                src="htSix Core Valuestps://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" 
                                 alt="Our Values" 
                                 className="w-full h-auto rounded-2xl shadow-2xl group-hover:shadow-3xl group-hover:scale-105 transition-all duration-500 relative z-10"
-                            />
+                            /> */}
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* ===== Six Core Values ===== */}
-            <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-50 to-white">
+            <section className="py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16">
-                        <h2 className="text-5xl font-bold text-gray-900 mb-4">
+                    <div className="text-center mb-12 md:mb-16">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
                             Six Core Values
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
                             These values form the foundation of our organization and guide our daily decisions, interactions, and strategic direction.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                         {coreValues.map((val) => (
-                            <div key={val.id} className={`group bg-gradient-to-br ${val.color} rounded-2xl p-8 text-white shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:scale-105 hover:-translate-y-3 relative overflow-hidden`}>
-                                <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-all duration-500"></div>
-                                <div className="relative z-10">
-                                    <p className="text-6xl mb-4 group-hover:scale-125 group-hover:rotate-12 inline-block transition-all duration-300">
-                                        {val.icon}
-                                    </p>
-                                    <h3 className="text-3xl font-bold mb-3 group-hover:text-white transition-colors">
+                            <div key={val.id} className="group rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:-translate-y-2 relative min-h-[400px] md:min-h-[450px]">
+                                {/* Background Image */}
+                                <div className="absolute inset-0">
+                                    <img 
+                                        src={val.image} 
+                                        alt={val.title} 
+                                        className="w-full h-full object-cover brightness-90 group-hover:scale-110 transition-all duration-500"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/70 group-hover:from-black/60 group-hover:via-black/50 group-hover:to-black/60 transition-all duration-500"></div>
+                                </div>
+                                
+                                {/* Content */}
+                                <div className="relative z-10 p-6 md:p-8 h-full flex flex-col">
+                                    <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 group-hover:text-purple-300 transition-colors">
                                         {val.title}
                                     </h3>
-                                    <p className="text-white/90 mb-6 group-hover:text-white transition-colors leading-relaxed">
+                                    <p className="text-sm md:text-base text-gray-200 mb-4 md:mb-6 group-hover:text-white transition-colors leading-relaxed">
                                         {val.description}
                                     </p>
-                                    <div className="space-y-2 mb-6 pb-6 border-b border-white/20">
+                                    <div className="space-y-2 mb-4 md:mb-6 pb-4 md:pb-6 border-b border-white/20 group-hover:border-white/40 transition-colors">
                                         {val.details.map((detail, idx) => (
-                                            <div key={idx} className="flex items-center gap-2 text-white/80 group-hover:text-white transition-colors">
-                                                <span className="w-2 h-2 bg-white rounded-full group-hover:scale-150 transition-all duration-300"></span>
+                                            <div key={idx} className="flex items-center gap-2 md:gap-3 text-xs md:text-sm text-gray-300 group-hover:text-white transition-colors">
+                                                <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-purple-400 rounded-full group-hover:scale-150 transition-all duration-300"></span>
                                                 {detail}
                                             </div>
                                         ))}
                                     </div>
-                                    <p className="text-sm font-semibold text-white/90 group-hover:text-white">
-                                        ✨ {val.impact}
+                                    <p className="text-xs md:text-sm font-semibold text-purple-300 group-hover:text-purple-200 mt-auto">
+                                        ✓ {val.impact}
                                     </p>
                                 </div>
                             </div>
@@ -311,32 +335,27 @@ export default function Values() {
             </section>
 
             {/* ===== Values Pillars ===== */}
-            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-                <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-50 to-white">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12 md:mb-16">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
                             Four Pillars of Our Values
                         </h2>
-                        <p className="text-xl text-gray-600">How our values span across dimensions</p>
+                        <p className="text-base md:text-lg lg:text-xl text-gray-600">How our values span across dimensions</p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
                         {valuesPillars.map((pillar, idx) => (
-                            <div key={idx} className="group bg-gradient-to-br from-white to-gray-50 rounded-xl p-8 border-2 border-gray-200 hover:border-purple-400 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 cursor-pointer transform hover:-translate-y-2">
-                                <div className="flex items-start gap-4 mb-4">
-                                    <p className="text-5xl group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
-                                        {pillar.icon}
-                                    </p>
-                                    <h3 className="text-2xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors">
-                                        {pillar.category}
-                                    </h3>
-                                </div>
-                                <p className="text-gray-700 mb-6 group-hover:text-gray-800 transition-colors">
+                            <div key={idx} className="group bg-white rounded-xl p-6 md:p-8 border-2 border-gray-200 hover:border-purple-400 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 cursor-pointer transform hover:-translate-y-2 min-h-[280px] md:min-h-[300px]">
+                                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4 group-hover:text-purple-600 transition-colors">
+                                    {pillar.category}
+                                </h3>
+                                <p className="text-sm md:text-base text-gray-700 mb-4 md:mb-6 group-hover:text-gray-900 transition-colors leading-relaxed">
                                     {pillar.description}
                                 </p>
                                 <div className="flex flex-wrap gap-2">
                                     {pillar.values.map((v, i) => (
-                                        <span key={i} className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+                                        <span key={i} className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-100 text-purple-700 rounded-full text-xs md:text-sm font-semibold group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
                                             {v}
                                         </span>
                                     ))}
@@ -348,35 +367,41 @@ export default function Values() {
             </section>
 
             {/* ===== When We Uphold Values ===== */}
-            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-indigo-50 to-purple-50">
-                <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12 md:mb-16">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
                             When We Uphold Our Values
                         </h2>
-                        <p className="text-xl text-gray-600">Real-world examples of values in action</p>
+                        <p className="text-base md:text-lg lg:text-xl text-gray-600">Real-world examples of values in action</p>
                     </div>
 
-                    <div className="space-y-6">
+                    <div className="space-y-6 md:space-y-8">
                         {whenWeUphold.map((item, idx) => (
-                            <div key={idx} className="group">
-                                <div className="flex flex-col md:flex-row gap-6 p-8 bg-white rounded-xl border-2 border-gray-200 hover:border-purple-400 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 cursor-pointer transform hover:-translate-y-1">
+                            <div key={idx} className="group relative">
+                                <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-start">
                                     <div className="flex-none">
-                                        <div className="w-20 h-20 rounded-lg bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center font-bold text-white text-sm text-center shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300">
+                                        <div className="w-16 h-16 md:w-20 md:h-20 rounded-lg bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center font-bold text-white text-xl md:text-2xl shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300">
                                             {(idx + 1)}
                                         </div>
                                     </div>
                                     <div className="flex-1">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
-                                            {item.situation}
-                                        </h3>
-                                        <div className="p-4 bg-purple-50 rounded-lg mb-4">
-                                            <p className="text-sm font-semibold text-purple-700 mb-2">Core Value: {item.value}</p>
-                                            <p className="text-gray-700">{item.action}</p>
+                                        <div className="bg-white border-2 border-gray-200 rounded-xl p-6 md:p-8 hover:border-purple-400 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 group-hover:-translate-y-2">
+                                            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4 group-hover:text-purple-600 transition-colors">
+                                                {item.situation}
+                                            </h3>
+                                            <div className="mb-4 md:mb-6">
+                                                <p className="text-sm md:text-base font-semibold text-purple-600 mb-2">Core Value: {item.value}</p>
+                                                <p className="text-sm md:text-base text-gray-700 group-hover:text-gray-900 transition-colors leading-relaxed">
+                                                    {item.action}
+                                                </p>
+                                            </div>
+                                            <div className="pt-3 md:pt-4 border-t border-gray-200">
+                                                <p className="text-sm md:text-base text-gray-600 group-hover:text-gray-700 transition-colors">
+                                                    <span className="font-bold text-green-600">✓ Outcome:</span> {item.outcome}
+                                                </p>
+                                            </div>
                                         </div>
-                                        <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors">
-                                            <span className="font-bold text-green-600">Outcome:</span> {item.outcome}
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -418,29 +443,38 @@ export default function Values() {
             </section>
 
             {/* ===== Leadership Testimonials ===== */}
-            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-900 to-gray-800">
-                <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-white mb-4">
+            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <img 
+                        src={leadershipBg} 
+                        alt="Leadership Background" 
+                        className="w-full h-full object-cover brightness-90"
+                    />
+                    <div className="absolute inset-0 bg-white/85"></div>
+                </div>
+                <div className="relative max-w-7xl mx-auto">
+                    <div className="text-center mb-12 md:mb-16">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
                             Leadership on Values
                         </h2>
-                        <p className="text-xl text-gray-300">Voices from across our organization</p>
+                        <p className="text-base md:text-lg lg:text-xl text-gray-600">Voices from across our organization</p>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                         {testimonials.map((test, idx) => (
-                            <div key={idx} className="group bg-gradient-to-br from-gray-700 to-gray-600 rounded-xl p-8 border-2 border-gray-600 hover:border-purple-400 hover:shadow-2xl hover:shadow-purple-500/30 hover:-translate-y-2 transition-all duration-500 cursor-pointer">
-                                <div className="mb-6">
-                                    <p className="text-5xl text-purple-300 mb-4">"</p>
-                                    <p className="text-white text-lg group-hover:text-gray-100 transition-colors leading-relaxed">
+                            <div key={idx} className="group bg-white rounded-xl p-6 md:p-8 border-2 border-gray-200 hover:border-purple-400 hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2 transition-all duration-500 cursor-pointer min-h-[280px] md:min-h-[300px]">
+                                <div className="mb-4 md:mb-6">
+                                    <p className="text-4xl md:text-5xl text-purple-500 mb-3 md:mb-4">"</p>
+                                    <p className="text-sm md:text-base text-gray-700 group-hover:text-gray-900 transition-colors leading-relaxed">
                                         {test.quote}
                                     </p>
                                 </div>
-                                <div className="pt-6 border-t border-gray-500 group-hover:border-purple-400 transition-colors">
-                                    <p className="font-bold text-white group-hover:text-purple-300 transition-colors">
+                                <div className="pt-4 md:pt-6 border-t border-gray-200 group-hover:border-purple-300 transition-colors">
+                                    <p className="font-bold text-gray-900 group-hover:text-purple-600 transition-colors">
                                         {test.name}
                                     </p>
-                                    <p className="text-gray-400 text-sm group-hover:text-purple-200 transition-colors">
+                                    <p className="text-gray-600 text-xs md:text-sm group-hover:text-gray-700 transition-colors">
                                         {test.role} • {test.company}
                                     </p>
                                 </div>

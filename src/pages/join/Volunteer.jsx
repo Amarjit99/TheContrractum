@@ -317,19 +317,19 @@ export default function Volunteer() {
             </div>
 
            {/* CTA Section – Professional */}
-<div className="bg-primary text-white">
+<div className="bg-blue-900 text-white">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16 lg:py-20 text-center">
 
-    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 text-white">
       Ready to Make a Meaningful Impact?
     </h2>
 
-    <p className="text-gray-400 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
+    <p className="text-gray-100 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
       Become part of our volunteer network and contribute your time,
       skills, and passion to initiatives that create lasting change.
     </p>
 
-    <button className="bg-primary text-white font-medium px-6 sm:px-8 py-3 rounded-lg shadow-lg hover:bg-primary-dark hover:shadow-xl transition duration-300">
+    <button className="bg-white text-blue-900 font-medium px-6 sm:px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 hover:shadow-xl transition duration-300">
       Apply as Volunteer
     </button>
 

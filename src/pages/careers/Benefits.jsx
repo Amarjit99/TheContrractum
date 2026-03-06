@@ -177,25 +177,25 @@ export default function Benefits() {
 
             {/* CTA Section */}
             <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-                <div className="bg-gradient-to-r from-primary to-primary-light rounded-3xl shadow-2xl overflow-hidden">
+                <div className="bg-blue-900 rounded-3xl shadow-2xl overflow-hidden">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div className="p-12">
                             <h2 className="text-4xl font-bold text-white mb-4">
                                 Ready to Join Our Team?
                             </h2>
-                            <p className="text-white/90 text-lg mb-6">
+                            <p className="text-gray-100 text-lg mb-6">
                                 Explore our current job openings and start your journey with The Contrractum today.
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <a
                                     href="#/careers/jobs"
-                                    className="inline-block px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-dark transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
+                                    className="inline-block px-8 py-4 bg-white text-blue-900 font-bold rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
                                 >
                                     View Job Openings
                                 </a>
                                 <a
                                     href="#/careers/life"
-                                    className="inline-block px-8 py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white/50 font-bold rounded-xl hover:bg-white/20 transition-all duration-300"
+                                    className="inline-block px-8 py-4 bg-transparent text-white border-2 border-white font-bold rounded-xl hover:bg-white/10 transition-all duration-300"
                                 >
                                     Life at Company
                                 </a>

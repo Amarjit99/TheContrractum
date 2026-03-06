@@ -396,9 +396,9 @@ export default function Startup() {
             </section>
 
             {/* CTA Section */}
-            <section className="bg-primary text-white py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
+            <section className="bg-blue-900 text-white py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-white">
                         Ready to Launch Your Startup?
                     </h2>
                     <p className="text-base md:text-lg mb-6 md:mb-8 text-gray-100 max-w-2xl mx-auto">
@@ -406,10 +406,10 @@ export default function Startup() {
                         funding, and network you need to succeed.
                     </p>
                     <div className="flex flex-col md:flex-row gap-4 justify-center">
-                        <button className="bg-primary text-white hover:bg-gray-50 font-bold py-3 px-6 md:px-8 rounded-lg transition-colors text-sm md:text-base shadow-lg">
+                        <button className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-3 px-6 md:px-8 rounded-lg transition-colors text-sm md:text-base shadow-lg">
                             Apply to Accelerator
                         </button>
-                        <button className="border-2 border-white text-white hover:bg-primary-dark font-bold py-3 px-6 md:px-8 rounded-lg transition-colors text-sm md:text-base">
+                        <button className="border-2 border-white text-white hover:bg-white/10 font-bold py-3 px-6 md:px-8 rounded-lg transition-colors text-sm md:text-base">
                             Download Guidebook
                         </button>
                     </div>

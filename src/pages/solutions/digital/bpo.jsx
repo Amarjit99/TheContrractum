@@ -205,22 +205,22 @@ export default function BPO() {
             </div>
 
             {/* Final CTA Section */}
-            <div className="bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-700 text-white">
+            <div className="bg-blue-900 text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
                     <div className="text-center">
-                        <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4">Ready to Optimize Your Operations?</h2>
-                        <p className="text-purple-100 text-sm sm:text-base mb-8 max-w-2xl mx-auto leading-relaxed">
+                        <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4 text-white">Ready to Optimize Your Operations?</h2>
+                        <p className="text-gray-100 text-sm sm:text-base mb-8 max-w-2xl mx-auto leading-relaxed">
                             Partner with us to streamline your business processes, reduce costs, and focus on what matters most. Get expert guidance tailored to your business needs.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <button className="bg-white text-purple-600 font-bold px-8 sm:px-10 py-3 rounded-lg hover:bg-gray-50 transition duration-300 transform hover:scale-110 hover:shadow-xl active:scale-95 text-sm sm:text-base cursor-pointer">
+                            <button className="bg-white text-blue-900 font-bold px-8 sm:px-10 py-3 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-110 hover:shadow-xl active:scale-95 text-sm sm:text-base cursor-pointer">
                                 Get Free Consultation
                             </button>
-                            <button className="border-3 border-white text-white font-bold px-8 sm:px-10 py-3 rounded-lg hover:bg-white hover:text-purple-600 transition duration-300 transform hover:scale-110 hover:shadow-xl active:scale-95 text-sm sm:text-base cursor-pointer">
+                            <button className="border-3 border-white text-white font-bold px-8 sm:px-10 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition duration-300 transform hover:scale-110 hover:shadow-xl active:scale-95 text-sm sm:text-base cursor-pointer">
                                 Schedule a Call
                             </button>
                         </div>
-                        <p className="text-purple-200 text-sm mt-6">No credit card required • 30-minute demo • Dedicated account manager</p>
+                        <p className="text-gray-100 text-sm mt-6">No credit card required • 30-minute demo • Dedicated account manager</p>
                     </div>
                 </div>
             </div>

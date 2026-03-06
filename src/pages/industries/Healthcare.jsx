@@ -156,15 +156,14 @@ export default function Healthcare() {
             {/* CTA Section */}
             <div className="py-24 bg-white">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <div className="bg-linear-to-r from-teal-500 to-emerald-600 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
-                        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                    <div className="bg-blue-900 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
                         <div className="relative z-10">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">Innovate Your Healthcare Services</h2>
-                            <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Innovate Your Healthcare Services</h2>
+                            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
                                 Partner with us to deliver better care through technology. Secure, scalable, and patient-centric solutions await.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact/quote" className="px-8 py-4 bg-white text-teal-600 font-bold rounded-lg hover:bg-gray-50 transition-colors shadow-lg">
+                                <Link to="/contact/quote" className="px-8 py-4 bg-white text-blue-900 font-bold rounded-lg hover:bg-gray-100 transition-colors shadow-lg">
                                     Get Started
                                 </Link>
                                 <Link to="/company/about-us" className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">

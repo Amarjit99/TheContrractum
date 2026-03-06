@@ -139,19 +139,19 @@ export default function DigitalSolutions() {
             </div>
 
             {/* CTA Section – Professional Dark */}
-<div className="bg-primary py-20">
+<div className="bg-blue-900 py-20">
   <div className="max-w-5xl mx-auto px-6 text-center text-white">
 
-    <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
+    <h2 className="text-3xl sm:text-4xl font-semibold mb-4 text-white">
       Ready to Transform Your Business?
     </h2>
 
-    <p className="text-gray-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
+    <p className="text-gray-100 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
       Contact our experts to discuss how our digital solutions can drive
       your success and accelerate growth.
     </p>
 
-    <button className="bg-primary text-white font-medium px-8 py-3 rounded-lg shadow-md hover:bg-primary-dark transition">
+    <button className="bg-white text-blue-900 font-medium px-8 py-3 rounded-lg shadow-md hover:bg-gray-100 transition">
       Schedule Consultation
     </button>
 

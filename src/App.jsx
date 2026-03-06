@@ -64,6 +64,9 @@ import Completed from './pages/projects/Completed';
 import CaseStudies from './pages/projects/CaseStudies';
 import Research from './pages/projects/Research';
 import Testimonials from './pages/projects/Testimonials';
+import ProjectDetails from './pages/projects/ProjectDetails';
+import CompletedProjectDetails from './pages/projects/CompletedProjectDetails';
+import CaseStudyDetails from './pages/projects/CaseStudyDetails';
 
 //////////////////// Resources Pages/////////////////////////////////////
 import Blogs from './pages/resources/Blogs';
@@ -164,8 +167,11 @@ export default function App() {
 
 {/* ///////////////////////// projects Routes///////////////////////// */}
             <Route path="/projects/ongoing" element={<Ongoing />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/projects/completed" element={<Completed />} />
+            <Route path="/projects/completed/:id" element={<CompletedProjectDetails />} />
             <Route path="/projects/case-studies" element={<CaseStudies />} />
+            <Route path="/projects/case-studies/:id" element={<CaseStudyDetails />} />
             <Route path="/projects/research" element={<Research />} />
             <Route path="/projects/testimonials" element={<Testimonials />} />
 

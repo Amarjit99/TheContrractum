@@ -31,16 +31,39 @@ export default function CoreTeam() {
 
     return (
         <div className="min-h-screen bg-gray-50">
-            {/* Hero Section */}
-            <div className="bg-gradient-to-r from-primary via-primary-light to-primary-dark text-white py-24">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg">
+            {/* Hero Section with Background Image */}
+            <div className="relative bg-white text-gray-200 py-32 overflow-hidden">
+                {/* Background Image */}
+                <div 
+                    className="absolute inset-0 z-0"
+                    style={{
+                        backgroundImage: 'url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=2000&q=80)',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        opacity: '1'
+                    }}
+                />
+                
+                {/* Light Overlay for Text Readability */}
+                <div className="absolute inset-0 bg-white/60 z-0" />
+                
+                {/* Content */}
+                <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg text-gray-900">
                         Meet Our Leadership
                     </h1>
-                    <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+                    <p className="text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed font-semibold">
                         The visionaries and strategists guiding The Contrractum towards a
                         smarter, more connected future.
                     </p>
+                    <div className="mt-8 flex justify-center gap-4 flex-wrap">
+                        <div className="bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full border-2 border-gray-800 shadow-lg">
+                            <p className="text-sm font-bold text-gray-900">🎯 Visionary Leadership</p>
+                        </div>
+                        <div className="bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full border-2 border-gray-800 shadow-lg">
+                            <p className="text-sm font-bold text-gray-900">🚀 Strategic Excellence</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -85,14 +108,14 @@ export default function CoreTeam() {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-primary text-white py-20">
+            <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white py-20">
                 <div className="max-w-4xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl lg:text-4xl font-black mb-6">Connect with Visionaries</h2>
-                    <p className="text-gray-400 text-lg mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-black mb-6 text-white">Connect with Visionaries</h2>
+                    <p className="text-gray-100 text-lg mb-8">
                         Our leadership team is always open to discussing strategic partnerships and new ventures.
                     </p>
                     <Link to="/contact/touch">
-                        <button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-dark hover:to-primary text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
+                        <button className="bg-white text-blue-600 hover:bg-gray-100 font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-2xl cursor-pointer">
                             Contact Leadership
                         </button>
                     </Link>

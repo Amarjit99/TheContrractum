@@ -541,12 +541,7 @@ export default function CSR() {
         )}
 
         {/* Get Involved CTA */}
-        <div className="bg-gradient-to-r from-green-600 via-emerald-600 to-primary-light rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0" style={{
-              backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-            }}></div>
-          </div>
+        <div className="bg-blue-900 rounded-2xl shadow-2xl p-12 text-center text-white">
           <div className="max-w-4xl mx-auto relative z-10">
             <div className="bg-white/10 backdrop-blur-sm w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -556,7 +551,7 @@ export default function CSR() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Join Us in Making a Difference
             </h2>
-            <p className="text-xl text-green-100 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-100 mb-8 leading-relaxed">
               Partner with us, volunteer your time, or contribute to our CSR initiatives. Together, we can create lasting positive change in communities across the nation.
             </p>
 
@@ -566,29 +561,29 @@ export default function CSR() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <p className="font-bold mb-1">Corporate Partnership</p>
-                <p className="text-green-100 text-sm">Join our CSR coalition</p>
+                <p className="text-gray-100 text-sm">Join our CSR coalition</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <svg className="w-8 h-8 text-white mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
                 <p className="font-bold mb-1">Volunteer Programs</p>
-                <p className="text-green-100 text-sm">Give your time & skills</p>
+                <p className="text-gray-100 text-sm">Give your time & skills</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <svg className="w-8 h-8 text-white mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <p className="font-bold mb-1">Donate & Support</p>
-                <p className="text-green-100 text-sm">Fund our initiatives</p>
+                <p className="text-gray-100 text-sm">Fund our initiatives</p>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Get Involved
               </button>
-              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
+              <button className="bg-transparent text-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white">
                 Download CSR Report
               </button>
             </div>

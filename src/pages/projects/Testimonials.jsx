@@ -561,18 +561,18 @@ export default function Testimonials() {
 
         {/* Video Testimonials Section */}
         {videoTestimonials.length > 0 && (
-          <div className="mb-16 bg-gradient-to-br from-primary to-primary rounded-2xl p-12 text-white">
+          <div className="mb-16 bg-blue-900 rounded-2xl p-12 text-white">
             <div className="text-center mb-8">
               <div className="inline-block bg-white/10 backdrop-blur-sm px-6 py-2 rounded-full mb-4">
-                <span className="text-blue-200 text-sm font-semibold flex items-center gap-2 justify-center">
+                <span className="text-white text-sm font-semibold flex items-center gap-2 justify-center">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
                   </svg>
                   Video Testimonials
                 </span>
               </div>
-              <h2 className="text-3xl font-bold">Hear From Our Clients Directly</h2>
-              <p className="text-blue-100 mt-2">{videoTestimonials.length} video testimonials available</p>
+              <h2 className="text-3xl font-bold text-white">Hear From Our Clients Directly</h2>
+              <p className="text-gray-100 mt-2">{videoTestimonials.length} video testimonials available</p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               {videoTestimonials.slice(0, 6).map((testimonial) => (
@@ -584,12 +584,12 @@ export default function Testimonials() {
                       className="w-12 h-12 rounded-full border-2 border-white object-cover"
                     />
                     <div>
-                      <p className="font-bold text-sm">{testimonial.name}</p>
-                      <p className="text-xs text-blue-100">{testimonial.company}</p>
+                      <p className="font-bold text-sm text-white">{testimonial.name}</p>
+                      <p className="text-xs text-gray-100">{testimonial.company}</p>
                     </div>
                   </div>
-                  <p className="text-sm text-blue-50 leading-relaxed line-clamp-3">"{testimonial.testimonial.substring(0, 100)}..."</p>
-                  <button className="mt-3 w-full bg-primary text-white py-2 rounded-lg font-semibold text-sm hover:bg-primary-dark transition-all flex items-center justify-center gap-2">
+                  <p className="text-sm text-gray-100 leading-relaxed line-clamp-3">"{testimonial.testimonial.substring(0, 100)}..."</p>
+                  <button className="mt-3 w-full bg-white text-blue-900 py-2 rounded-lg font-semibold text-sm hover:bg-gray-100 transition-all flex items-center justify-center gap-2">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
                     </svg>
@@ -602,12 +602,7 @@ export default function Testimonials() {
         )}
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-primary-light to-primary rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0" style={{
-              backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-            }}></div>
-          </div>
+        <div className="bg-blue-900 rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
           <div className="max-w-4xl mx-auto relative z-10">
             <div className="bg-white/10 backdrop-blur-sm w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -617,14 +612,14 @@ export default function Testimonials() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Ready to Join Our Success Stories?
             </h2>
-            <p className="text-xl text-amber-100 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-100 mb-8 leading-relaxed">
               Experience the same transformative results. Let's create your success story together with cutting-edge technology solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Start Your Project
               </button>
-              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white/30">
+              <button className="bg-transparent text-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white">
                 Schedule a Call
               </button>
             </div>

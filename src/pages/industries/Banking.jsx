@@ -156,15 +156,14 @@ export default function Banking() {
             {/* CTA Section */}
             <div className="py-24 bg-white">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <div className="bg-linear-to-r from-primary to-primary-light rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
-                        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                    <div className="bg-blue-900 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
                         <div className="relative z-10">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">Innovate with Confidence</h2>
-                            <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Innovate with Confidence</h2>
+                            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
                                 Partner with a team that understands the intersection of finance and technology.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact/quote" className="px-8 py-4 bg-white text-emerald-600 font-bold rounded-lg hover:bg-gray-50 transition-colors shadow-lg">
+                                <Link to="/contact/quote" className="px-8 py-4 bg-white text-blue-900 font-bold rounded-lg hover:bg-gray-100 transition-colors shadow-lg">
                                     Start a Project
                                 </Link>
                                 <Link to="/company/about-us" className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">

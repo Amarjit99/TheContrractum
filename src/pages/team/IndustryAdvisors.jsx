@@ -1,5 +1,6 @@
 import { Quote, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import advisorsHero from "../../assets/leadership.webp";
 
 export default function IndustryAdvisors() {
     const advisors = [
@@ -32,9 +33,18 @@ export default function IndustryAdvisors() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <div className="bg-gradient-to-r from-primary via-primary-light to-primary-dark text-white py-24">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg">
+            <div className="relative py-20 md:py-24 overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                    <img 
+                        src={advisorsHero} 
+                        alt="Industry Advisors Background" 
+                        className="w-full h-full object-cover brightness-75"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary-light/75 to-primary-dark/80"></div>
+                </div>
+                <div className="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg text-white">
                         Industry Advisors
                     </h1>
                     <p className="text-xl text-blue-100 max-w-2xl mx-auto">
@@ -79,14 +89,14 @@ export default function IndustryAdvisors() {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-gray-50 border-t border-gray-200 py-20">
+            <div className="bg-blue-900 text-white py-20">
                 <div className="max-w-4xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-6">Shape the Future with Us</h2>
-                    <p className="text-gray-600 text-lg mb-8">
+                    <h2 className="text-3xl lg:text-4xl font-black text-white mb-6">Shape the Future with Us</h2>
+                    <p className="text-gray-100 text-lg mb-8">
                         We value wisdom and experience. If you're a industry veteran looking to make an impact, let's talk.
                     </p>
                     <Link to="/join/partner">
-                        <button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-dark hover:to-primary text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
+                        <button className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
                             Become an Advisor
                         </button>
                     </Link>

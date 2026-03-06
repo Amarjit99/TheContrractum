@@ -286,7 +286,7 @@ export default function Events() {
               <span className="text-sm text-slate-600 hidden md:inline">
                 {upcomingEvents.length} Upcoming · {pastEvents.length} Past
               </span>
-              <button className="bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
+              <button className="bg-red-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-red-700 transition-colors">
                 Register Now
               </button>
             </div>
@@ -533,7 +533,7 @@ export default function Events() {
                       <span className="text-lg font-bold text-primary">{event.price}</span>
                     </div>
 
-                    <button className="w-full bg-gradient-to-r from-primary to-primary-light text-white py-3 rounded-lg font-semibold hover:from-primary-dark hover:to-primary transition-all duration-300 shadow-md hover:shadow-lg">
+                    <button className="w-full bg-red-600 text-white py-3 rounded-full font-semibold hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg">
                       Register Now →
                     </button>
                   </div>
@@ -610,8 +610,8 @@ export default function Events() {
                         </span>
                         <span className="font-bold text-primary">{event.price}</span>
                       </div>
-                      <button className="w-full bg-primary text-white py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300">
-                        Register
+                      <button className="w-full bg-red-600 text-white py-2.5 rounded-full font-semibold hover:bg-red-700 transition-all duration-300">
+                        Register Now
                       </button>
                     </>
                   ) : (
@@ -639,7 +639,7 @@ export default function Events() {
             <div className="text-center mt-8">
               <button
                 onClick={() => setVisibleEvents(prev => prev + 6)}
-                className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 shadow-md hover:shadow-lg"
+                className="bg-primary text-black px-8 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Load More Events ({filteredEvents.length - visibleEvents} remaining)
               </button>
@@ -659,12 +659,7 @@ export default function Events() {
         )}
 
         {/* Newsletter CTA */}
-        <div className="bg-gradient-to-r from-primary via-primary-light to-primary rounded-2xl shadow-2xl p-12 text-center text-white overflow-hidden relative">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0" style={{
-              backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-            }}></div>
-          </div>
+        <div className="bg-blue-900 rounded-2xl shadow-2xl p-12 text-center text-white">
           <div className="max-w-4xl mx-auto relative z-10">
             <div className="bg-white/10 backdrop-blur-sm w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -674,7 +669,7 @@ export default function Events() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Never Miss an Event!
             </h2>
-            <p className="text-xl text-purple-100 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-100 mb-8 leading-relaxed">
               Subscribe to our newsletter and get notified about upcoming events, exclusive workshops, and early bird discounts.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto">
@@ -683,11 +678,11 @@ export default function Events() {
                 placeholder="Enter your email address"
                 className="flex-1 px-6 py-4 rounded-lg text-slate-900 font-medium focus:ring-4 focus:ring-white/30 outline-none"
               />
-              <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary/10 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Subscribe Now
               </button>
             </div>
-            <p className="text-purple-200 text-sm mt-4">
+            <p className="text-gray-100 text-sm mt-4">
               Join 10,000+ professionals already subscribed
             </p>
           </div>

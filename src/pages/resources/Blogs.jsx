@@ -449,7 +449,7 @@ export default function Blogs() {
                                             </div>
                                             <button 
                                                 onClick={() => navigate(`/resources/blogs/${post.id}`)}
-                                                className="w-full py-2 bg-gradient-to-r from-primary to-primary-light text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 group-hover:scale-105"
+                                                className="w-full py-2 bg-gradient-to-r from-primary to-primary-light text-black font-semibold rounded-lg hover:shadow-lg transition-all duration-300 group-hover:scale-105"
                                             >
                                                 Read Article →
                                             </button>
@@ -463,7 +463,7 @@ export default function Blogs() {
                                 <div className="text-center mt-8 md:mt-12">
                                     <button
                                         onClick={() => setVisiblePosts(prev => prev + 6)}
-                                        className="px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base bg-white bg-primary text-white font-bold rounded-lg sm:rounded-xl hover:bg-primary hover:text-white transition-all duration-300 hover:shadow-xl"
+                                        className="px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base bg-primary text-black-300 font-bold rounded-lg sm:rounded-xl hover:bg-primary-dark transition-all duration-300 hover:shadow-xl hover:scale-105"
                                     >
                                         Load More Articles
                                     </button>
