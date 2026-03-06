@@ -10,6 +10,7 @@ import {
   MapPin,
   ArrowRight,
 } from "lucide-react";
+import VisitorCounter from "./VisitorCounter";
 
 const Footer = () => {
   return (
@@ -52,11 +53,11 @@ const Footer = () => {
 
       {/* ================= Main Footer ================= */}
       <div className="bg-gray-800 text-white pt-20 pb-6 px-6 relative overflow-hidden">
-        
+
         {/* Decorative Elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
-        
+
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
 
           {/* Column 1 - Company Info */}
@@ -176,7 +177,7 @@ const Footer = () => {
               Get in Touch
               <div className="h-0.5 w-8 bg-gradient-to-r from-red-500 to-transparent"></div>
             </h4>
-            
+
             <div className="space-y-4">
               <div className="flex items-start gap-3 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-all border border-white/10 group cursor-pointer">
                 <Mail size={20} className="text-red-500 mt-0.5 group-hover:scale-110 transition-transform" />
@@ -219,6 +220,7 @@ const Footer = () => {
           <p className="text-white text-sm text-center md:text-left">
             © {new Date().getFullYear()} <span className="text-blue-400 font-semibold">The</span> <span className="text-red-500 font-semibold">Contractum</span>. All rights reserved.
           </p>
+          <VisitorCounter />
           <div className="flex gap-6 text-sm">
             <a href="#" className="hover:text-red-400 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-red-400 transition-colors">Terms of Service</a>

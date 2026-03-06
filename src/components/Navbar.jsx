@@ -11,24 +11,24 @@ export default function Navbar() {
       name: 'Home',
       path: '/'
     },
-    
-     {
-  name: 'Company',
-  submenu: [
-    { title: 'Our Vision', path: '/company/about-us/vision', items: [] },
-    { title: 'Our Mission', path: '/company/about-us/mission', items: [] },
-    { title: 'Our Values', path: '/company/about-us/values' , items: []},
 
-    { title: 'Founders & Directors', path: '/company/leadership/founders', items: [] },
-    { title: 'Management Team', path: '/company/leadership/management', items: [] },
+    {
+      name: 'Company',
+      submenu: [
+        { title: 'Our Vision', path: '/company/about-us/vision', items: [] },
+        { title: 'Our Mission', path: '/company/about-us/mission', items: [] },
+        { title: 'Our Values', path: '/company/about-us/values', items: [] },
 
-    { title: 'Our Journey', path: '/company/our-journey', items: [] },
-    { title: 'Company Timeline', path: '/company/our-journey/timeline', items: [] },
+        { title: 'Founders & Directors', path: '/company/leadership/founders', items: [] },
+        { title: 'Management Team', path: '/company/leadership/management', items: [] },
 
-    { title: 'Innovation', path: '/company/why-choose-us/innovation' , items: []},
-    { title: 'Reliability', path: '/company/why-choose-us/reliability', items: [] },
-    { title: 'Scalability', path: '/company/why-choose-us/scalability', items: [] }
-  ]
+        { title: 'Our Journey', path: '/company/our-journey', items: [] },
+        { title: 'Company Timeline', path: '/company/our-journey/timeline', items: [] },
+
+        { title: 'Innovation', path: '/company/why-choose-us/innovation', items: [] },
+        { title: 'Reliability', path: '/company/why-choose-us/reliability', items: [] },
+        { title: 'Scalability', path: '/company/why-choose-us/scalability', items: [] }
+      ]
 
     },
     {
