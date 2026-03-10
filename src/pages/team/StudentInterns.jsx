@@ -1,6 +1,6 @@
-import { GraduationCap, Briefcase, Star, Rocket } from "lucide-react";
+import { GraduationCap, Briefcase, Star, Rocket, Users, Sparkles, BookOpen, Award } from "lucide-react";
 import { Link } from "react-router-dom";
-import internsHero from "../../assets/growth.webp";
+import intern from "../../assets/intern.webp";
 
 export default function StudentInterns() {
     const interns = [
@@ -39,101 +39,118 @@ export default function StudentInterns() {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen">
             {/* Hero Section */}
-            <div className="relative py-20 md:py-24 overflow-hidden">
-                {/* Background Image */}
-                <div className="absolute inset-0">
-                    <img 
-                        src={internsHero} 
-                        alt="Student Interns Background" 
-                        className="w-full h-full object-cover brightness-75"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/80 via-primary/75 to-primary-light/80"></div>
-                </div>
-                <div className="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-6">
-                        <Rocket size={18} className="text-yellow-300" />
-                        <span className="font-semibold text-sm uppercase tracking-wide text-white">
+            <div className="relative h-[600px] flex items-center" style={{ backgroundImage: `url(${intern})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-left">
+                    <div>
+                        {/* <span className="inline-block px-4 py-2 rounded-full bg-orange-100 text-orange-700 text-sm font-bold uppercase tracking-wider mb-4 drop-shadow-2xl">
                             Future Leaders Program
-                        </span>
+                        </span> */}
+                        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight text-white drop-shadow-2xl">
+                            Student Interns
+                        </h1>
+                        <p className="text-gray-100 text-lg sm:text-xl mb-8 leading-relaxed max-w-3xl drop-shadow-2xl">
+                            Fueling growth, innovation, and fresh perspectives. Meet the bright minds shaping tomorrow.
+                        </p>
+                        <button className="bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold px-10 py-4 rounded-xl hover:from-orange-700 hover:to-red-700 transition transform hover:scale-105 text-base sm:text-lg shadow-2xl">
+                            Join Our Team
+                        </button>
                     </div>
-                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg text-white">
-                        Student Interns
-                    </h1>
-                    <p className="text-xl text-orange-100 max-w-2xl mx-auto">
-                        Fueling growth, innovation, and fresh perspectives. Meet the bright
-                        minds shaping tomorrow.
-                    </p>
                 </div>
             </div>
 
             {/* Interns Grid */}
-            <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                    {interns.map((intern, index) => (
-                        <div
-                            key={index}
-                            className="bg-white rounded-3xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 md:flex gap-6 items-center group border border-gray-100"
-                        >
-                            <div className="w-full md:w-1/3 h-48 md:h-full shrink-0 overflow-hidden rounded-2xl relative">
-                                <img
-                                    src={intern.image}
-                                    alt={intern.name}
-                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                />
-                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 md:hidden">
-                                    <h3 className="text-white font-bold text-lg">{intern.name}</h3>
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-orange-50">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-orange-100 text-orange-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Our Rising Stars
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl font-black mb-4 text-slate-900">Meet Our Talented Interns</h2>
+                        <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+                            Passionate students bringing fresh ideas and driving innovation
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {interns.map((intern, index) => (
+                            <div
+                                key={index}
+                                className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-100 hover:-translate-y-2"
+                            >
+                                <div className="md:flex">
+                                    <div className="md:w-1/3 h-64 md:h-auto relative overflow-hidden">
+                                        <img
+                                            src={intern.image}
+                                            alt={intern.name}
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                        <div className="absolute top-4 right-4">
+                                            <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                                                <Star className="w-5 h-5 text-white fill-white" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="p-6 md:w-2/3">
+                                        <h3 className="text-2xl font-black text-slate-900 mb-1">
+                                            {intern.name}
+                                        </h3>
+                                        <p className="text-orange-600 font-bold mb-3">{intern.role}</p>
+
+                                        <div className="flex items-center gap-2 text-slate-600 text-sm mb-4 bg-slate-100 w-fit px-3 py-1.5 rounded-lg">
+                                            <GraduationCap size={16} />
+                                            <span className="font-semibold">{intern.school}</span>
+                                        </div>
+
+                                        <div className="bg-orange-50 p-4 rounded-xl mb-4 relative border-l-4 border-orange-500">
+                                            <div className="absolute top-3 right-3">
+                                                <QuoteIcon className="text-orange-200 w-6 h-6" />
+                                            </div>
+                                            <p className="text-slate-700 italic text-sm leading-relaxed">"{intern.quote}"</p>
+                                        </div>
+
+                                        <div className="flex flex-wrap gap-2">
+                                            {intern.tags.map((tag, idx) => (
+                                                <span
+                                                    key={idx}
+                                                    className="px-3 py-1 bg-slate-100 text-xs font-bold text-slate-700 rounded-full hover:bg-orange-100 hover:text-orange-700 transition"
+                                                >
+                                                    #{tag}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="flex-1 mt-4 md:mt-0">
-                                <div className="hidden md:block">
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                                        {intern.name}
-                                    </h3>
-                                    <p className="text-primary font-semibold mb-3">{intern.role}</p>
-                                </div>
-
-                                <div className="flex items-center gap-2 text-gray-500 text-sm mb-4">
-                                    <GraduationCap size={16} />
-                                    <span>{intern.school}</span>
-                                </div>
-
-                                <div className="bg-orange-50 p-4 rounded-xl mb-4 relative">
-                                    <QuoteIcon className="absolute top-2 left-2 text-orange-200 w-6 h-6 z-0" />
-                                    <p className="text-gray-700 italic text-sm relative z-10">"{intern.quote}"</p>
-                                </div>
-
-                                <div className="flex flex-wrap gap-2">
-                                    {intern.tags.map((tag, idx) => (
-                                        <span
-                                            key={idx}
-                                            className="px-2 py-1 bg-gray-100 text-xs font-semibold text-gray-600 rounded-md"
-                                        >
-                                            #{tag}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
+            </section>
 
             {/* CTA Section */}
-            <div className="bg-blue-900 text-white py-20">
-                <div className="max-w-4xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl lg:text-4xl font-black mb-6 text-white">Applications for Summer Internships 2026 are Open!</h2>
-                    <p className="text-gray-100 text-lg mb-8">
+            <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-orange-900 to-red-900 text-white overflow-hidden">
+                <div className="absolute top-0 -left-4 w-72 h-72 bg-orange-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+                <div className="absolute top-0 -right-4 w-72 h-72 bg-red-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+                <div className="absolute -bottom-8 left-20 w-72 h-72 bg-yellow-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+                <div className="relative max-w-4xl mx-auto text-center">
+                    <div className="flex items-center justify-center gap-3 mb-6">
+                        <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl shadow-lg flex items-center justify-center">
+                            <Sparkles className="w-6 h-6 text-white" />
+                        </div>
+                    </div>
+                    <h2 className="text-4xl sm:text-5xl font-black text-white mb-6">Applications for Summer Internships 2026 are Open!</h2>
+                    <p className="text-slate-200 text-lg sm:text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
                         Don't just watch the revolution—be part of it. Experience mentorship, real projects, and rapid growth.
                     </p>
                     <Link to="/careers/internships">
-                        <button className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
+                        <button className="bg-white text-orange-900 hover:bg-slate-100 font-black py-4 px-10 rounded-xl transition-all transform hover:scale-105 shadow-2xl inline-flex items-center gap-3">
+                            <Rocket className="w-5 h-5" />
                             Apply Now
                         </button>
                     </Link>
                 </div>
-            </div>
+            </section>
         </div>
     );
 }

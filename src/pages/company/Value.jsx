@@ -1,5 +1,5 @@
 import React from "react";
-import valuesHero from "../../assets/culture.webp";
+import { Target, Award, Lightbulb, Users, Heart, Leaf, CheckCircle, Sparkles, Rocket, Shield, TrendingUp } from "lucide-react";
 import value1 from "../../assets/g1.png";
 import value2 from "../../assets/g2.png";
 import value3 from "../../assets/g3.png";
@@ -7,7 +7,7 @@ import value4 from "../../assets/g4.png";
 import value5 from "../../assets/g5.png";
 import value6 from "../../assets/g6.png";
 import leadershipBg from "../../assets/leadership.webp";
-
+import value from "../../assets/value.webp";
 export default function Values() {
     const coreValues = [
         {
@@ -242,43 +242,35 @@ export default function Values() {
     return (
         <div className="bg-white">
             {/* ===== Hero Section ===== */}
-            <div className="relative min-h-[600px] overflow-hidden pt-20">
-                {/* Background Image */}
-                <div className="absolute inset-0">
-                    <img 
-                        src={valuesHero} 
-                        alt="Values Background" 
-                        className="w-full h-full object-cover brightness-75"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/80 via-purple-900/75 to-pink-900/80"></div>
-                </div>
+            <div 
+                className="relative h-[600px] flex items-center justify-start overflow-hidden"
+                style={{
+                    backgroundImage: `url(${value})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                }}
+            >
+                <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-transparent"></div>
 
-                <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <p className="text-purple-300 text-lg font-semibold mb-4 uppercase tracking-widest">Our Foundation</p>
-                            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                                Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-purple-300">Values</span> Matter
-                            </h1>
-                            <p className="text-xl text-purple-100 mb-8 leading-relaxed">
-                                Six core values guide every decision we make and define who we are as an organization. They shape our culture, drive our actions, and inspire our teams.
-                            </p>
-                            <div className="flex flex-col sm:flex-row gap-4">
-                                <button className="px-8 py-4 bg-gradient-to-r from-pink-400 to-purple-400 text-purple-900 font-bold rounded-lg hover:shadow-2xl hover:shadow-pink-500/50 hover:scale-105 active:scale-95 transition-all duration-300">
-                                    Discover Our Values
-                                </button>
-                                <button className="px-8 py-4 border-2 border-pink-300 text-pink-300 font-bold rounded-lg hover:bg-pink-400/10 hover:scale-105 active:scale-95 transition-all duration-300">
-                                    Culture & Impact
-                                </button>
-                            </div>
-                        </div>
-                        <div className="relative group">
-                            {/* <img 
-                                src="htSix Core Valuestps://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" 
-                                alt="Our Values" 
-                                className="w-full h-auto rounded-2xl shadow-2xl group-hover:shadow-3xl group-hover:scale-105 transition-all duration-500 relative z-10"
-                            /> */}
-                        </div>
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+                    {/* <span className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-bold uppercase tracking-wider mb-6">
+                        Our Foundation
+                    </span> */}
+                    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight drop-shadow-2xl">
+                        Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300">Values</span> Matter
+                    </h1>
+                    <p className="text-xl sm:text-2xl text-white/90 mb-10 max-w-3xl leading-relaxed drop-shadow-lg">
+                        Six core values guide every decision we make and define who we are as an organization. They shape our culture, drive our actions, and inspire our teams.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-start">
+                        <button className="group inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-xl hover:scale-105 transform transition-all duration-300 shadow-2xl text-lg">
+                            <Award className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
+                            Discover Our Values
+                        </button>
+                        <button className="inline-flex items-center gap-3 px-10 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/50 text-white font-bold rounded-xl hover:bg-white/20 hover:scale-105 transition-all duration-300 text-lg">
+                            Culture & Impact
+                            <Sparkles className="w-5 h-5" />
+                        </button>
                     </div>
                 </div>
             </div>
@@ -287,10 +279,13 @@ export default function Values() {
             <section className="py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                        <span className="inline-block px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Core Values
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Six Core Values
                         </h2>
-                        <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             These values form the foundation of our organization and guide our daily decisions, interactions, and strategic direction.
                         </p>
                     </div>
@@ -335,13 +330,16 @@ export default function Values() {
             </section>
 
             {/* ===== Values Pillars ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-50 to-white">
+            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 via-indigo-50 to-pink-50">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                        <span className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Values Framework
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Four Pillars of Our Values
                         </h2>
-                        <p className="text-base md:text-lg lg:text-xl text-gray-600">How our values span across dimensions</p>
+                        <p className="text-xl text-gray-600">How our values span across dimensions</p>
                     </div>
 
                     <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
@@ -370,10 +368,13 @@ export default function Values() {
             <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                        <span className="inline-block px-4 py-2 rounded-full bg-green-100 text-green-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Values in Action
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             When We Uphold Our Values
                         </h2>
-                        <p className="text-base md:text-lg lg:text-xl text-gray-600">Real-world examples of values in action</p>
+                        <p className="text-xl text-gray-600">Real-world examples of values in action</p>
                     </div>
 
                     <div className="space-y-6 md:space-y-8">
@@ -411,10 +412,13 @@ export default function Values() {
             </section>
 
             {/* ===== Values-Aligned Behaviors ===== */}
-            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <span className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Daily Behaviors
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Behaviors That Embody Our Values
                         </h2>
                         <p className="text-xl text-gray-600">How we live our values every day</p>
@@ -455,10 +459,13 @@ export default function Values() {
                 </div>
                 <div className="relative max-w-7xl mx-auto">
                     <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                        <span className="inline-block px-4 py-2 rounded-full bg-amber-100 text-amber-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Leadership Voices
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Leadership on Values
                         </h2>
-                        <p className="text-base md:text-lg lg:text-xl text-gray-600">Voices from across our organization</p>
+                        <p className="text-xl text-gray-600">Voices from across our organization</p>
                     </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -488,7 +495,10 @@ export default function Values() {
             <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <span className="inline-block px-4 py-2 rounded-full bg-pink-100 text-pink-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Our Commitments
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Our Commitments
                         </h2>
                         <p className="text-xl text-gray-600">Promises we make to uphold our values</p>
@@ -498,8 +508,8 @@ export default function Values() {
                         {commitments.map((commitment, idx) => (
                             <div key={idx} className="group flex items-start gap-4 p-6 bg-gradient-to-br from-white to-purple-50 rounded-lg border-2 border-gray-200 hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 cursor-pointer transform hover:-translate-y-1">
                                 <div className="flex-none">
-                                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center font-bold text-white text-lg group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
-                                        ✓
+                                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
+                                        <CheckCircle className="w-6 h-6 text-white" />
                                     </div>
                                 </div>
                                 <div className="flex-1">
@@ -514,10 +524,13 @@ export default function Values() {
             </section>
 
             {/* ===== Values Impact Statistics ===== */}
-            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-50 to-indigo-50">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 via-indigo-50 to-pink-50">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <span className="inline-block px-4 py-2 rounded-full bg-teal-100 text-teal-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Impact Metrics
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Impact Through Values
                         </h2>
                         <p className="text-xl text-gray-600">Real outcomes from living our values</p>
@@ -559,7 +572,10 @@ export default function Values() {
                             />
                         </div>
                         <div>
-                            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                            <span className="inline-block px-4 py-2 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold uppercase tracking-wider mb-4">
+                                Team Culture
+                            </span>
+                            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6">
                                 Every Team Member Matters
                             </h2>
                             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
@@ -573,7 +589,9 @@ export default function Values() {
                                     "We support continuous learning and growth rooted in our values"
                                 ].map((point, idx) => (
                                     <div key={idx} className="group flex items-start gap-3 p-4 rounded-lg hover:bg-purple-50 transition-all duration-300 cursor-pointer">
-                                        <span className="text-2xl group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">✨</span>
+                                        <div className="flex-none w-8 h-8 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-lg flex items-center justify-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
+                                            <Sparkles className="w-4 h-4 text-white" />
+                                        </div>
                                         <span className="text-gray-700 font-medium group-hover:text-gray-900">{point}</span>
                                     </div>
                                 ))}
@@ -589,7 +607,10 @@ export default function Values() {
             {/* ===== Final CTA ===== */}
             <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600">
                 <div className="max-w-3xl mx-auto text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm rounded-2xl mb-6">
+                        <Rocket className="w-10 h-10 text-white" />
+                    </div>
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6">
                         Live Our Values With Us
                     </h2>
                     <p className="text-xl text-purple-100 mb-10 leading-relaxed">
@@ -597,11 +618,13 @@ export default function Values() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                        <button className="px-10 py-4 bg-white text-purple-600 font-bold rounded-lg hover:shadow-2xl hover:shadow-white/50 hover:scale-105 active:scale-95 transition-all duration-300">
+                        <button className="group inline-flex items-center gap-3 px-10 py-4 bg-white text-purple-600 font-bold rounded-xl hover:shadow-2xl hover:shadow-white/50 hover:scale-105 transition-all duration-300 text-lg">
+                            <Users className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                             Explore Careers
                         </button>
-                        <button className="px-10 py-4 border-3 border-white text-white font-bold rounded-lg hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-300">
+                        <button className="inline-flex items-center gap-3 px-10 py-4 border-2 border-white text-white font-bold rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-300 text-lg">
                             Get to Know Us
+                            <Heart className="w-5 h-5" />
                         </button>
                     </div>
 

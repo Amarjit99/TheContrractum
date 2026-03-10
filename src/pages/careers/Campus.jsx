@@ -1,6 +1,6 @@
 import { GraduationCap, BookOpen, Users, Globe, Award, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import campus from "../../assets/Campus.png"
 export default function Campus() {
     const programs = [
         {
@@ -33,30 +33,36 @@ export default function Campus() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <div className="bg-gradient-to-r from-primary via-primary-light to-primary-dark text-white py-24">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-6">
+            <div className="relative text-white h-[550px] overflow-hidden bg-gray-900" style={{
+                backgroundImage: `url(${campus})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+            }}>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+                <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 h-full flex flex-col justify-center">
+                    {/* <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-6">
                         <GraduationCap size={18} className="text-yellow-300" />
                         <span className="font-semibold text-sm uppercase tracking-wide">
                             University Relations
                         </span>
-                    </div>
-                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg">
+                    </div> */}
+                    <h1 className="text-5xl lg:text-7xl font-black mb-6 drop-shadow-2xl leading-tight">
                         From Campus to Corporate
                     </h1>
-                    <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+                    <p className="text-xl text-gray-200 max-w-3xl mx-auto drop-shadow-lg leading-relaxed">
                         Your degree was just the beginning. Launch your career with a company that invests in your potential.
                     </p>
                 </div>
             </div>
 
             {/* Stats Section */}
-            <div className="max-w-7xl mx-auto px-6 lg:px-8 -mt-16 relative z-10">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8 -mt-20 relative z-10">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                     {stats.map((stat, index) => (
-                        <div key={index} className="bg-white p-6 rounded-2xl shadow-lg text-center border-b-4 border-red-500">
-                            <div className="text-3xl lg:text-4xl font-black text-gray-900 mb-1">{stat.number}</div>
-                            <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide">{stat.label}</div>
+                        <div key={index} className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border-t-4 border-violet-600 transform hover:-translate-y-1">
+                            <div className="text-4xl lg:text-5xl font-black bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent mb-2">{stat.number}</div>
+                            <div className="text-sm font-bold text-gray-600 uppercase tracking-wide">{stat.label}</div>
                         </div>
                     ))}
                 </div>
@@ -65,29 +71,32 @@ export default function Campus() {
             {/* Programs Grid */}
             <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl font-black text-gray-900 mb-4">Our Programs</h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
+                    <div className="inline-block bg-violet-50 text-violet-600 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
+                        Campus Programs
+                    </div>
+                    <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">Our Programs</h2>
+                    <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
                         We offer tailored paths for different disciplines, ensuring you start your career on the right foot.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {programs.map((program, index) => (
-                        <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group">
-                            <div className="bg-gray-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                        <div key={index} className="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-violet-500 group transform hover:-translate-y-2">
+                            <div className="bg-gradient-to-br from-violet-50 to-purple-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                                 {program.icon}
                             </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-3">{program.title}</h3>
+                            <h3 className="text-2xl font-black text-gray-900 mb-3 group-hover:text-violet-600 transition-colors">{program.title}</h3>
                             <p className="text-gray-600 mb-6 text-sm leading-relaxed">{program.description}</p>
-                            <ul className="space-y-2 mb-8">
+                            <ul className="space-y-3 mb-8">
                                 {program.features.map((feature, idx) => (
-                                    <li key={idx} className="flex items-center gap-2 text-sm text-gray-700">
-                                        <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                                    <li key={idx} className="flex items-center gap-3 text-sm text-gray-700">
+                                        <div className="w-2 h-2 bg-gradient-to-r from-violet-600 to-purple-600 rounded-full flex-shrink-0"></div>
                                         {feature}
                                     </li>
                                 ))}
                             </ul>
-                            <Link to="/careers/jobs" className="flex items-center text-primary font-bold hover:gap-2 transition-all">
-                                View Openings <ArrowRight size={16} className="ml-1" />
+                            <Link to="/careers/jobs" className="inline-flex items-center gap-2 text-violet-600 font-bold hover:gap-3 transition-all group-hover:underline">
+                                View Openings <ArrowRight size={16} />
                             </Link>
                         </div>
                     ))}
@@ -95,12 +104,14 @@ export default function Campus() {
             </div>
 
             {/* Steps Section */}
-            <div className="bg-white py-24">
+            <div className="bg-gradient-to-br from-gray-50 to-white py-24">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <span className="text-primary font-bold uppercase tracking-wider text-sm">Hiring Process</span>
-                            <h2 className="text-4xl font-black text-gray-900 mt-2 mb-6">How We Hire</h2>
+                            <div className="inline-block bg-violet-50 text-violet-600 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
+                                Hiring Process
+                            </div>
+                            <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">How We Hire</h2>
                             <p className="text-gray-600 text-lg mb-8">
                                 We look for problem solvers, critical thinkers, and passionate learners. Our process is designed to help you showcase your best self.
                             </p>
@@ -111,24 +122,24 @@ export default function Campus() {
                                     { title: "Culture Fit & HR", desc: "Understanding your aspirations and alignment with our values." },
                                     { title: "Offer & Onboarding", desc: "Welcome to the team! A structured orientation awaits you." }
                                 ].map((step, index) => (
-                                    <div key={index} className="flex gap-4">
-                                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-primary flex items-center justify-center font-bold text-sm">
+                                    <div key={index} className="flex gap-5 items-start group">
+                                        <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-violet-600 to-purple-600 text-white flex items-center justify-center font-bold shadow-lg group-hover:scale-110 transition-transform">
                                             {index + 1}
                                         </div>
-                                        <div>
-                                            <h4 className="font-bold text-gray-900">{step.title}</h4>
-                                            <p className="text-gray-500 text-sm">{step.desc}</p>
+                                        <div className="flex-1">
+                                            <h4 className="font-bold text-lg text-gray-900 mb-1 group-hover:text-violet-600 transition-colors">{step.title}</h4>
+                                            <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
                                         </div>
                                     </div>
                                 ))}
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="absolute -inset-4 bg-gradient-to-r from-red-600 to-primary rounded-2xl opacity-20 blur-xl"></div>
+                            <div className="absolute -inset-6 bg-gradient-to-r from-violet-600 to-purple-600 rounded-3xl opacity-20 blur-2xl animate-pulse"></div>
                             <img
                                 src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800"
                                 alt="Students discussing"
-                                className="relative rounded-2xl shadow-2xl w-full object-cover"
+                                className="relative rounded-3xl shadow-2xl w-full object-cover h-[500px] border-4 border-white"
                             />
                         </div>
                     </div>
@@ -136,20 +147,22 @@ export default function Campus() {
             </div>
 
             {/* CTA */}
-            <div className="bg-primary text-white py-20">
-                <div className="max-w-4xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl lg:text-4xl font-black mb-6">Ready to Start Your Journey?</h2>
-                    <p className="text-gray-400 text-lg mb-8">
+            <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-24 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-violet-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+                <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+                    <h2 className="text-4xl lg:text-5xl font-black mb-6">Ready to Start Your Journey?</h2>
+                    <p className="text-gray-300 text-lg mb-10 leading-relaxed">
                         Check if we are visiting your campus or apply directly through our off-campus drives.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <Link to="/careers/jobs">
-                            <button className="bg-primary text-white hover:bg-primary-dark font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto">
+                            <button className="bg-white text-gray-900 hover:bg-gray-100 font-bold py-4 px-10 rounded-xl transition-all transform hover:scale-105 shadow-xl w-full sm:w-auto">
                                 View Campus Drives
                             </button>
                         </Link>
                         <Link to="/contact/touch">
-                            <button className="bg-primary hover:bg-primary-dark text-white font-bold py-4 px-10 rounded-full transition-all w-full sm:w-auto">
+                            <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 font-bold py-4 px-10 rounded-xl transition-all transform hover:scale-105 w-full sm:w-auto">
                                 For Placement Officers
                             </button>
                         </Link>

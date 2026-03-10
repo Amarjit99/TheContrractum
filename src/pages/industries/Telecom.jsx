@@ -1,6 +1,7 @@
 import React from 'react';
 import { Signal, Radio, Globe2, Wifi, Server, Phone, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import telecomImg from '../../assets/tele.jfif';
 
 export default function Telecom() {
     return (
@@ -18,10 +19,10 @@ export default function Telecom() {
 
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
+                        {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
                             <Signal size={16} />
                             <span>Next-Gen Connectivity</span>
-                        </div>
+                        </div> */}
                         <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
                             The Future of <br />
                             <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-cyan-400">
@@ -119,7 +120,7 @@ export default function Telecom() {
                         <div className="relative">
                             <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-cyan-600/20 rounded-3xl transform rotate-3"></div>
                             <img
-                                src="https://images.unsplash.com/photo-1558494949-ef526b0042a0?auto=format&fit=crop&q=80&w=800"
+                                src={telecomImg}
                                 alt="Fiber Optics"
                                 loading="lazy"
                                 className="relative rounded-3xl shadow-2xl transform -rotate-3 hover:rotate-0 transition-transform duration-500"

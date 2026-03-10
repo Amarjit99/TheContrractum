@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Search, MapPin, Briefcase, Clock, Filter, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import join  from "../../assets/join.png"
 
 export default function JobOpenings() {
     const [filterDepartment, setFilterDepartment] = useState("All");
@@ -66,14 +67,15 @@ export default function JobOpenings() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <div className="bg-gradient-to-r from-primary via-indigo-700 to-purple-700 text-white py-24">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg">
+            <div className="relative text-white h-[500px] overflow-hidden" style={{ backgroundImage: `url(${join})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+                {/* Content */}
+                <div className="relative max-w-7xl text-black mx-auto px-6 lg:px-8 text-center z-10 h-full flex flex-col justify-center">
+                    {/* <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-2xl">
                         Join Our Team
                     </h1>
-                    <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+                    <p className="text-xl text-black max-w-2xl mx-auto drop-shadow-lg">
                         Find your next challenge. Build the future with us.
-                    </p>
+                    </p> */}
                 </div>
             </div>
 
@@ -145,9 +147,11 @@ export default function JobOpenings() {
                                 </div>
                             </div>
                             <div>
-                                <button className="bg-primary text-white font-bold py-2.5 px-6 rounded-lg hover:bg-primary-dark transition-all md:opacity-0 md:group-hover:opacity-100 md:translate-x-4 md:group-hover:translate-x-0">
-                                    Apply Now
-                                </button>
+                                <Link to={`/careers/job-application/${job.id}`}>
+                                    <button className="bg-red-600 text-white font-bold py-2.5 px-6 rounded-lg hover:bg-red-700 transition-all">
+                                        Apply Now
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     ))}
@@ -169,7 +173,7 @@ export default function JobOpenings() {
             </div>
 
             {/* Newsletter CTA */}
-            <div className="max-w-7xl mx-auto px-6 lg:px-8 items-center py-12">
+            {/* <div className="max-w-7xl mx-auto px-6 lg:px-8 items-center py-12">
                 <div className="bg-gradient-to-r from-gray-900 to-black rounded-3xl p-8 md:p-16 text-center text-white">
                     <h2 className="text-2xl md:text-3xl font-black mb-4">Don't see a perfect fit?</h2>
                     <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
@@ -179,7 +183,7 @@ export default function JobOpenings() {
                         Join Talent Network
                     </button>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

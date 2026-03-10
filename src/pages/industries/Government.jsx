@@ -1,42 +1,39 @@
 import React from 'react';
 import { Building2, Shield, Users, BarChart3, Globe, Zap, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import city from "../../assets/city.jpg"
 
 export default function Government() {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
-            <div className="relative bg-primary text-white py-24 lg:py-32 overflow-hidden">
-                <div className="absolute inset-0 z-0 opacity-20">
-                    <img
-                        src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&q=80&w=1200"
-                        alt="Government Building"
-                        className="w-full h-full object-cover"
-                    />
-                </div>
-                <div className="absolute inset-0 bg-linear-to-r from-gray-900 via-gray-900/90 to-transparent z-0"></div>
+            <div className="relative text-white h-[600px] overflow-hidden flex items-center" style={{
+                backgroundImage: `url(${city})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+            }}>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent z-0"></div>
 
-                <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-                    <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
-                            <Building2 size={16} />
-                            <span>Public Sector Solutions</span>
-                        </div>
-                        <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full">
+                    <div className="max-w-3xl text-left">
+                        {/* <div className="inline-block px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-bold uppercase tracking-wider mb-6 border border-white/30">
+                            <span className="flex items-center gap-2"><Building2 size={16} />Public Sector Solutions</span>
+                        </div> */}
+                        <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight drop-shadow-2xl">
                             Building Smarter <br />
-                            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-indigo-400">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
                                 Cities & Nations
                             </span>
                         </h1>
-                        <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                        <p className="text-xl text-gray-100 mb-8 leading-relaxed max-w-2xl drop-shadow-lg">
                             Empowering government agencies with secure, scalable, and innovative digital solutions to better serve citizens in the digital age.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/contact/quote" className="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-blue-500/25 flex items-center gap-2">
+                            <Link to="/contact/quote" className="px-10 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold rounded-xl transition-all shadow-xl hover:shadow-2xl flex items-center gap-2 transform hover:scale-105">
                                 Request Consultation
                                 <ArrowRight size={20} />
                             </Link>
-                            <Link to="/projects/case-studies" className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-lg backdrop-blur-sm transition-all border border-white/10">
+                            <Link to="/projects/case-studies" className="px-10 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl backdrop-blur-sm transition-all border-2 border-white/30 hover:border-white/50 transform hover:scale-105">
                                 View Case Studies
                             </Link>
                         </div>
@@ -48,7 +45,10 @@ export default function Government() {
             <div className="py-24 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">Solving Complex Public Sector Challenges</h2>
+                        <div className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Key Challenges
+                        </div>
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Solving Complex Public Sector Challenges</h2>
                         <p className="text-gray-600 text-lg">We understand the unique hurdles government agencies face and provide tailored solutions to overcome them.</p>
                     </div>
 
@@ -70,8 +70,8 @@ export default function Government() {
                                 description: "Transforming outdated systems into agile, cloud-native infrastructures that improve efficiency and reduce costs."
                             }
                         ].map((item, index) => (
-                            <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                                <div className="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6">
+                            <div key={index} className="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-blue-500 transform hover:-translate-y-2">
+                                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center text-white mb-6 shadow-lg">
                                     <item.icon size={28} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
@@ -87,6 +87,9 @@ export default function Government() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
+                            <div className="inline-block px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 text-sm font-bold uppercase tracking-wider mb-6">
+                                Our Solutions
+                            </div>
                             <h2 className="text-4xl font-bold text-gray-900 mb-6">Comprehensive E-Governance Solutions</h2>
                             <p className="text-lg text-gray-600 mb-8">
                                 From smart city infrastructure to digital identity management, we provide end-to-end technology services designed for the public sector.
@@ -117,9 +120,9 @@ export default function Government() {
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-primary/20 rounded-3xl transform rotate-3"></div>
+                            <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-indigo-500/20 rounded-3xl transform rotate-3"></div>
                             <img
-                                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
+                                src={city}
                                 alt="Smart City Infrastructure"
                                 loading="lazy"
                                 className="relative rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500"
@@ -130,24 +133,27 @@ export default function Government() {
             </div>
 
             {/* Stats Section */}
-            <div className="bg-blue-900 py-20 text-white">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 py-20 text-white overflow-hidden">
+                <div className="absolute top-0 -left-4 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+                <div className="absolute top-0 -right-4 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+                <div className="absolute -bottom-8 left-20 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+                <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                     <div className="grid md:grid-cols-4 gap-8 text-center">
                         <div>
-                            <div className="text-4xl font-bold mb-2">50+</div>
-                            <div className="text-blue-200">Government Agencies</div>
+                            <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">50+</div>
+                            <div className="text-gray-300">Government Agencies</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold mb-2">10M+</div>
-                            <div className="text-blue-200">Citizens Served</div>
+                            <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">10M+</div>
+                            <div className="text-gray-300">Citizens Served</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold mb-2">99.9%</div>
-                            <div className="text-blue-200">System Uptime</div>
+                            <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">99.9%</div>
+                            <div className="text-gray-300">System Uptime</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold mb-2">30%</div>
-                            <div className="text-blue-200">Cost Reduction</div>
+                            <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">30%</div>
+                            <div className="text-gray-300">Cost Reduction</div>
                         </div>
                     </div>
                 </div>
@@ -156,17 +162,19 @@ export default function Government() {
             {/* CTA Section */}
             <div className="py-24 bg-white">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <div className="bg-blue-900 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
+                    <div className="bg-gradient-to-br from-blue-900 via-indigo-900 to-cyan-900 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
+                        <div className="absolute top-10 left-10 w-40 h-40 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+                        <div className="absolute bottom-10 right-10 w-40 h-40 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
                         <div className="relative z-10">
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Transform Public Service?</h2>
                             <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
                                 Let's collaborate to build a more efficient, transparent, and citizen-centric future.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact/touch" className="px-8 py-4 bg-white text-blue-900 font-bold rounded-lg hover:bg-gray-100 transition-colors shadow-lg">
+                                <Link to="/contact/touch" className="px-10 py-4 bg-white text-blue-900 font-bold rounded-xl hover:bg-gray-100 transition-all shadow-xl transform hover:scale-105">
                                     Get in Touch
                                 </Link>
-                                <Link to="/about-us" className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">
+                                <Link to="/about-us" className="px-10 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white/10 transition-all transform hover:scale-105">
                                     Learn More
                                 </Link>
                             </div>

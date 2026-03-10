@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Target, Rocket, Trophy, Sparkles, Globe, Building2, TrendingUp, Lightbulb, Users, Shield, Heart, Award, Zap, CheckCircle } from "lucide-react";
 import g1 from "../../assets/g1.png";
 import g2 from "../../assets/g2.png";
 import g3 from "../../assets/g3.png";
@@ -13,7 +14,7 @@ import g11 from "../../assets/g11.png";
 import g12 from "../../assets/g12.png";
 import g13 from "../../assets/g13.png";
 import g14 from "../../assets/g14.png";
-import vision from "../../assets/vision.jpg";
+import visin from "../../assets/visin.png";
 export default function Vision() {
     const visionPillars = [
         {
@@ -142,7 +143,7 @@ export default function Vision() {
                 { title: "AI Integration", detail: "Deploy comprehensive AI-powered service suite" },
                 { title: "Talent Acquisition", detail: "Onboard 2,500+ skilled professionals globally" }
             ],
-            icon: "🚀",
+            icon: Rocket,
             color: "from-blue-500 to-cyan-500"
         },
         {
@@ -156,7 +157,7 @@ export default function Vision() {
                 { title: "Client Milestone", detail: "Serve 5,000+ enterprise clients worldwide" },
                 { title: "Strategic Partnerships", detail: "Form alliances with 50+ technology leaders" }
             ],
-            icon: "🏆",
+            icon: Trophy,
             color: "from-purple-500 to-indigo-500"
         },
         {
@@ -170,7 +171,7 @@ export default function Vision() {
                 { title: "Green Solutions", detail: "Launch eco-friendly product line and services" },
                 { title: "Social Impact", detail: "Impact 1M+ lives through CSR initiatives" }
             ],
-            icon: "🌱",
+            icon: Sparkles,
             color: "from-green-500 to-emerald-500"
         },
         {
@@ -184,7 +185,7 @@ export default function Vision() {
                 { title: "Employer Brand", detail: "Become #1 employer of choice in tech industry" },
                 { title: "Innovation Labs", detail: "Run 15+ R&D labs pioneering future technologies" }
             ],
-            icon: "👑",
+            icon: Award,
             color: "from-amber-500 to-orange-500"
         },
     ];
@@ -199,53 +200,47 @@ export default function Vision() {
     return (
         <div className="bg-white">
             {/* ===== Hero Section ===== */}
-            <div className="relative min-h-[400px] md:min-h-[500px] lg:min-h-[600px] overflow-hidden pt-20">
-                {/* Background Image with Overlay */}
-                <div className="absolute inset-0">
-                    <img 
-                        src={vision} 
-                        alt="Vision Background" 
-                        className="w-full h-full object-cover"
-                    />
-                    {/* <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/95 via-purple-900/90 to-blue-900/95"></div> */}
-                </div>
+            <div 
+                className="relative h-[600px] flex items-center justify-center overflow-hidden"
+                style={{
+                    backgroundImage: `url(${visin})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                }}
+            >
+                <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-transparent"></div>
 
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 lg:py-24">
-                    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                        <div className="order-1 md:order-1">
-                            <p className="text-purple-300 text-sm md:text-lg font-semibold mb-3 md:mb-4 uppercase tracking-widest">Our Direction</p>
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
-                                Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">Vision</span> for Tomorrow
-                            </h1>
-                            <p className="text-base md:text-xl text-purple-100 mb-6 md:mb-8 leading-relaxed">
-                                To be the world's most trusted technology partner, transforming businesses and empowering organizations to achieve their boldest aspirations.
-                            </p>
-                            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                                <button className="px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-purple-400 to-indigo-400 text-white font-bold rounded-lg hover:shadow-2xl hover:shadow-purple-500/50 hover:scale-105 active:scale-95 transition-all duration-300 text-sm md:text-base">
-                                    Discover Our Journey
-                                </button>
-                                <button className="px-6 md:px-8 py-3 md:py-4 border-2 border-purple-300 text-purple-300 font-bold rounded-lg hover:bg-purple-400/10 hover:scale-105 active:scale-95 transition-all duration-300 text-sm md:text-base">
-                                    Our Impact
-                                </button>
-                            </div>
-                        </div>
-                        <div className="relative group order-2 md:order-2">
-                            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-indigo-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                            <img 
-                                // src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" 
-                                // alt="Company Vision" 
-                                className="w-full h-auto rounded-2xl shadow-2xl group-hover:shadow-3xl group-hover:scale-105 transition-all duration-500 relative z-10"
-                            />
-                        </div>
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+                    {/* <span className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-bold uppercase tracking-wider mb-6">
+                        Our Vision
+                    </span> */}
+                    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight drop-shadow-2xl">
+                        Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">Vision</span> for Tomorrow
+                    </h1>
+                    <p className="text-xl sm:text-2xl text-white/90 mb-10 max-w-3xl leading-relaxed drop-shadow-lg">
+                        To be the world's most trusted technology partner, transforming businesses and empowering organizations to achieve their boldest aspirations
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-start">
+                        <button className="group inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold rounded-xl hover:scale-105 transform transition-all duration-300 shadow-2xl text-lg">
+                            <Target className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
+                            Discover Our Journey
+                        </button>
+                        <button className="inline-flex items-center gap-3 px-10 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/50 text-white font-bold rounded-xl hover:bg-white/20 hover:scale-105 transition-all duration-300 text-lg">
+                            Our Impact
+                            <Sparkles className="w-5 h-5" />
+                        </button>
                     </div>
                 </div>
             </div>
 
             {/* ===== Vision Statement ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-50 to-blue-50">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Vision Statement
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6">
                             Our Vision Statement
                         </h2>
                         <div className="max-w-4xl mx-auto p-6 md:p-8 lg:p-10 bg-white rounded-2xl border-2 border-purple-200 shadow-lg hover:shadow-2xl hover:border-purple-400 transition-all duration-500 cursor-pointer group">
@@ -258,13 +253,16 @@ export default function Vision() {
             </section>
 
             {/* ===== Vision Pillars ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+            <section className="py-16 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Strategic Pillars
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Four Pillars of Our Vision
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600">The foundation of our strategic direction</p>
+                        <p className="text-xl text-gray-600">The foundation of our strategic direction</p>
                     </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
@@ -304,7 +302,7 @@ export default function Vision() {
             </section>
 
             {/* ===== Core Values ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 relative">
                 {/* Background Image - Clear and Visible */}
                 <div className="absolute inset-0">
                     <img 
@@ -316,11 +314,14 @@ export default function Vision() {
                 </div>
 
                 <div className="relative max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Core Values
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Our Core Values
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600">Principles that guide our decisions and actions</p>
+                        <p className="text-xl text-gray-600">Principles that guide our decisions and actions</p>
                     </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -351,13 +352,16 @@ export default function Vision() {
             </section>
 
             {/* ===== Future Focus Areas ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+            <section className="py-16 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-green-100 text-green-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Future Focus
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Future Focus Areas
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600">Where we're investing for tomorrow's opportunities</p>
+                        <p className="text-xl text-gray-600">Where we're investing for tomorrow's opportunities</p>
                     </div>
 
                     <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
@@ -397,16 +401,16 @@ export default function Vision() {
             </section>
 
             {/* ===== Vision Roadmap ===== */}
-            <section className="py-12 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+            <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-20">
-                        <div className="inline-block px-4 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-sm font-bold rounded-full mb-4 shadow-lg">
-                            OUR JOURNEY AHEAD
-                        </div>
-                        <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6">
+                    <div className="text-center mb-20">
+                        <span className="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-sm font-bold rounded-full mb-6 shadow-lg uppercase tracking-wider">
+                            Our Journey Ahead
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6">
                             Strategic Roadmap to 2028
                         </h2>
-                        <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                             Four transformative phases that will shape our journey from global expansion to industry leadership
                         </p>
                     </div>
@@ -421,8 +425,8 @@ export default function Vision() {
                                 <div key={idx} className="relative group">
                                     {/* Timeline Dot */}
                                     <div className="absolute top-20 left-1/2 -translate-x-1/2 z-10">
-                                        <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-2xl shadow-2xl ring-4 ring-white group-hover:scale-125 transition-all duration-500`}>
-                                            {item.icon}
+                                        <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center shadow-2xl ring-4 ring-white group-hover:scale-125 transition-all duration-500`}>
+                                            <item.icon className="w-6 h-6 text-white" />
                                         </div>
                                     </div>
                                     
@@ -485,8 +489,8 @@ export default function Vision() {
                                 <div key={idx} className="relative pl-16 md:pl-20 group">
                                     {/* Timeline Icon */}
                                     <div className="absolute left-2 md:left-3 top-0">
-                                        <div className={`w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-2xl md:text-3xl shadow-xl ring-4 ring-white`}>
-                                            {item.icon}
+                                        <div className={`w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center shadow-xl ring-4 ring-white`}>
+                                            <item.icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
                                         </div>
                                     </div>
                                     
@@ -550,8 +554,9 @@ export default function Vision() {
                             
                             {/* Premium badge */}
                             <div className="relative inline-block mb-6">
-                                <div className="px-6 py-2 bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 text-black text-xs md:text-sm font-black uppercase tracking-widest rounded-full shadow-lg shadow-amber-500/50">
-                                    ✨ Exclusive Opportunity
+                                <div className="flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 text-black text-xs md:text-sm font-black uppercase tracking-widest rounded-full shadow-lg shadow-amber-500/50">
+                                    <Sparkles className="w-4 h-4" />
+                                    Exclusive Opportunity
                                 </div>
                             </div>
                             
@@ -574,14 +579,14 @@ export default function Vision() {
                             
                             {/* Premium CTA buttons */}
                             <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4">
-                                <button className="group px-10 py-4 bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 text-black text-base md:text-lg font-black rounded-xl shadow-2xl shadow-amber-500/50 hover:shadow-amber-500/70 hover:scale-105 transition-all duration-300 uppercase tracking-wide">
-                                    <span className="flex items-center gap-3">
-                                        Explore Opportunities
-                                        <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
-                                    </span>
+                                <button className="group inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 text-black text-base md:text-lg font-black rounded-xl shadow-2xl shadow-amber-500/50 hover:shadow-amber-500/70 hover:scale-105 transition-all duration-300 uppercase tracking-wide">
+                                    <Rocket className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
+                                    Explore Opportunities
+                                    <Zap className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                                 </button>
-                                <button className="px-10 py-4 bg-transparent border-2 border-amber-400/50 text-amber-400 text-base md:text-lg font-bold rounded-xl hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all duration-300 uppercase tracking-wide">
+                                <button className="inline-flex items-center gap-2 px-10 py-4 bg-transparent border-2 border-amber-400/50 text-amber-400 text-base md:text-lg font-bold rounded-xl hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all duration-300 uppercase tracking-wide">
                                     Learn More
+                                    <TrendingUp className="w-5 h-5" />
                                 </button>
                             </div>
                             
@@ -612,7 +617,7 @@ export default function Vision() {
             </section>
 
             {/* ===== Vision Commitment ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative min-h-[600px] md:min-h-[700px] lg:min-h-[800px]">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 relative min-h-[700px]">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                     <img 
@@ -623,25 +628,31 @@ export default function Vision() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/60"></div>
                 </div>
 
-                <div className="relative max-w-5xl mx-auto text-center flex flex-col justify-center min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 md:mb-8 drop-shadow-2xl">
+                <div className="relative max-w-5xl mx-auto text-center flex flex-col justify-center min-h-[600px]">
+                    <span className="inline-block px-4 py-2 rounded-full bg-amber-100 text-amber-700 text-sm font-bold uppercase tracking-wider mb-6 mx-auto">
+                        Our Promise
+                    </span>
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8 drop-shadow-2xl">
                         Our Commitment to You
                     </h2>
-                    <p className="text-base md:text-lg lg:text-xl text-gray-100 mb-8 md:mb-12 leading-relaxed drop-shadow-lg">
+                    <p className="text-lg sm:text-xl text-gray-100 mb-12 leading-relaxed drop-shadow-lg max-w-3xl mx-auto">
                         We are committed to building an organization that not only achieves business success but also makes a meaningful positive impact on society, the environment, and the communities we serve. Our vision is aspirational yet grounded in measurable, achievable goals that drive us every single day.
                     </p>
 
-                    <div className="grid sm:grid-cols-3 gap-4 md:gap-6 mt-8 md:mt-12">
+                    <div className="grid sm:grid-cols-3 gap-6 mt-12">
                         {[
-                            { text: "Innovation", number: "01" },
-                            { text: "Responsibility", number: "02" },
-                            { text: "Excellence", number: "03" }
+                            { text: "Innovation", number: "01", icon: Lightbulb },
+                            { text: "Responsibility", number: "02", icon: Shield },
+                            { text: "Excellence", number: "03", icon: Award }
                         ].map((item, idx) => (
-                            <div key={idx} className="group p-6 md:p-8 bg-white/10 backdrop-blur-md rounded-xl border-2 border-white/20 hover:border-amber-400 hover:bg-white/20 transition-all duration-500 cursor-pointer">
-                                <p className="text-5xl md:text-6xl font-bold text-white/20 mb-2 md:mb-3 group-hover:text-white/30 transition-colors">
+                            <div key={idx} className="group p-8 bg-white/10 backdrop-blur-md rounded-2xl border-2 border-white/20 hover:border-amber-400 hover:bg-white/20 transition-all duration-500 cursor-pointer">
+                                <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
+                                    <item.icon className="w-6 h-6 text-white" />
+                                </div>
+                                <p className="text-6xl font-bold text-white/20 mb-3 group-hover:text-white/30 transition-colors">
                                     {item.number}
                                 </p>
-                                <p className="text-lg md:text-xl text-white font-bold group-hover:text-amber-300 transition-colors">
+                                <p className="text-xl text-white font-bold group-hover:text-amber-300 transition-colors">
                                     {item.text}
                                 </p>
                             </div>
@@ -651,7 +662,7 @@ export default function Vision() {
             </section>
 
             {/* ===== Final CTA ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+            <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
                 {/* Background Pattern */}
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900"></div>
                 <div className="absolute inset-0 opacity-10">
@@ -662,14 +673,10 @@ export default function Vision() {
 
                 <div className="relative max-w-6xl mx-auto">
                     {/* Top Badge */}
-                    <div className="text-center mb-6 md:mb-8">
-                        <div className="inline-block px-6 py-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 backdrop-blur-sm border border-purple-400/30 rounded-full mb-6">
-                            <span className="text-purple-300 text-sm md:text-base font-semibold uppercase tracking-wider">Join Our Journey</span>
-                        </div>
+                    <div className="text-center mb-8">
+                        <span className="inline-block px-6 py-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 backdrop-blur-sm border border-purple-400/30 rounded-full mb-6 text-purple-300 text-sm font-bold uppercase tracking-wider\">\n                            Join Our Journey\n                        </span>
                         
-                        <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 md:mb-8 leading-tight">
-                            Be Part of Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-blue-300 to-indigo-300">Vision</span>
-                        </h2>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8 leading-tight\">\n                            Be Part of Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-blue-300 to-indigo-300\">Vision</span>\n                        </h2>
                         
                         <div className="flex items-center justify-center gap-3 mb-6">
                             <div className="w-16 md:w-24 h-0.5 bg-gradient-to-r from-transparent to-purple-400"></div>
@@ -683,15 +690,15 @@ export default function Vision() {
                     </div>
 
                     {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mb-10 md:mb-12">
-                        <button className="group px-10 py-5 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-bold rounded-xl shadow-2xl shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 text-base md:text-lg">
-                            <span className="flex items-center justify-center gap-3">
-                                Explore Opportunities
-                                <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
-                            </span>
+                    <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+                        <button className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-bold rounded-xl shadow-2xl shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 text-lg">
+                            <Rocket className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
+                            Explore Opportunities
+                            <Zap className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
                         </button>
-                        <button className="px-10 py-5 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-xl hover:bg-white/20 hover:border-white/50 hover:scale-105 transition-all duration-300 text-base md:text-lg">
+                        <button className="inline-flex items-center gap-3 px-10 py-5 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-xl hover:bg-white/20 hover:border-white/50 hover:scale-105 transition-all duration-300 text-lg">
                             Learn More
+                            <TrendingUp className="w-5 h-5" />
                         </button>
                     </div>
 
@@ -699,8 +706,8 @@ export default function Vision() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                         <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 hover:bg-white/10 hover:border-purple-400/50 transition-all duration-500">
                             <div className="flex items-center gap-4 mb-4">
-                                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center text-2xl shadow-lg">
-                                    🎯
+                                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                                    <Target className="w-6 h-6 md:w-7 md:h-7 text-white" />
                                 </div>
                                 <div>
                                     <p className="text-3xl md:text-4xl font-black text-white group-hover:text-purple-300 transition-colors mb-1">2028</p>
@@ -712,8 +719,8 @@ export default function Vision() {
 
                         <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 hover:bg-white/10 hover:border-indigo-400/50 transition-all duration-500">
                             <div className="flex items-center gap-4 mb-4">
-                                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center text-2xl shadow-lg">
-                                    🌍
+                                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center shadow-lg">
+                                    <Globe className="w-6 h-6 md:w-7 md:h-7 text-white" />
                                 </div>
                                 <div>
                                     <p className="text-3xl md:text-4xl font-black text-white group-hover:text-indigo-300 transition-colors mb-1">75+</p>
@@ -725,8 +732,8 @@ export default function Vision() {
 
                         <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 hover:bg-white/10 hover:border-blue-400/50 transition-all duration-500">
                             <div className="flex items-center gap-4 mb-4">
-                                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center text-2xl shadow-lg">
-                                    🏢
+                                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center shadow-lg">
+                                    <Building2 className="w-6 h-6 md:w-7 md:h-7 text-white" />
                                 </div>
                                 <div>
                                     <p className="text-3xl md:text-4xl font-black text-white group-hover:text-blue-300 transition-colors mb-1">10K+</p>
@@ -739,8 +746,12 @@ export default function Vision() {
 
                     {/* Bottom Accent */}
                     <div className="mt-12 pt-8 border-t border-white/10 text-center">
-                        <p className="text-gray-400 text-sm md:text-base">
-                            Ready to transform your organization? <span className="text-purple-300 font-semibold cursor-pointer hover:text-purple-200 transition-colors">Get in touch →</span>
+                        <p className="text-gray-400 text-base flex items-center justify-center gap-2">
+                            Ready to transform your organization? 
+                            <span className="inline-flex items-center gap-1 text-purple-300 font-semibold cursor-pointer hover:text-purple-200 transition-colors">
+                                Get in touch 
+                                <Zap className="w-4 h-4" />
+                            </span>
                         </p>
                     </div>
                 </div>

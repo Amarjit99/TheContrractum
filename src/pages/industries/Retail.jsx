@@ -1,42 +1,39 @@
 import React from 'react';
 import { ShoppingBag, TrendingUp, Users, RefreshCw, Truck, Smartphone, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+import eco from "../../assets/eco.jpg"
+import ecommerceImg from "../../assets/ecommerce.jfif"
 export default function Retail() {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
-            <div className="relative bg-purple-900 text-white py-24 lg:py-32 overflow-hidden">
-                <div className="absolute inset-0 z-0 opacity-20">
-                    <img
-                        src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&q=80&w=1200"
-                        alt="Retail Store"
-                        className="w-full h-full object-cover"
-                    />
-                </div>
-                <div className="absolute inset-0 bg-linear-to-r from-purple-900 via-purple-900/90 to-transparent z-0"></div>
+            <div className="relative text-white h-[600px] overflow-hidden flex items-center" style={{
+                backgroundImage: `url(${eco})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+            }}>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent z-0"></div>
 
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-purple-500/20 text-purple-300 text-sm font-medium mb-6">
-                            <ShoppingBag size={16} />
-                            <span>Retail & Ecommerce</span>
-                        </div>
-                        <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                       {/* <div className="inline-block px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-bold uppercase tracking-wider mb-6 border border-white/30">
+                            <span className="flex items-center gap-2"><ShoppingBag size={16} />Retail & Ecommerce</span>
+                        </div> */}
+                        <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight drop-shadow-2xl">
                             Redefining the <br />
-                            <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-400">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
                                 Shopper Experience
                             </span>
                         </h1>
-                        <p className="text-xl text-purple-100 mb-8 leading-relaxed max-w-2xl">
+                        <p cla ssName="text-xl text-gray-100 mb-8 leading-relaxed max-w-2xl drop-shadow-lg">
                             Unifying physical and digital commerce with omnichannel strategies, AI-driven personalization, and smart supply chain solutions.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/contact/quote" className="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-purple-500/25 flex items-center gap-2">
+                            <Link to="/contact/quote" className="px-10 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-all shadow-xl hover:shadow-2xl flex items-center gap-2 transform hover:scale-105">
                                 Request Strategy
                                 <ArrowRight size={20} />
                             </Link>
-                            <Link to="/solutions/business" className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-lg backdrop-blur-sm transition-all border border-white/10">
+                            <Link to="/solutions/business" className="px-10 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl backdrop-blur-sm transition-all border-2 border-white/30 hover:border-white/50 transform hover:scale-105">
                                 Explore Services
                             </Link>
                         </div>
@@ -48,7 +45,10 @@ export default function Retail() {
             <div className="py-24 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">Capturing the Modern Consumer</h2>
+                        <div className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Key Challenges
+                        </div>
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Capturing the Modern Consumer</h2>
                         <p className="text-gray-600 text-lg">In a hyper-competitive market, we help retailers stay agile, relevant, and customer-obsessed.</p>
                     </div>
 
@@ -70,8 +70,8 @@ export default function Retail() {
                                 description: "Building lasting relationships through rewards programs, superior service, and emotional connection."
                             }
                         ].map((item, index) => (
-                            <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+                            <div key={index} className="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-purple-500 transform hover:-translate-y-2">
+                                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center text-white mb-6 shadow-lg">
                                     <item.icon size={28} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
@@ -87,15 +87,18 @@ export default function Retail() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
-                            <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-primary-light/20 rounded-3xl transform -rotate-3"></div>
+                            <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-pink-500/20 rounded-3xl transform -rotate-3"></div>
                             <img
-                                src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=800"
+                                src={ecommerceImg}
                                 alt="Modern Retail"
                                 loading="lazy"
                                 className="relative rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500"
                             />
                         </div>
                         <div className="order-1 lg:order-2">
+                            <div className="inline-block px-4 py-2 rounded-full bg-pink-100 text-pink-700 text-sm font-bold uppercase tracking-wider mb-6">
+                                Our Solutions
+                            </div>
                             <h2 className="text-4xl font-bold text-gray-900 mb-6">Future-Ready Retail Architecture</h2>
                             <p className="text-lg text-gray-600 mb-8">
                                 Whether you're a boutique brand or a global chain, we build the technology stack that powers your growth.
@@ -130,24 +133,27 @@ export default function Retail() {
             </div>
 
             {/* Stats Section */}
-            <div className="bg-purple-900 py-20 text-white">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 py-20 text-white overflow-hidden">
+                <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+                <div className="absolute top-0 -right-4 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+                <div className="absolute -bottom-8 left-20 w-72 h-72 bg-fuchsia-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+                <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                     <div className="grid md:grid-cols-4 gap-8 text-center">
                         <div>
-                            <div className="text-4xl font-bold mb-2">100+</div>
-                            <div className="text-purple-200">Brands Transformed</div>
+                            <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">100+</div>
+                            <div className="text-gray-300">Brands Transformed</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold mb-2">$2B+</div>
-                            <div className="text-purple-200">Revenue Processed</div>
+                            <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">$2B+</div>
+                            <div className="text-gray-300">Revenue Processed</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold mb-2">25%</div>
-                            <div className="text-purple-200">Conversion Uplift</div>
+                            <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">25%</div>
+                            <div className="text-gray-300">Conversion Uplift</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold mb-2">50%</div>
-                            <div className="text-purple-200">Faster Checkout</div>
+                            <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">50%</div>
+                            <div className="text-gray-300">Faster Checkout</div>
                         </div>
                     </div>
                 </div>
@@ -156,17 +162,19 @@ export default function Retail() {
             {/* CTA Section */}
             <div className="py-24 bg-white">
                 <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                    <div className="bg-blue-900 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
+                    <div className="bg-gradient-to-br from-purple-900 via-fuchsia-900 to-pink-900 rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
+                        <div className="absolute top-10 left-10 w-40 h-40 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+                        <div className="absolute bottom-10 right-10 w-40 h-40 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
                         <div className="relative z-10">
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Scale Your Retail Business</h2>
                             <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
                                 Don't just sell—create experiences. Let's build a retail ecosystem that customers love.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact/quote" className="px-8 py-4 bg-white text-blue-900 font-bold rounded-lg hover:bg-gray-100 transition-colors shadow-lg">
+                                <Link to="/contact/quote" className="px-10 py-4 bg-white text-purple-900 font-bold rounded-xl hover:bg-gray-100 transition-all shadow-xl transform hover:scale-105">
                                     Get Started
                                 </Link>
-                                <Link to="/company/about-us" className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors">
+                                <Link to="/company/about-us" className="px-10 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white/10 transition-all transform hover:scale-105">
                                     Learn More
                                 </Link>
                             </div>

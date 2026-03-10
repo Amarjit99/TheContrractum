@@ -52,6 +52,7 @@ import Agriculture from './pages/industries/Agriculture';
 // ///////////////////////Careers Pages/////////////////////////////////
 import Life from './pages/careers/Life';
 import JobOpenings from './pages/careers/JobOpenings';
+import JobApplication from './pages/careers/JobApplication';
 import Internships from './pages/careers/Internships';
 import Projects from './pages/careers/Projects';
 import Campus from './pages/careers/Campus';
@@ -158,6 +159,7 @@ export default function App() {
 {/* ///////////////////////// Careers Routes///////////////////////// */}
             <Route path="/careers/life" element={<Life />} />
             <Route path="/careers/jobs" element={<JobOpenings />} />
+            <Route path="/careers/job-application/:jobId" element={<JobApplication />} />
             <Route path="/careers/internships" element={<Internships />} />
             <Route path="/careers/projects" element={<Projects />} />
             <Route path="/careers/campus" element={<Campus />} />

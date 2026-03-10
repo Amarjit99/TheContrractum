@@ -1,6 +1,6 @@
-import { Quote, TrendingUp } from "lucide-react";
+import { Quote, TrendingUp, Award, Briefcase, Users, Target, Lightbulb } from "lucide-react";
 import { Link } from "react-router-dom";
-import advisorsHero from "../../assets/leadership.webp";
+import Business from "../../assets/business.jpg"
 
 export default function IndustryAdvisors() {
     const advisors = [
@@ -31,77 +31,98 @@ export default function IndustryAdvisors() {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen">
             {/* Hero Section */}
-            <div className="relative py-20 md:py-24 overflow-hidden">
-                {/* Background Image */}
-                <div className="absolute inset-0">
-                    <img 
-                        src={advisorsHero} 
-                        alt="Industry Advisors Background" 
-                        className="w-full h-full object-cover brightness-75"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary-light/75 to-primary-dark/80"></div>
-                </div>
-                <div className="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl lg:text-6xl font-black mb-6 drop-shadow-lg text-white">
-                        Industry Advisors
-                    </h1>
-                    <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-                        Guiding our journey with decades of experience and strategic
-                        foresight.
-                    </p>
+            <div className="relative h-[600px] flex items-center" style={{ backgroundImage: `url(${Business})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-left">
+                    <div>
+                        {/* <span className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-bold uppercase tracking-wider mb-4 drop-shadow-2xl">
+                            Strategic Leadership
+                        </span> */}
+                        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight text-white drop-shadow-2xl">
+                            Industry Advisors
+                        </h1>
+                        <p className="text-gray-100 text-lg sm:text-xl mb-8 leading-relaxed max-w-3xl drop-shadow-2xl">
+                            Guiding our journey with decades of experience and strategic foresight from world-class industry leaders
+                        </p>
+                        <button className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold px-10 py-4 rounded-xl hover:from-purple-700 hover:to-indigo-700 transition transform hover:scale-105 text-base sm:text-lg shadow-2xl">
+                            Meet Our Advisors
+                        </button>
+                    </div>
                 </div>
             </div>
 
             {/* Advisors Grid */}
-            <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {advisors.map((advisor, index) => (
-                        <div
-                            key={index}
-                            className="bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-shadow duration-300 flex flex-col"
-                        >
-                            <div className="p-8 flex-1">
-                                <Quote className="w-10 h-10 text-red-200 mb-4" />
-                                <p className="text-gray-600 italic text-lg mb-6 leading-relaxed">
-                                    "{advisor.quote}"
-                                </p>
-                                <div className="flex items-center gap-2 text-sm font-semibold text-primary mb-6 bg-primary/10 w-fit px-3 py-1 rounded-full">
-                                    <TrendingUp size={16} />
-                                    <span>Focus: {advisor.impact}</span>
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-gray-50">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Our Advisory Board
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl font-black mb-4 text-slate-900">Strategic Industry Leaders</h2>
+                        <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+                            Experienced professionals providing strategic guidance and industry insights
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                        {advisors.map((advisor, index) => (
+                            <div
+                                key={index}
+                                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 flex flex-col border border-slate-100"
+                            >
+                                <div className="p-8 flex-1">
+                                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                        <Quote className="w-6 h-6 text-white" />
+                                    </div>
+                                    <p className="text-slate-600 italic text-lg mb-6 leading-relaxed">
+                                        "{advisor.quote}"
+                                    </p>
+                                    <div className="flex items-center gap-2 text-sm font-bold text-purple-700 mb-6 bg-purple-100 w-fit px-4 py-2 rounded-full">
+                                        <Target size={16} />
+                                        <span>Focus: {advisor.impact}</span>
+                                    </div>
+                                </div>
+                                <div className="bg-gradient-to-br from-slate-50 to-white p-6 flex items-center gap-4 border-t border-slate-100">
+                                    <img
+                                        src={advisor.image}
+                                        alt={advisor.name}
+                                        className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-110 transition-transform duration-300"
+                                    />
+                                    <div>
+                                        <h3 className="font-black text-slate-900 mb-1">{advisor.name}</h3>
+                                        <p className="text-sm text-slate-600">{advisor.role}</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="bg-gray-50 p-6 flex items-center gap-4 border-t border-gray-100">
-                                <img
-                                    src={advisor.image}
-                                    alt={advisor.name}
-                                    className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md"
-                                />
-                                <div>
-                                    <h3 className="font-bold text-gray-900">{advisor.name}</h3>
-                                    <p className="text-sm text-gray-500">{advisor.role}</p>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
+            </section>
 
             {/* CTA Section */}
-            <div className="bg-blue-900 text-white py-20">
-                <div className="max-w-4xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl lg:text-4xl font-black text-white mb-6">Shape the Future with Us</h2>
-                    <p className="text-gray-100 text-lg mb-8">
-                        We value wisdom and experience. If you're a industry veteran looking to make an impact, let's talk.
+            <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900 text-white overflow-hidden">
+                <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+                <div className="absolute top-0 -right-4 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+                <div className="absolute -bottom-8 left-20 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+                <div className="relative max-w-4xl mx-auto text-center">
+                    <div className="flex items-center justify-center gap-3 mb-6">
+                        <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl shadow-lg flex items-center justify-center">
+                            <Lightbulb className="w-6 h-6 text-white" />
+                        </div>
+                    </div>
+                    <h2 className="text-4xl sm:text-5xl font-black text-white mb-6">Shape the Future with Us</h2>
+                    <p className="text-slate-200 text-lg sm:text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
+                        We value wisdom and experience. If you're an industry veteran looking to make an impact, let's talk.
                     </p>
                     <Link to="/join/partner">
-                        <button className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg cursor-pointer">
+                        <button className="bg-white text-purple-900 hover:bg-slate-100 font-black py-4 px-10 rounded-xl transition-all transform hover:scale-105 shadow-2xl inline-flex items-center gap-3">
+                            <Users className="w-5 h-5" />
                             Become an Advisor
                         </button>
                     </Link>
                 </div>
-            </div>
+            </section>
         </div>
     );
 }

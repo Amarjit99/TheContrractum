@@ -1,10 +1,11 @@
 import React from "react";
-import missionHero from "../../assets/foundation.webp";
+import { Target, Sparkles, TrendingUp, Users, Shield, CheckCircle, Lightbulb, Heart, Award, Zap, Globe, Building2, Rocket } from "lucide-react";
 import about1 from "../../assets/about-1.jpg";
 import about2 from "../../assets/about-2.jpg";
 import commitment from "../../assets/commitment.webp";
 import m1 from "../../assets/m1.png";
 import gov from "../../assets/gov.png";
+import mission from "../../assets/mission.png";
 export default function Mission() {
     const missionPillars = [
         {
@@ -197,53 +198,47 @@ export default function Mission() {
     return (
         <div className="bg-white">
             {/* ===== Hero Section ===== */}
-            <div className="relative min-h-[600px] md:min-h-[700px] lg:min-h-[800px] overflow-hidden pt-20">
-                {/* Background Image */}
-                <div className="absolute inset-0">
-                    <img 
-                        src={missionHero} 
-                        alt="Mission Background" 
-                        className="w-full h-full object-cover brightness-75"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/70 via-teal-900/65 to-cyan-900/70"></div>
-                </div>
+            <div 
+                className="relative h-[600px] flex items-center justify-start overflow-hidden"
+                style={{
+                    backgroundImage: `url(${mission})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                }}
+            >
+                <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-transparent"></div>
 
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 lg:py-24">
-                    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                        <div className="relative group order-1 md:order-1">
-                            <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-emerald-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                            <img 
-                                src={about1} 
-                                alt="Our Mission" 
-                                className="w-full h-auto rounded-2xl shadow-2xl group-hover:shadow-3xl group-hover:scale-105 transition-all duration-500 relative z-10"
-                            />
-                        </div>
-                        <div className="order-2 md:order-2">
-                            <p className="text-teal-300 text-sm md:text-lg font-semibold mb-3 md:mb-4 uppercase tracking-widest">Our Purpose</p>
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
-                                Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-cyan-300">Mission</span> Matters
-                            </h1>
-                            <p className="text-base md:text-xl text-teal-100 mb-6 md:mb-8 leading-relaxed">
-                                To transform businesses through innovative technology solutions, strategic partnerships, and exceptional service that creates lasting value and positive impact.
-                            </p>
-                            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                                <button className="px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-teal-400 to-emerald-400 text-emerald-900 font-bold rounded-lg hover:shadow-2xl hover:shadow-teal-500/50 hover:scale-105 active:scale-95 transition-all duration-300 text-sm md:text-base">
-                                    Start Your Journey
-                                </button>
-                                <button className="px-6 md:px-8 py-3 md:py-4 border-2 border-teal-300 text-teal-300 font-bold rounded-lg hover:bg-teal-400/10 hover:scale-105 active:scale-95 transition-all duration-300 text-sm md:text-base">
-                                    Our Approach
-                                </button>
-                            </div>
-                        </div>
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+                    {/* <span className="inline-block px-4 py-2 rounded-full bg-teal-100 text-teal-700 text-sm font-bold uppercase tracking-wider mb-6">
+                        Our Mission
+                    </span> */}
+                    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight drop-shadow-2xl">
+                        Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-cyan-300">Mission</span> Matters
+                    </h1>
+                    <p className="text-xl sm:text-2xl text-white/90 mb-10 max-w-3xl leading-relaxed drop-shadow-lg">
+                        To transform businesses through innovative technology solutions, strategic partnerships, and exceptional service that creates lasting value and positive impact
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-start">
+                        <button className="group inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-bold rounded-xl hover:scale-105 transform transition-all duration-300 shadow-2xl text-lg">
+                            <Target className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
+                            Start Your Journey
+                        </button>
+                        <button className="inline-flex items-center gap-3 px-10 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/50 text-white font-bold rounded-xl hover:bg-white/20 hover:scale-105 transition-all duration-300 text-lg">
+                            Our Approach
+                            <Sparkles className="w-5 h-5" />
+                        </button>
                     </div>
                 </div>
             </div>
 
             {/* ===== Mission Statement ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-50 to-emerald-50">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-50 via-emerald-50 to-cyan-50">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-teal-100 text-teal-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Mission Statement
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6">
                             Our Core Mission
                         </h2>
                         <div className="max-w-4xl mx-auto p-6 md:p-8 lg:p-10 bg-white rounded-2xl border-2 border-teal-200 shadow-lg hover:shadow-2xl hover:border-teal-400 transition-all duration-500 cursor-pointer group">
@@ -256,13 +251,16 @@ export default function Mission() {
             </section>
 
             {/* ===== Mission Pillars ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+            <section className="py-16 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Core Pillars
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Four Core Pillars
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600">Building blocks of our daily mission</p>
+                        <p className="text-xl text-gray-600">Building blocks of our daily mission</p>
                     </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
@@ -289,13 +287,16 @@ export default function Mission() {
             </section>
 
             {/* ===== What We Do ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            What We Do
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             What We Do
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600">Comprehensive services delivering mission-driven results</p>
+                        <p className="text-xl text-gray-600">Comprehensive services delivering mission-driven results</p>
                     </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -326,7 +327,7 @@ export default function Mission() {
             </section>
 
             {/* ===== Our Approach ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 relative">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                     <img 
@@ -337,11 +338,14 @@ export default function Mission() {
                     <div className="absolute inset-0 bg-white/85"></div>
                 </div>
                 <div className="relative max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Our Approach
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             How We Work
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600">Our five-step mission-driven approach</p>
+                        <p className="text-xl text-gray-600">Our five-step mission-driven approach</p>
                     </div>
 
                     <div className="space-y-6 md:space-y-8">
@@ -371,13 +375,16 @@ export default function Mission() {
             </section>
 
             {/* ===== Industries We Serve ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-50 to-emerald-50">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-50 via-emerald-50 to-cyan-50">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-green-100 text-green-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Industries We Serve
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Industries We Serve
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600">Delivering mission-aligned solutions across sectors</p>
+                        <p className="text-xl text-gray-600">Delivering mission-aligned solutions across sectors</p>
                     </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -408,7 +415,7 @@ export default function Mission() {
             </section>
 
             {/* ===== Our Values ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 relative">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                     <img 
@@ -419,11 +426,14 @@ export default function Mission() {
                     <div className="absolute inset-0 bg-white/80"></div>
                 </div>
                 <div className="relative max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Our Values
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Values That Guide Us
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600">Core principles in our mission execution</p>
+                        <p className="text-xl text-gray-600">Core principles in our mission execution</p>
                     </div>
 
                     <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
@@ -447,13 +457,16 @@ export default function Mission() {
             </section>
 
             {/* ===== Impact Metrics ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-amber-100 text-amber-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Impact Metrics
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Mission Impact
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600">Measurable results from our mission-driven work</p>
+                        <p className="text-xl text-gray-600">Measurable results from our mission-driven work</p>
                     </div>
 
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -475,21 +488,24 @@ export default function Mission() {
             </section>
 
             {/* ===== Our Commitments ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+            <section className="py-16 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 text-sm font-bold uppercase tracking-wider mb-4">
+                            Our Commitments
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
                             Our Commitments
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600">Promises we make every day</p>
+                        <p className="text-xl text-gray-600">Promises we make every day</p>
                     </div>
 
                     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
                         {commitments.map((commitment, idx) => (
                             <div key={idx} className="group flex items-start gap-3 md:gap-4 p-4 md:p-6 bg-gradient-to-br from-white to-gray-50 rounded-lg border-2 border-gray-200 hover:border-teal-400 hover:shadow-lg hover:shadow-teal-500/20 transition-all duration-300 cursor-pointer hover:bg-teal-50/50">
                                 <div className="flex-none">
-                                    <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-teal-400 to-emerald-400 flex items-center justify-center font-bold text-white group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 text-sm md:text-base">
-                                        ✓
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-teal-400 to-emerald-400 flex items-center justify-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
+                                        <CheckCircle className="w-5 h-5 text-white" />
                                     </div>
                                 </div>
                                 <div className="flex-1">
@@ -504,13 +520,16 @@ export default function Mission() {
             </section>
 
             {/* ===== Client Success Stories ===== */}
-            <section className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-900 to-gray-800">
+            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-900 to-gray-800">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-4">
+                    <div className="text-center mb-12">
+                        <span className="inline-block px-4 py-2 rounded-full bg-teal-500/20 border border-teal-400/30 text-teal-300 text-sm font-bold uppercase tracking-wider mb-4">
+                            Success Stories
+                        </span>
+                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-4">
                             Mission in Action
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-300">Real impact from our mission-driven partnerships</p>
+                        <p className="text-xl text-gray-300">Real impact from our mission-driven partnerships</p>
                     </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -542,9 +561,14 @@ export default function Mission() {
                                     <p className="text-gray-400 text-xs md:text-sm mb-3 md:mb-4">
                                         <span className="text-gray-500">Challenge:</span> {story.challenge}
                                     </p>
-                                    <p className="text-teal-300 font-semibold mb-3 md:mb-4 text-sm md:text-base">
-                                        💡 {story.mission}
-                                    </p>
+                                    <div className="flex items-center gap-2 mb-4">
+                                        <div className="w-8 h-8 bg-gradient-to-br from-teal-400 to-emerald-400 rounded-lg flex items-center justify-center">
+                                            <Lightbulb className="w-4 h-4 text-white" />
+                                        </div>
+                                        <p className="text-teal-300 font-semibold text-sm md:text-base">
+                                            {story.mission}
+                                        </p>
+                                    </div>
                                     <div className="pt-3 md:pt-4 border-t border-gray-500">
                                         <p className="text-teal-300 font-bold group-hover:text-teal-100 transition-colors text-sm md:text-base">
                                             {story.result}
@@ -558,21 +582,26 @@ export default function Mission() {
             </section>
 
             {/* ===== Final CTA ===== */}
-            <section className="py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600">
+            <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600">
                 <div className="max-w-3xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm rounded-2xl mb-6">
+                        <Rocket className="w-10 h-10 text-white" />
+                    </div>
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6">
                         Join Us in Our Mission
                     </h2>
-                    <p className="text-base md:text-lg lg:text-xl text-teal-100 mb-8 md:mb-10 leading-relaxed">
-                        Partner with us to achieve meaningful digital transformation, sustainable growth, and lasting business success through our mission-driven approach.
+                    <p className="text-xl text-teal-100 mb-10 leading-relaxed">
+                        Partner with us to achieve meaningful digital transformation, sustainable growth, and lasting business success through our mission-driven approach
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-                        <button className="px-8 md:px-10 py-3 md:py-4 bg-white text-emerald-600 font-bold rounded-lg hover:shadow-2xl hover:shadow-white/50 hover:scale-105 active:scale-95 transition-all duration-300 text-sm md:text-base">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button className="group inline-flex items-center gap-3 px-10 py-4 bg-white text-emerald-600 font-bold rounded-xl hover:shadow-2xl hover:shadow-white/50 hover:scale-105 transition-all duration-300 text-lg">
+                            <Target className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                             Begin Your Transformation
                         </button>
-                        <button className="px-8 md:px-10 py-3 md:py-4 border-2 md:border-3 border-white text-white font-bold rounded-lg hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-300 text-sm md:text-base">
+                        <button className="inline-flex items-center gap-3 px-10 py-4 border-2 border-white text-white font-bold rounded-xl hover:bg-white/10 hover:scale-105 transition-all duration-300 text-lg">
                             Explore Solutions
+                            <Sparkles className="w-5 h-5" />
                         </button>
                     </div>
 

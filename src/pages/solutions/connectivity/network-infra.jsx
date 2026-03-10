@@ -1,20 +1,24 @@
+import React from 'react';
+import network from "../../../assets/network.png";
+import { Building2, Link, Settings, Radio, Shield, RefreshCw, Building, Cloud, Heart, Landmark, Gamepad2, Network, Server, SwitchCamera, Wifi, Lock as LockIcon, Activity, Eye, MonitorCheck, CheckCircle, Zap, DollarSign, Users, TrendingUp, Target } from 'lucide-react';
+
 export default function NetworkInfrastructure() {
   const infraServices = [
-    { icon: "🏗️", title: "Infrastructure Design", desc: "Custom architecture tailored to your needs" },
-    { icon: "🔗", title: "Network Topology", desc: "Optimized mesh and redundant configurations" },
-    { icon: "⚙️", title: "Installation & Deployment", desc: "Expert setup with zero downtime migration" },
-    { icon: "📡", title: "Fiber Optic Networks", desc: "High-speed backbone connectivity" },
-    { icon: "🛡️", title: "Edge Security", desc: "Distributed security across all nodes" },
-    { icon: "🔄", title: "Load Balancing", desc: "Intelligent traffic distribution systems" },
+    { icon: Building2, title: "Infrastructure Design", desc: "Custom architecture tailored to your needs" },
+    { icon: Link, title: "Network Topology", desc: "Optimized mesh and redundant configurations" },
+    { icon: Settings, title: "Installation & Deployment", desc: "Expert setup with zero downtime migration" },
+    { icon: Radio, title: "Fiber Optic Networks", desc: "High-speed backbone connectivity" },
+    { icon: Shield, title: "Edge Security", desc: "Distributed security across all nodes" },
+    { icon: RefreshCw, title: "Load Balancing", desc: "Intelligent traffic distribution systems" },
   ];
 
   const components = [
-    { icon: "🏛️", name: "Core Routers", specs: "BGP, MPLS, QoS enabled", performance: "400+ Tbps" },
-    { icon: "🔌", name: "Switches", specs: "Layer 2/3, PoE capable", performance: "100 Gbps+" },
-    { icon: "🛰️", name: "Wireless Access Points", specs: "Wi-Fi 6E, Mesh capable", performance: "High-density deployment" },
-    { icon: "🌐", name: "Network Security Appliances", specs: "Firewall, IDS/IPS, DDoS protection", performance: "Multi-layer defense" },
-    { icon: "📊", name: "Monitoring Systems", specs: "AI-powered analytics", performance: "Real-time insights" },
-    { icon: "🔐", name: "VPN & Encryption", specs: "Military-grade encryption", performance: "Zero-trust architecture" },
+    { icon: Server, name: "Core Routers", specs: "BGP, MPLS, QoS enabled", performance: "400+ Tbps" },
+    { icon: SwitchCamera, name: "Switches", specs: "Layer 2/3, PoE capable", performance: "100 Gbps+" },
+    { icon: Wifi, name: "Wireless Access Points", specs: "Wi-Fi 6E, Mesh capable", performance: "High-density deployment" },
+    { icon: Shield, name: "Network Security Appliances", specs: "Firewall, IDS/IPS, DDoS protection", performance: "Multi-layer defense" },
+    { icon: Activity, name: "Monitoring Systems", specs: "AI-powered analytics", performance: "Real-time insights" },
+    { icon: LockIcon, name: "VPN & Encryption", specs: "Military-grade encryption", performance: "Zero-trust architecture" },
   ];
 
   const architectureModels = [
@@ -25,128 +29,119 @@ export default function NetworkInfrastructure() {
   ];
 
   const benefits = [
-    { icon: "⚡", title: "Enhanced Performance", desc: "Reduced latency, increased bandwidth utilization" },
-    { icon: "💰", title: "Cost Optimization", desc: "60% reduction in operational expenses" },
-    { icon: "🔓", title: "Improved Accessibility", desc: "24/7 network availability and uptime" },
-    { icon: "🛡️", title: "Enterprise Security", desc: "Multi-layer protection and threat prevention" },
-    { icon: "📈", title: "Scalable Architecture", desc: "Grow your network without disruption" },
-    { icon: "🎯", title: "Better User Experience", desc: "Consistent performance across locations" },
+    { icon: Zap, title: "Enhanced Performance", desc: "Reduced latency, increased bandwidth utilization" },
+    { icon: DollarSign, title: "Cost Optimization", desc: "60% reduction in operational expenses" },
+    { icon: MonitorCheck, title: "Improved Accessibility", desc: "24/7 network availability and uptime" },
+    { icon: Shield, title: "Enterprise Security", desc: "Multi-layer protection and threat prevention" },
+    { icon: TrendingUp, title: "Scalable Architecture", desc: "Grow your network without disruption" },
+    { icon: Target, title: "Better User Experience", desc: "Consistent performance across locations" },
   ];
 
   const useCases = [
-    { icon: "🏢", title: "Enterprise Networks", desc: "Multi-site connectivity for corporations" },
-    { icon: "☁️", title: "Cloud Integration", desc: "Seamless hybrid cloud connectivity" },
-    { icon: "🏥", title: "Healthcare Systems", desc: "HIPAA-compliant secure networks" },
-    { icon: "🏦", title: "Financial Services", desc: "High-security transaction networks" },
-    { icon: "🎮", title: "Content Delivery", desc: "Low-latency streaming infrastructure" },
-    { icon: "🚗", title: "IoT Networks", desc: "Massive sensor network management" },
+    { icon: Building, title: "Enterprise Networks", desc: "Multi-site connectivity for corporations" },
+    { icon: Cloud, title: "Cloud Integration", desc: "Seamless hybrid cloud connectivity" },
+    { icon: Heart, title: "Healthcare Systems", desc: "HIPAA-compliant secure networks" },
+    { icon: Landmark, title: "Financial Services", desc: "High-security transaction networks" },
+    { icon: Gamepad2, title: "Content Delivery", desc: "Low-latency streaming infrastructure" },
+    { icon: Network, title: "IoT Networks", desc: "Massive sensor network management" },
   ];
 
   return (
-    <div className="bg-white">
+    <div className="min-h-screen">
       {/* ===== Hero Section ===== */}
-      <div className="relative min-h-[600px] bg-gradient-to-r from-teal-900 via-cyan-900 to-blue-900 overflow-hidden pt-20">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-40 h-40 bg-teal-400 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-60 h-60 bg-cyan-400 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                Enterprise Network <span className="text-cyan-300">Infrastructure</span> Solutions
-              </h1>
-              <p className="text-xl text-cyan-100 mb-8 leading-relaxed">
-                Build scalable, secure, and high-performance networks that power your digital transformation journey.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-teal-400 text-teal-900 font-bold rounded-lg hover:shadow-2xl hover:shadow-cyan-500/50 hover:scale-105 active:scale-95 transition-all duration-300">
-                  Schedule Assessment
-                </button>
-                <button className="px-8 py-4 border-2 border-cyan-400 text-cyan-300 font-bold rounded-lg hover:bg-cyan-400/10 hover:scale-105 active:scale-95 transition-all duration-300">
-                  View Architecture
-                </button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-2xl p-8 backdrop-blur-sm border border-cyan-400/30 hover:border-cyan-400/60 hover:shadow-2xl hover:shadow-cyan-500/30 transition-all duration-500">
-                <div className="grid grid-cols-3 gap-4">
-                  {[
-                    { num: "99.99%", label: "Uptime" },
-                    { num: "400+", label: "Tbps Capacity" },
-                    { num: "50ms", label: "Global Latency" },
-                  ].map((stat, idx) => (
-                    <div key={idx} className="text-center group cursor-pointer">
-                      <p className="text-3xl font-bold text-cyan-300 group-hover:text-cyan-100 group-hover:scale-110 transition-all duration-300">
-                        {stat.num}
-                      </p>
-                      <p className="text-sm text-cyan-100 mt-2">{stat.label}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+      <div className="relative h-[600px] flex items-center" style={{ backgroundImage: `url(${network})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-left">
+          <div>
+            {/* <span className="inline-block px-4 py-2 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold uppercase tracking-wider mb-4 drop-shadow-2xl">
+              Network Infrastructure
+            </span> */}
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight text-white drop-shadow-2xl">
+              Enterprise Network Infrastructure
+            </h1>
+            <p className="text-gray-100 text-lg sm:text-xl mb-8 leading-relaxed max-w-3xl drop-shadow-2xl">
+              Build scalable, secure, and high-performance networks that power your digital transformation journey.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="bg-gradient-to-r from-cyan-600 to-teal-600 text-white font-bold px-10 py-4 rounded-xl hover:from-cyan-700 hover:to-teal-700 transition transform hover:scale-105 text-base sm:text-lg shadow-2xl">
+                Schedule Assessment
+              </button>
+              <button className="border-2 border-white text-white font-bold px-10 py-4 rounded-xl hover:bg-white hover:text-cyan-900 transition transform hover:scale-105 text-base sm:text-lg shadow-2xl">
+                View Architecture
+              </button>
             </div>
           </div>
         </div>
       </div>
 
       {/* ===== Infrastructure Services Grid ===== */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-2 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold uppercase tracking-wider mb-4">
+              Our Services
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4">
               Comprehensive Infrastructure Services
             </h2>
-            <p className="text-xl text-gray-600">Complete solutions for modern network requirements</p>
+            <p className="text-slate-600 text-lg max-w-2xl mx-auto">Complete solutions for modern network requirements</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {infraServices.map((service, idx) => (
-              <div key={idx} className="group bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-500 border-l-4 border-transparent hover:border-cyan-400 cursor-pointer">
-                <div className="text-5xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                  {service.icon}
+            {infraServices.map((service, idx) => {
+              const Icon = service.icon;
+              return (
+                <div key={idx} className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-md hover:shadow-2xl hover:-translate-y-2 transition border-l-4 border-cyan-500">
+                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-xl shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 transform transition">
+                    <Icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-cyan-600 transition">
+                    {service.title}
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed">
+                    {service.desc}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-cyan-600 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
-                  {service.desc}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* ===== Network Components Section ===== */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-cyan-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-2 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold uppercase tracking-wider mb-4">
+              Technology Stack
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4">
               Network Components & Technology Stack
             </h2>
-            <p className="text-xl text-gray-600">Enterprise-grade equipment and solutions</p>
+            <p className="text-slate-600 text-lg max-w-2xl mx-auto">Enterprise-grade equipment and solutions</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {components.map((comp, idx) => (
-              <div key={idx} className="group bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border-2 border-blue-200 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-400/20 transition-all duration-500 cursor-pointer">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="text-4xl group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
-                    {comp.icon}
+            {components.map((comp, idx) => {
+              const Icon = comp.icon;
+              return (
+                <div key={idx} className="group bg-white rounded-2xl p-6 border-2 border-cyan-200 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-400/20 transition">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-xl shadow-lg flex items-center justify-center group-hover:scale-110 transform transition">
+                      <Icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-lg text-slate-900">{comp.name}</h3>
+                      <p className="text-sm text-slate-600 mt-1">{comp.specs}</p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="font-bold text-lg text-gray-900">{comp.name}</h3>
-                    <p className="text-sm text-gray-600 mt-1">{comp.specs}</p>
+                  <div className="flex items-center gap-2 text-cyan-600 font-semibold group-hover:text-cyan-700">
+                    <span className="w-2 h-2 bg-cyan-400 rounded-full group-hover:scale-150 transition"></span>
+                    {comp.performance}
                   </div>
                 </div>
-                <div className="flex items-center gap-2 text-cyan-600 font-semibold group-hover:text-cyan-700">
-                  <span className="w-2 h-2 bg-cyan-400 rounded-full group-hover:scale-150 transition-all duration-300"></span>
-                  {comp.performance}
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -199,60 +194,72 @@ export default function NetworkInfrastructure() {
       </section>
 
       {/* ===== Business Benefits ===== */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-cyan-50 to-teal-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-2 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold uppercase tracking-wider mb-4">
+              Key Benefits
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4">
               Business Benefits & ROI
             </h2>
-            <p className="text-xl text-gray-600">Proven results from enterprise infrastructure optimization</p>
+            <p className="text-slate-600 text-lg max-w-2xl mx-auto">Proven results from enterprise infrastructure optimization</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefits.map((benefit, idx) => (
-              <div key={idx} className="group bg-white rounded-xl p-8 shadow-md hover:shadow-2xl hover:shadow-cyan-400/30 hover:border-cyan-400 border-2 border-transparent transition-all duration-500 cursor-pointer">
-                <div className="text-6xl mb-4 group-hover:scale-125 group-hover:rotate-12 inline-block transition-all duration-300">
-                  {benefit.icon}
+            {benefits.map((benefit, idx) => {
+              const Icon = benefit.icon;
+              return (
+                <div key={idx} className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-md hover:shadow-2xl hover:border-cyan-400 border-2 border-transparent transition">
+                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-xl shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 transform transition">
+                    <Icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-slate-600">
+                    {benefit.desc}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {benefit.title}
-                </h3>
-                <p className="text-gray-600 group-hover:text-gray-700">
-                  {benefit.desc}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* ===== Industry Use Cases ===== */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-cyan-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-2 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold uppercase tracking-wider mb-4">
+              Industry Solutions
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4">
               Industry-Specific Solutions
             </h2>
-            <p className="text-xl text-gray-600">Tailored infrastructure for every vertical</p>
+            <p className="text-slate-600 text-lg max-w-2xl mx-auto">Tailored infrastructure for every vertical</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {useCases.map((useCase, idx) => (
-              <div key={idx} className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl hover:shadow-cyan-500/30 transition-all duration-500 cursor-pointer border border-gray-200 hover:border-cyan-400">
-                <div className="p-8">
-                  <div className="text-5xl mb-4 group-hover:scale-110 group-hover:translateY-[-5px] transition-all duration-300">
-                    {useCase.icon}
+            {useCases.map((useCase, idx) => {
+              const Icon = useCase.icon;
+              return (
+                <div key={idx} className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl hover:shadow-cyan-500/30 transition border border-cyan-200 hover:border-cyan-400">
+                  <div className="p-8">
+                    <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-xl shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 transform transition">
+                      <Icon className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-cyan-600 transition">
+                      {useCase.title}
+                    </h3>
+                    <p className="text-slate-600">
+                      {useCase.desc}
+                    </p>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-cyan-600 transition-colors">
-                    {useCase.title}
-                  </h3>
-                  <p className="text-gray-600 group-hover:text-gray-700">
-                    {useCase.desc}
-                  </p>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-400 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-400 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -424,20 +431,23 @@ export default function NetworkInfrastructure() {
       </section>
 
       {/* ===== CTA Section ===== */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-blue-900">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-cyan-900 via-teal-900 to-cyan-800 text-white overflow-hidden">
+        <div className="absolute top-0 -left-4 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div className="absolute top-0 -right-4 w-72 h-72 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-cyan-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+        <div className="relative max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 drop-shadow-2xl">
             Ready to Transform Your Network?
           </h2>
-          <p className="text-xl text-gray-100 mb-10">
+          <p className="text-gray-100 text-lg sm:text-xl mb-10 max-w-3xl mx-auto leading-relaxed">
             Let our infrastructure experts design the perfect solution for your enterprise needs.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-10 py-4 bg-white text-blue-900 font-bold rounded-lg hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-300">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <button className="bg-white text-cyan-900 font-bold px-10 py-4 rounded-xl hover:bg-gray-100 transition transform hover:scale-105 text-base sm:text-lg shadow-2xl">
               Request Free Consultation
             </button>
-            <button className="px-10 py-4 border-3 border-white text-white font-bold rounded-lg hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-300">
+            <button className="border-2 border-white text-white font-bold px-10 py-4 rounded-xl hover:bg-white hover:text-cyan-900 transition transform hover:scale-105 text-base sm:text-lg shadow-2xl">
               Download Checklist
             </button>
           </div>

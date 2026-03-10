@@ -22,21 +22,11 @@ export default function Life() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section with Background Image */}
-            <div className="relative bg-gradient-to-r from-teal-500 via-blue-500 to-primary text-white py-32 overflow-hidden">
-                {/* Background Image */}
-                <div 
-                    className="absolute inset-0 z-0"
-                    style={{
-                        backgroundImage: 'url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80)',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        opacity: '0.3'
-                    }}
-                />
-                
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-teal-500/80 via-blue-600/80 to-primary/80 z-0" />
-                
+            <div className="relative text-white py-32 overflow-hidden" style={{
+                backgroundImage: 'url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+            }}>
                 {/* Content */}
                 <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
                     <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-6">
@@ -104,14 +94,14 @@ export default function Life() {
                                     <Hand size={18} />
                                     <span>Giving Back</span>
                                 </div>
-                                <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
+                                <h2 className="text-3xl md:text-4xl font-bold text-red mb-6">
                                     Community & Impact
                                 </h2>
                                 <p className="text-gray-400 text-lg mb-8 leading-relaxed">
                                     We don't just work in silos. We engage with our local communities through volunteer days, coding workshops for kids, and environmental initiatives.
                                 </p>
                                 <Link to="/resources/csr">
-                                    <button className="bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg w-fit">
+                                    <button className="bg-primary hover:bg-primary-dark text-red-600 font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg w-fit">
                                         See Our CSR Initiatives
                                     </button>
                                 </Link>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import { Cloud, Zap, Globe, Database, Shield, Bell, Activity, CheckCircle, TrendingUp, Award, FileCheck, ArrowRight, Sparkles, Users, Server, Lock, AlertCircle } from 'lucide-react';
+import ReliabilityBg from '../../assets/commitment.webp';
 export default function Reliability() {
   const [selectedMetric, setSelectedMetric] = useState(1);
 
@@ -12,7 +13,7 @@ export default function Reliability() {
       uptime: 99.99,
       response: "5 minutes",
       color: "from-blue-500 to-cyan-600",
-      icon: "☁️"
+      icon: "cloud"
     },
     {
       id: 2,
@@ -22,7 +23,7 @@ export default function Reliability() {
       uptime: 99.95,
       response: "10 minutes",
       color: "from-cyan-500 to-teal-600",
-      icon: "🔌"
+      icon: "zap"
     },
     {
       id: 3,
@@ -32,7 +33,7 @@ export default function Reliability() {
       uptime: 99.90,
       response: "15 minutes",
       color: "from-teal-500 to-green-600",
-      icon: "🌐"
+      icon: "globe"
     },
     {
       id: 4,
@@ -42,7 +43,7 @@ export default function Reliability() {
       uptime: 99.99,
       response: "5 minutes",
       color: "from-green-500 to-emerald-600",
-      icon: "💾"
+      icon: "database"
     },
     {
       id: 5,
@@ -52,7 +53,7 @@ export default function Reliability() {
       uptime: 99.95,
       response: "30 minutes",
       color: "from-emerald-500 to-blue-600",
-      icon: "🆘"
+      icon: "users"
     },
     {
       id: 6,
@@ -62,7 +63,7 @@ export default function Reliability() {
       uptime: 99.99,
       response: "1 minute",
       color: "from-indigo-500 to-purple-600",
-      icon: "🔒"
+      icon: "shield"
     }
   ];
 
@@ -75,7 +76,7 @@ export default function Reliability() {
       target: "Target: 99.99%",
       achieved: "99.99%",
       trend: "↑ Improving",
-      icon: "📈",
+      icon: "trendingUp",
       color: "from-blue-100 to-blue-50"
     },
     {
@@ -86,7 +87,7 @@ export default function Reliability() {
       target: "Target: < 1 hour",
       achieved: "< 30 minutes",
       trend: "↓ Decreasing",
-      icon: "⏱️",
+      icon: "activity",
       color: "from-cyan-100 to-cyan-50"
     },
     {
@@ -97,7 +98,7 @@ export default function Reliability() {
       target: "Target: 100%",
       achieved: "100%",
       trend: "→ Stable",
-      icon: "✅",
+      icon: "checkCircle",
       color: "from-teal-100 to-teal-50"
     },
     {
@@ -108,7 +109,7 @@ export default function Reliability() {
       target: "Target: < 20 min",
       achieved: "15 minutes",
       trend: "✓ Exceeded",
-      icon: "🛡️",
+      icon: "shield",
       color: "from-green-100 to-green-50"
     }
   ];
@@ -117,7 +118,7 @@ export default function Reliability() {
     {
       id: 1,
       system: "Multi-Region Hosting",
-      icon: "🌍",
+      icon: "globe",
       description: "Applications deployed across 5+ geographic locations",
       features: [
         "Automatic failover between regions",
@@ -131,7 +132,7 @@ export default function Reliability() {
     {
       id: 2,
       system: "Database Replication",
-      icon: "🔄",
+      icon: "activity",
       description: "Master-slave and multi-master database replication",
       features: [
         "Real-time synchronous replication",
@@ -145,7 +146,7 @@ export default function Reliability() {
     {
       id: 3,
       system: "Load Balancing",
-      icon: "⚡",
+      icon: "zap",
       description: "Advanced traffic distribution and health checking",
       features: [
         "Intelligent request routing",
@@ -159,7 +160,7 @@ export default function Reliability() {
     {
       id: 4,
       system: "Backup & Recovery",
-      icon: "💿",
+      icon: "database",
       description: "Comprehensive backup strategy with multiple copies",
       features: [
         "Hourly incremental backups",
@@ -176,7 +177,7 @@ export default function Reliability() {
     {
       id: 1,
       tool: "Real-time Monitoring",
-      icon: "📊",
+      icon: "trendingUp",
       description: "24/7 system performance and health monitoring",
       capabilities: [
         "Metrics collected every 10 seconds",
@@ -188,7 +189,7 @@ export default function Reliability() {
     {
       id: 2,
       tool: "Log Aggregation",
-      icon: "📝",
+      icon: "fileCheck",
       description: "Centralized logging from all system components",
       capabilities: [
         "Log collection from 500+ servers",
@@ -200,7 +201,7 @@ export default function Reliability() {
     {
       id: 3,
       tool: "Health Checks",
-      icon: "🏥",
+      icon: "activity",
       description: "Automated system health verification",
       capabilities: [
         "API endpoint health checks every 30 seconds",
@@ -212,7 +213,7 @@ export default function Reliability() {
     {
       id: 4,
       tool: "Alert Management",
-      icon: "🔔",
+      icon: "bell",
       description: "Intelligent alerting and incident management",
       capabilities: [
         "Smart alert routing",
@@ -227,7 +228,7 @@ export default function Reliability() {
     {
       id: 1,
       cert: "ISO 27001",
-      icon: "🔐",
+      icon: "lock",
       description: "Information Security Management",
       validTill: "Valid Till: 2026",
       color: "from-blue-500 to-cyan-600",
@@ -241,7 +242,7 @@ export default function Reliability() {
     {
       id: 2,
       cert: "ISO 9001",
-      icon: "✓",
+      icon: "checkCircle",
       description: "Quality Management System",
       validTill: "Valid Till: 2025",
       color: "from-cyan-500 to-teal-600",
@@ -255,7 +256,7 @@ export default function Reliability() {
     {
       id: 3,
       cert: "SOC 2 Type II",
-      icon: "🛡️",
+      icon: "shield",
       description: "Service Organization Control",
       validTill: "Valid Till: 2027",
       color: "from-teal-500 to-green-600",
@@ -269,7 +270,7 @@ export default function Reliability() {
     {
       id: 4,
       cert: "GDPR Compliant",
-      icon: "👤",
+      icon: "users",
       description: "General Data Protection Regulation",
       validTill: "Ongoing Compliance",
       color: "from-green-500 to-emerald-600",
@@ -287,7 +288,7 @@ export default function Reliability() {
       id: 1,
       phase: "Detection",
       time: "< 5 minutes",
-      icon: "🚨",
+      icon: "alertCircle",
       description: "Automated detection of critical failures",
       steps: [
         "24/7 automated monitoring systems active",
@@ -300,7 +301,7 @@ export default function Reliability() {
       id: 2,
       phase: "Response",
       time: "5-10 minutes",
-      icon: "⚡",
+      icon: "zap",
       description: "Immediate response and stabilization",
       steps: [
         "On-call team automatically paged",
@@ -313,7 +314,7 @@ export default function Reliability() {
       id: 3,
       phase: "Recovery",
       time: "10-30 minutes",
-      icon: "🔧",
+      icon: "activity",
       description: "Service restoration and recovery",
       steps: [
         "Primary system repair initiated",
@@ -326,7 +327,7 @@ export default function Reliability() {
       id: 4,
       phase: "Restoration",
       time: "30-60 minutes",
-      icon: "✅",
+      icon: "checkCircle",
       description: "Full system restoration",
       steps: [
         "All systems operating at full capacity",
@@ -361,29 +362,37 @@ export default function Reliability() {
   ];
 
   const reliabilityStats = [
-    { label: "Uptime Guarantee", value: "99.99%", icon: "📈" },
-    { label: "Data Centers", value: "5+", icon: "🏢" },
-    { label: "Backup Locations", value: "3+", icon: "💾" },
-    { label: "Response Time", value: "< 5 min", icon: "⚡" },
-    { label: "Recovery Time", value: "< 15 min", icon: "🔧" },
-    { label: "Certifications", value: "10+", icon: "🏆" }
+    { label: "Uptime Guarantee", value: "99.99%", icon: "trendingUp" },
+    { label: "Data Centers", value: "5+", icon: "server" },
+    { label: "Backup Locations", value: "3+", icon: "database" },
+    { label: "Response Time", value: "< 5 min", icon: "zap" },
+    { label: "Recovery Time", value: "< 15 min", icon: "activity" },
+    { label: "Certifications", value: "10+", icon: "award" }
   ];
 
   return (
     <div className="bg-gradient-to-b from-white to-gray-50 min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 opacity-10"></div>
-        <div className="relative max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+      <section className="relative w-full h-[600px] flex items-center justify-center overflow-hidden mb-16 md:mb-20" style={{ backgroundImage: `url(${ReliabilityBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-transparent"></div>
+        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+          {/* <span className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-bold uppercase tracking-wider mb-4">Reliability</span> */}
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-4 md:mb-6 drop-shadow-2xl tracking-wide">
             Enterprise-Grade Reliability
           </h1>
-          <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl font-light mb-8 drop-shadow-lg tracking-wide">
             Built on decades of experience and cutting-edge infrastructure, our systems deliver 99.99% uptime with enterprise-grade security and compliance
           </p>
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-semibold hover:scale-105 hover:shadow-2xl transition-all duration-300">
-            View SLA Details
-          </button>
+          <div className="flex gap-4 justify-center flex-wrap">
+            <button className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300">
+              <span>View SLA Details</span>
+              <FileCheck className="w-5 h-5" />
+            </button>
+            <button className="inline-flex items-center gap-3 px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 hover:shadow-2xl hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+              <span>Contact Support</span>
+              <Sparkles className="w-5 h-5" />
+            </button>
+          </div>
         </div>
       </section>
 
@@ -391,19 +400,22 @@ export default function Reliability() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Service Level Agreements</h2>
+            <span className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-bold uppercase tracking-wider mb-4">SLA Commitments</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 drop-shadow-lg">Service Level Agreements</h2>
             <p className="text-gray-600 text-lg">Guaranteed uptime across all critical services</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {uptemeSLA.map((sla) => (
+            {uptemeSLA.map((sla) => {
+              const IconComponent = sla.icon === 'cloud' ? Cloud : sla.icon === 'zap' ? Zap : sla.icon === 'globe' ? Globe : sla.icon === 'database' ? Database : sla.icon === 'users' ? Users : Shield;
+              return (
               <div
                 key={sla.id}
                 className={`group bg-gradient-to-br ${sla.color} rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-2`}
               >
                 <div className="p-8 text-white">
-                  <div className="text-4xl mb-4 group-hover:scale-125 transition-transform duration-300">
-                    {sla.icon}
+                  <div className="w-16 h-16 mb-4 bg-white bg-opacity-20 rounded-xl flex items-center justify-center group-hover:scale-125 transition-transform duration-300">
+                    <IconComponent className="w-8 h-8 text-white" />
                   </div>
 
                   <h3 className="text-2xl font-bold mb-2">{sla.service}</h3>
@@ -421,7 +433,7 @@ export default function Reliability() {
                   </div>
 
                   {/* Uptime Progress */}
-                  <div className="bg-white bg-opacity-20 rounded-lg p-4">
+                  <div className="bg-black bg-opacity-20 rounded-lg p-4">
                     <div className="flex justify-between mb-2">
                       <span className="text-xs font-semibold uppercase">Uptime</span>
                       <span className="font-bold">{sla.uptime}%</span>
@@ -435,7 +447,8 @@ export default function Reliability() {
                   </div>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -444,21 +457,24 @@ export default function Reliability() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Redundancy & Failover Systems</h2>
+            <span className="inline-block px-4 py-2 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold uppercase tracking-wider mb-4">Infrastructure</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 drop-shadow-lg">Redundancy & Failover Systems</h2>
             <p className="text-gray-600 text-lg">Multi-layered infrastructure for maximum reliability</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {redundancySystems.map((system) => (
+            {redundancySystems.map((system) => {
+              const IconComponent = system.icon === 'globe' ? Globe : system.icon === 'activity' ? Activity : system.icon === 'zap' ? Zap : Database;
+              return (
               <div
                 key={system.id}
-                className={`group bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 border-l-4 ${system.borderColor} overflow-hidden`}
+                className="group bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 overflow-hidden border-t-4 border-blue-500"
               >
                 <div className="p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <span className="text-4xl group-hover:scale-125 transition-transform duration-300">
-                      {system.icon}
-                    </span>
+                    <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center group-hover:scale-125 transition-transform duration-300">
+                      <IconComponent className="w-8 h-8 text-blue-600" />
+                    </div>
                     <h3 className="text-2xl font-bold text-gray-900">{system.system}</h3>
                   </div>
 
@@ -474,9 +490,10 @@ export default function Reliability() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </div>  
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -485,20 +502,23 @@ export default function Reliability() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">24/7 Monitoring & Alerting</h2>
+            <span className="inline-block px-4 py-2 rounded-full bg-green-100 text-green-700 text-sm font-bold uppercase tracking-wider mb-4">Monitoring</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 drop-shadow-lg">24/7 Monitoring & Alerting</h2>
             <p className="text-gray-600 text-lg">Always watching, always ready to respond</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {monitoringTools.map((tool) => (
+            {monitoringTools.map((tool) => {
+              const IconComponent = tool.icon === 'trendingUp' ? TrendingUp : tool.icon === 'fileCheck' ? FileCheck : tool.icon === 'activity' ? Activity : Bell;
+              return (
               <div
                 key={tool.id}
                 className="group bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-8 hover:from-blue-100 hover:to-indigo-100 transition-all duration-300 hover:scale-105 hover:-translate-y-2 border-2 border-transparent hover:border-blue-500"
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="text-4xl group-hover:scale-125 transition-transform duration-300">
-                    {tool.icon}
-                  </span>
+                  <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center group-hover:scale-125 transition-transform duration-300">
+                    <IconComponent className="w-8 h-8 text-blue-600" />
+                  </div>
                   <h3 className="text-2xl font-bold text-gray-900">{tool.tool}</h3>
                 </div>
 
@@ -518,7 +538,8 @@ export default function Reliability() {
                   ))}
                 </ul>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -527,19 +548,22 @@ export default function Reliability() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-indigo-50 to-purple-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Security & Compliance Certifications</h2>
+            <span className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-bold uppercase tracking-wider mb-4">Standards</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 drop-shadow-lg">Security & Compliance Certifications</h2>
             <p className="text-gray-600 text-lg">Trusted by enterprise clients worldwide</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {certifications.map((cert) => (
+            {certifications.map((cert) => {
+              const IconComponent = cert.icon === 'lock' ? Lock : cert.icon === 'checkCircle' ? CheckCircle : cert.icon === 'shield' ? Shield : Users;
+              return (
               <div
                 key={cert.id}
                 className={`group bg-gradient-to-br ${cert.color} rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-2`}
               >
-                <div className="p-8 text-white">
-                  <div className="text-5xl mb-4 group-hover:scale-125 transition-transform duration-300">
-                    {cert.icon}
+                <div className="p-8 text-black">
+                  <div className="w-16 h-16 mb-4 bg-white bg-opacity-20 rounded-xl flex items-center justify-center group-hover:scale-125 transition-transform duration-300">
+                    <IconComponent className="w-8 h-8 text-white" />
                   </div>
 
                   <h3 className="text-2xl font-bold mb-2">{cert.cert}</h3>
@@ -559,7 +583,8 @@ export default function Reliability() {
                   </div>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -568,21 +593,24 @@ export default function Reliability() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Disaster Recovery & Business Continuity</h2>
+            <span className="inline-block px-4 py-2 rounded-full bg-orange-100 text-orange-700 text-sm font-bold uppercase tracking-wider mb-4">Emergency Response</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 drop-shadow-lg">Disaster Recovery & Business Continuity</h2>
             <p className="text-gray-600 text-lg">Comprehensive plans for every scenario</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {disasterRecoveryPlan.map((phase, index) => (
+            {disasterRecoveryPlan.map((phase, index) => {
+              const IconComponent = phase.icon === 'alertCircle' ? AlertCircle : phase.icon === 'zap' ? Zap : phase.icon === 'activity' ? Activity : CheckCircle;
+              return (
               <div
                 key={phase.id}
                 className="group bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 overflow-hidden border-t-4 border-blue-500"
               >
                 <div className="p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <span className="text-4xl group-hover:scale-125 transition-transform duration-300">
-                      {phase.icon}
-                    </span>
+                    <div className="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center group-hover:scale-125 transition-transform duration-300">
+                      <IconComponent className="w-8 h-8 text-orange-600" />
+                    </div>
                     <div>
                       <h3 className="text-2xl font-bold text-gray-900">{phase.phase}</h3>
                       <p className="text-blue-600 font-semibold">{phase.time}</p>
@@ -601,20 +629,26 @@ export default function Reliability() {
                   </div>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Recovery Timeline */}
           <div className="mt-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg p-8 text-white">
             <h3 className="text-2xl font-bold mb-6">Complete Recovery Timeline</h3>
             <div className="grid sm:grid-cols-4 gap-4">
-              {disasterRecoveryPlan.map((phase) => (
+              {disasterRecoveryPlan.map((phase) => {
+                const IconComponent = phase.icon === 'alertCircle' ? AlertCircle : phase.icon === 'zap' ? Zap : phase.icon === 'activity' ? Activity : CheckCircle;
+                return (
                 <div key={phase.id} className="text-center">
-                  <div className="text-3xl mb-2">{phase.icon}</div>
+                  <div className="flex items-center justify-center mb-2">
+                    <IconComponent className="w-8 h-8 text-white" />
+                  </div>
                   <p className="font-semibold mb-1">{phase.phase}</p>
                   <p className="text-blue-100">{phase.time}</p>
                 </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
@@ -624,12 +658,15 @@ export default function Reliability() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-50 to-cyan-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Key Reliability Metrics</h2>
+            <span className="inline-block px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 text-sm font-bold uppercase tracking-wider mb-4">Performance</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 drop-shadow-lg">Key Reliability Metrics</h2>
             <p className="text-gray-600 text-lg">Measured and monitored continuously</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {reliabilityMetrics.map((metric) => (
+            {reliabilityMetrics.map((metric) => {
+              const IconComponent = metric.icon === 'trendingUp' ? TrendingUp : metric.icon === 'activity' ? Activity : metric.icon === 'checkCircle' ? CheckCircle : Shield;
+              return (
               <div
                 key={metric.id}
                 onClick={() => setSelectedMetric(metric.id)}
@@ -646,9 +683,9 @@ export default function Reliability() {
                     </p>
                     <p className="text-4xl font-bold text-gray-900 mt-2">{metric.value}</p>
                   </div>
-                  <span className="text-3xl group-hover:scale-125 transition-transform duration-300">
-                    {metric.icon}
-                  </span>
+                  <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center group-hover:scale-125 transition-transform duration-300">
+                    <IconComponent className="w-8 h-8 text-blue-600" />
+                  </div>
                 </div>
 
                 <p className="text-gray-700 mb-4">{metric.description}</p>
@@ -661,7 +698,8 @@ export default function Reliability() {
                   <div className="text-sm font-semibold text-blue-600">{metric.trend}</div>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -670,7 +708,8 @@ export default function Reliability() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Compliance Standards</h2>
+            <span className="inline-block px-4 py-2 rounded-full bg-teal-100 text-teal-700 text-sm font-bold uppercase tracking-wider mb-4">Compliance</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 drop-shadow-lg">Compliance Standards</h2>
             <p className="text-gray-600 text-lg">Meeting and exceeding industry requirements</p>
           </div>
 
@@ -697,23 +736,29 @@ export default function Reliability() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-indigo-50 to-blue-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Reliability by Numbers</h2>
+            <span className="inline-block px-4 py-2 rounded-full bg-amber-100 text-amber-700 text-sm font-bold uppercase tracking-wider mb-4">Impact by Numbers</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 drop-shadow-lg">Reliability by Numbers</h2>
             <p className="text-gray-600 text-lg">Proven track record of consistent performance</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {reliabilityStats.map((stat, index) => (
+            {reliabilityStats.map((stat, index) => {
+              const IconComponent = stat.icon === 'trendingUp' ? TrendingUp : stat.icon === 'server' ? Server : stat.icon === 'database' ? Database : stat.icon === 'zap' ? Zap : stat.icon === 'activity' ? Activity : Award;
+              return (
               <div
                 key={index}
                 className="group text-center p-8 rounded-lg bg-white shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 border-t-4 border-blue-500"
               >
-                <div className="text-5xl mb-4 group-hover:scale-125 transition-transform duration-300">
-                  {stat.icon}
+                <div className="flex items-center justify-center mb-4">
+                  <div className="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center group-hover:scale-125 transition-transform duration-300">
+                    <IconComponent className="w-10 h-10 text-blue-600" />
+                  </div>
                 </div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-2">{stat.value}</h3>
                 <p className="text-gray-600 font-medium">{stat.label}</p>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -728,10 +773,12 @@ export default function Reliability() {
             With 99.99% uptime guarantee, enterprise-grade security, and 24/7 monitoring, your business is always protected
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 hover:scale-105 transition-all duration-300 hover:shadow-lg">
+            <button className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 hover:scale-105 transition-all duration-300 hover:shadow-lg">
+              <FileCheck className="w-5 h-5" />
               Download SLA
             </button>
-            <button className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-indigo-600 hover:scale-105 transition-all duration-300">
+            <button className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-indigo-600 hover:scale-105 transition-all duration-300">
+              <ArrowRight className="w-5 h-5" />
               Contact Support
             </button>
           </div>
